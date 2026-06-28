@@ -1,0 +1,392 @@
+picture,name,active_ingredient,minimal_package,package_type,minimal_dosage,dosage_type,primary_geometry,secondary_geometry,unit_count_standard
+1-min.jpg,Atomoxetine Generic,Atomoxetine,30,pills,40.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),10
+2-min.jpg,Strattera,Atomoxetine,30,pills,40.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+3-min.jpg,Alavert,Loratadine,30,pills,10.0,mg,Blister (Alu-Alu),Reverse Tuck End (Standard),30
+4-min.jpg,Aristocort,Triamcinolone,30,pills,4.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+5-min.jpg,Decadron,Dexamethasone,30,pills,4.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+6-min.jpg,Periactin,Cyproheptadine,30,pills,4.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+8-min.jpg,Phenergan,Promethazine,30,pills,25.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+9-min.jpg,Zyrtec,Cetirizine,30,pills,10.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+10-min.jpg,Revia,Naltrexone,30,pills,50.0,mg,Bottle (HDPE),Reverse Tuck End (Standard),30
+11-min.jpg,Amoxil,Amoxicillin,30,pills,250.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+12-min.jpg,Ampicillin,Penicillin,30,pills,250.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+13-min.jpg,Augmentin,Amoxicillin,30,pills,500.0,mg,Blister (Alu-Alu),Reverse Tuck End (Standard),30
+14-min.jpg,Bactrim,Trimethoprim,30,pills,160.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+15-min.jpg,Cipro,Ciprofloxacin,30,pills,500.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+16-min.jpg,Doxycycline,Doxycycline Hyclate,30,pills,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+17-min.jpg,Flagyl,Metronidazole,30,pills,500.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+18-min.jpg,Sustiva Generic,Efavirenz,30,pills,600.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+19-min.jpg,Zithromax,Azithromycin,30,pills,250.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+20-min.jpg,Abilify,Aripiprazole,30,pills,10.0,mg,Blister (Alu-Alu),Reverse Tuck End (Standard),30
+21-min.jpg,Cymbalta,Duloxetine,30,pills,30.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+22-min.jpg,Effexor,Venlafaxine,30,pills,75.0,mg,Bottle (HDPE),Reverse Tuck End (Standard),30
+23-min.jpg,Elavil,Amitriptyline,30,pills,25.0,mg,Bottle (HDPE),Reverse Tuck End (Standard),30
+24-min.jpg,Pamelor,Nortriptyline,30,pills,25.0,mg,Bottle (HDPE),Reverse Tuck End (Standard),30
+25-min.jpg,Paxil,Paroxetine,30,pills,20.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+26-min.jpg,Prozac,Fluoxetine,30,pills,20.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+27-min.jpg,Seroquel,Quetiapine,30,pills,50.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+28-min.jpg,Diflucan,Fluconazole,30,pills,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+29-min.jpg,Nizoral,Ketoconazole,30,pills,200.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+30-min.jpg,Loxitane,Loxapine,30,pills,25.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+31-min.jpg,Risperdal,Risperidone,30,pills,2.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+34-min.jpg,Adalat,Nifedipine,30,pills,10.0,mg,Bottle (HDPE),Reverse Tuck End (Standard),30
+35-min.jpg,Albenza,Albendazole,30,pills,200.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+36-min.jpg,Valtrex,Valacyclovir,30,pills,500.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+37-min.jpg,Zovirax Cream 5%,Aciclovir,1,tube,5.0,mg,Aluminum,Reverse Tuck End (Standard),1
+38-min.jpg,Prednisone Generic,Prednisone,30,pills,20.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+40-min.jpg,Norvasc,Amlodipine,30,pills,5.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+41-min.jpg,Nexium,Esomeprazole,30,pills,20.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+42-min.jpg,Cytotec,Misoprostol,30,pills,200.0,mcg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+43-min.jpg,Prevacid,Lansoprazole,30,pills,15.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+44-min.jpg,Prilosec,Omeprazole,30,pills,20.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+45-min.jpg,Zantac,Ranitidine,30,pills,150.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+46-min.jpg,Propecia,Finasteride,30,pills,1.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+47-min.jpg,Coumadin,Warfarin,30,pills,5.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+48-min.jpg,Lipitor,Atorvastatin,30,pills,20.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+49-min.jpg,Plavix,Clopidogrel,30,pills,75.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+50-min.jpg,Zocor,Simvastatin,30,pills,40.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+51-min.jpg,Sofosbuvir Generic,Sofosbuvir,30,pills,400.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+52-min.jpg,Sovaldi,Sofosbuvir,28,pills,400.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),28
+58-min.jpg,Cialis Brand,Tadalafil,4,pills,5.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),4
+59-min.jpg,Cialis,Tadalafil,4,pills,20.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+60-min.jpg,Cialis Professional,Tadalafil,10,pills,20.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),10
+61-min.jpg,Cialis Soft Tabs,Tadalafil,10,pills,20.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+62-min.jpg,Cialis Super Active,Tadalafil,10,pills,20.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),10
+63-min.jpg,Priligy,Dapoxetine,10,pills,30.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),10
+64-min.jpg,Kamagra,Sildenafil,4,pills,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+65-min.jpg,Kamagra Oral Jelly,Sildenafil Citrate,7,sachets,100.0,mg,Sachet (Foil),Reverse Tuck End (Standard),7
+66-min.jpg,Levitra,Vardenafil,4,pills,20.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),10
+67-min.jpg,Levitra Brand,Vardenafil HCl,4,pills,20.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),4
+70-min.jpg,Super Kamagra,Sildenafil Citrate + Dapoxetine HCl,4,pills,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),4
+71-min.jpg,Super P Force,Sildenafil Citrate + Dapoxetine HCl,4,pills,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),4
+72-min.jpg,Tadalis SX,Tadalafil,10,pills,20.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),10
+73-min.jpg,Viagra Brand,Sildenafil Citrate,4,pills,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),4
+74-min.jpg,Viagra,Sildenafil,4,pills,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+75-min.jpg,Viagra Gold,Sildenafil Citrate,10,pills,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),10
+76-min.jpg,Viagra Oral Jelly,Sildenafil Citrate,7,sachets,100.0,mg,Sachet (Foil),Reverse Tuck End (Standard),7
+77-min.jpg,Viagra Professional,Sildenafil Citrate,10,pills,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),10
+78-min.jpg,Viagra Soft Tabs,Sildenafil Citrate,10,pills,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),10
+79-min.jpg,Viagra Super Active,Sildenafil Citrate,10,pills,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+80-min.jpg,Viprogra,Sildenafil,30,pills,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+81-min.jpg,Eldepryl,Selegiline,30,pills,10.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+82-min.jpg,Parlodel,Bromocriptine Mesylate,30,pills,2.5,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+83-min.jpg,Baclofen Generic,Baclofen,30,pills,20.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+85-min.jpg,Imitrex,Sumatriptan,30,pills,50.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+86-min.jpg,Levitra Professional,Vardenafil HCl,10,pills,20.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),10
+87-min.jpg,Lioresal,Baclofen,30,pills,20.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+88-min.jpg,Robaxin,Methocarbamol,30,pills,500.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+89-min.jpg,Shallaki,Boswellia Serrata Extract,30,pills,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+90-min.jpg,Sildalis,Sildenafil Citrate + Tadalafil,10,pills,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),10
+91-min.jpg,Soma,Carisoprodol,30,pills,250.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+92-min.jpg,Tadacip,Tadalafil,10,pills,20.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),10
+93-min.jpg,Tegretol,Carbamazepine,30,pills,200.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+94-min.jpg,Urispas,Flavoxate HCl,30,pills,200.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+95-min.jpg,Voltaren,Diclofenac,30,pills,25.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+96-min.jpg,Voveran,Diclofenac Sodium,30,pills,25.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),90
+97-min.jpg,Voveran SR,Diclofenac Sodium,30,pills,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+98-min.jpg,Zanaflex,Tizanidine,30,pills,4.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+99-min.jpg,Acetaminophen,Acetaminophen (Paracetamol),30,pills,500.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+100-min.jpg,Arcoxia,Etoricoxib,30,pills,30.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+101-min.jpg,Celebrex,Celecoxib,30,pills,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+102-min.jpg,Isordil,Isosorbide Dinitrate,30,pills,10.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+103-min.jpg,Maxalt,Rizatriptan,10,pills,5.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+104-min.jpg,Mobic,Meloxicam,30,pills,7.5,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+105-min.jpg,Motrin,Ibuprofen,30,pills,200.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+106-min.jpg,Naprosyn,Naproxen,30,pills,500.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+107-min.jpg,Tramadol,Tramadol HCl,30,pills,50.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),60
+108-min.jpg,Tylenol,Acetaminophen,30,pills,500.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+109-min.jpg,Ultram,Tramadol,30,pills,50.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+110-min.jpg,Accutane,Isotretinoin,30,pills,10.0,mg,Blister (Alu-Alu),Reverse Tuck End (Standard),30
+111-min.jpg,Retin-A Cream 0.025%,Tretinoin,1,tube,0.025,g,Aluminum,Reverse Tuck End (Standard),30
+112-min.jpg,Champix,Varenicline Tartrate,30,pills,1.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+113-min.jpg,Zyban,Bupropion,30,pills,150.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+114-min.jpg,Synthroid,Levothyroxine,30,pills,100.0,mcg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+115-min.jpg,Alli,Orlistat,30,pills,60.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+116-min.jpg,Lida Daidaihua,Sibutramine HCl (Herbal Formula),30,pills,400.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+117-min.jpg,Meridia,Reductil,30,pills,10.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+118-min.jpg,Xenical,Orlistat,30,pills,120.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+119-min.jpg,Estrace,Estradiol,30,pills,1.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+120-min.jpg,Evista,Raloxifene,30,pills,60.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+121-min.jpg,Fosamax,Alendronic Acid,30,pills,70.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+122-min.jpg,Gestanin,Allylestrenol,30,pills,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+124-min.jpg,Norplant-72,Levonorgestrel,30,pills,0.75,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+125-min.jpg,Ponstel,Mefenamic Acid,30,pills,250.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+126-min.jpg,Provera,Medroxyprogesterone,30,pills,10.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+127-min.jpg,Vaniqa Cream 13.9%,Eflornithine,1,tube,15,g,Aluminum,Reverse Tuck End (Standard),1
+128-min.jpg,Aygestin,Norethindrone Acetate,30,pills,5.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+129-min.jpg,Clomid,Clomiphene,30,pills,50.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+130-min.jpg,Danocrine,Danazol,30,pills,200.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+131-min.jpg,Ladygra,Sildenafil,10,pills,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),10
+132-min.jpg,Levlen,Levonorgestrel + Ethinylestradiol,30,pills,0.15,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+133-min.jpg,Ambien,Zolpidem,30,pills,10.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+134-min.jpg,Atarax,Hydroxyzine,30,pills,25.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+135-min.jpg,Ativan,Lorazepam,30,pills,1.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+136-min.jpg,Buspar,Buspirone,30,pills,10.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+138-min.jpg,Codeine,Codeine Phosphate & Paracetamol,30,pills,30.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+139-min.jpg,Lyrica,Pregabalin,30,pills,75.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+141-min.jpg,Deca Durabolin,Testosterone,1,box,50.0,mg,Glass Type I,Reverse Tuck End (Standard),10
+143-min.jpg,Androgel,Cernos Gel,7,sachets,1.62,mg,Sachet (Foil),Reverse Tuck End (Standard),30
+144-min.jpg,HUCOG-2000 HP,Human Chorionic Gonadotropin HCG,10,vials,2000.0,iu,Glass Type I,Reverse Tuck End (Standard),10
+145-min.jpg,HUCOG-5000 HP,Human Chorionic Gonadotropin HCG,10,vials,5000.0,iu,Glass Type I,Reverse Tuck End (Standard),10
+146-min.jpg,HUCOG-10000 HP,Human Chorionic Gonadotropin HCG,10,vials,10000.0,iu,Glass Type I,Reverse Tuck End (Standard),10
+147-min.jpg,Sustaviron-250,Testosterone Blend (Sustanon 250),10,vials,250.0,mg,Glass Type I,Reverse Tuck End (Standard),10
+148-min.jpg,Masteron,Drostanolone Propionate,1,vials,10000.0,iu,Glass Type I,Reverse Tuck End (Standard),1
+149-min.jpg,Modalert,Modafinil,30,pills,200.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+150-min.jpg,Waklert,Armodafinil,30,pills,150.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+151-min.jpg,Provigil,Modafinil,30,pills,200.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+152-min.jpg,Artvigil,Armodafinil,30,pills,150.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+155-min.jpg,Imovane,Zopiclone,30,pills,7.5,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+156-min.jpg,Xanax,Alprazolam,30,pills,0.5,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+157-min.jpg,Valium,Diazepam,30,pills,5.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+158-min.jpg,Klonopin,Clonazepam,30,pills,1.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+159-min.jpg,Adipex,Phentermine,30,pills,37.5,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+160-min.jpg,Stendra,Avanafil,30,pills,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+161-min.jpg,Apcalis Oral Jelly,Tadalafil,7,sachets,20.0,mg,Sachet (Foil),Reverse Tuck End (Standard),7
+162-min.jpg,Tadapox,Tadalafil + Dapoxetine HCl,10,pills,20.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),10
+164-min.jpg,Arimidex,Anastrozole,30,pills,1.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+165-min.jpg,Claritin,Loratadine,60,pills,10.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),60
+166-min.jpg,Clarinex,Desloratadine,30,pills,5.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+170-min.jpg,Fliban,Flibanserin,10,pills,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),10
+171-min.jpg,Microzide,Hydrochlorothiazide,30,pills,25.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+172-min.jpg,Qutan,Quetiapine,30,pills,50.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+173-min.jpg,Lasix,Furosemide,30,pills,40.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+175-min.jpg,Nolvadex,Tamoxifen,30,pills,20.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+176-min.jpg,Zoloft,Sertraline,30,pills,50.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+177-min.jpg,Penicillin,Penicillin G / Penicillin V,30,pills,250.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),120
+178-min.jpg,Aciphex,Rabeprazole,20,pills,20.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),20
+179-min.jpg,Actos,Pioglitazone,30,pills,30.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+180-min.jpg,Aldactone,Spironolactone,30,pills,25.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+181-min.jpg,Alesse,Levonorgestrel + Ethinylestradiol,30,pills,20.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+183-min.jpg,Altace,Ramipril,30,pills,5.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+184-min.jpg,Amaryl,Glimepiride,30,pills,2.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+185-min.jpg,Anacin,Aspirin + Caffeine,30,pills,400.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+186-min.jpg,Anafranil,Clomipramine,30,pills,50.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+187-min.jpg,Antabuse,Disulfiram,30,pills,250.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+188-min.jpg,Aralen,Chloroquine,30,pills,250.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+189-min.jpg,Aricept,Donepezil,30,pills,10.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+190-min.jpg,Avodart,Dutasteride,30,pills,0.5,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+191-min.jpg,Beloc,Metoprolol,30,pills,50.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+192-min.jpg,Benicar,Olmesartan,30,pills,20.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+194-min.jpg,Celexa,Citalopram,30,pills,20.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+195-min.jpg,Cleocin,Clindamycin,30,pills,150.0,mg,Bottle (HDPE),Reverse Tuck End (Standard),30
+196-min.jpg,Cleocin cream 1%,Clindamycin,3,tube,10.0,g,Aluminum,Reverse Tuck End (Standard),3
+197-min.jpg,Catapres,Clonidine,30,pills,0.1,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+198-min.jpg,Colchicine Generic,Colchicine,30,pills,0.6,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+199-min.jpg,Cozaar,Losartan,30,pills,50.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+200-min.jpg,Crestor,Rosuvastatin,30,pills,10.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+201-min.jpg,Desyrel,Trazodone,30,pills,50.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+202-min.jpg,Detrol,Tolterodine,30,pills,2.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+203-min.jpg,Diamox,Acetazolamide,30,pills,250.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+204-min.jpg,Dilantin,Phenytoin,30,pills,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+205-min.jpg,Ditropan,Oxybutynin,30,pills,5.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+206-min.jpg,Dostinex,Cabergoline,30,pills,0.5,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+207-min.jpg,Dramamine,Dimenhydrinate,30,pills,50.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+208-min.jpg,Dulcolax,Bisacodyl,30,pills,5.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+209-min.jpg,Erythromycin Generic,Erythromycin,30,pills,250.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+210-min.jpg,Flomax,Tamsulosin,30,pills,0.4,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+211-min.jpg,Glucophage,Metformin,30,pills,500.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+212-min.jpg,Isoptin,Verapamil,30,pills,80.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+213-min.jpg,Malegra DXT,Sildenafil Citrate,30,pills,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+214-min.jpg,Malegra DXT Plus,Sildenafil Citrate,30,pills,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+215-min.jpg,Malegra FXT,Sildenafil Citrate,30,pills,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+216-min.jpg,Malegra FXT Plus,Sildenafil Citrate,30,pills,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+217-min.jpg,Medrol,Methylprednisolone,30,pills,4.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+218-min.jpg,Silagra,Sildenafil,10,pills,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),10
+219-min.jpg,Vermox,Mebendazole,30,pills,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+220-min.jpg,Zenegra,Sildenafil,30,pills,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+221-min.jpg,Inderal,Propranolol,30,pills,40.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+222-min.jpg,Indocin,Indomethacin,30,pills,25.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+223-min.jpg,Levitra Soft Tabs,Vardenafil HCl,10,pills,20.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),10
+224-min.jpg,Caverta,Sildenafil,30,pills,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+225-min.jpg,Cabgolin,Cabergoline,30,pills,0.25,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+226-min.jpg,Zovirax,Aciclovir,30,pills,400.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+227-min.jpg,Deltasone,Prednisolone,30,pills,20.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+228-min.jpg,Nizoral Cream 2%,Ketoconazole,1,tube,2.0,mg,Aluminum,Reverse Tuck End (Standard),1
+229-min.jpg,Lumigan 0.01%,Bimatoprost,1,bottle,0.01,ml,Bottle (HDPE),Reverse Tuck End (Standard),1
+230-min.jpg,Slimex,Sibutramine HCl,30,pills,15.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+231-min.jpg,Acticin,Permethrin,1,tube,30.0,mg,Tube (Aluminum),Reverse Tuck End (Standard),1
+232-min.jpg,Aldara Cream 5%,Imiquimod,1,tube,0.25,mg,Aluminum,Reverse Tuck End (Standard),1
+233-min.jpg,Asacol,Mesalazine,30,pills,400.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+234-min.jpg,Avapro,Irbesartan,30,pills,150.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+235-min.jpg,Artane,Trihexyphenidyl,30,pills,2.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+237-min.jpg,Female Viagra,Sildenafil,30,pills,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+238-min.jpg,Zyprexa,Olanzapine,30,pills,10.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+239-min.jpg,Cafergot,Caffeine/Ergotamine,30,pills,1.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+240-min.jpg,Fildena,Sildenafil,10,pills,50.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+241-min.jpg,Keflex,Cefalexin,30,pills,500.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+242-min.jpg,Lamictal,Lamotrigine,30,pills,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+243-min.jpg,Lamisil,Terbinafine,30,pills,250.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+244-min.jpg,Lamisil Cream 1%,Terbinafin,3,tube,10.0,g,Aluminum,Reverse Tuck End (Standard),3
+245-min.jpg,Levaquin,Levofloxacin,30,pills,500.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+246-min.jpg,Lexapro,Escitalopram,30,pills,10.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+247-min.jpg,Toprol XL,Metoprolol,30,pills,50.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+248-min.jpg,Lotrisone,Clotrimazole + Betamethasone Dipropionate,1,tube,15.0,mg,Tube (Aluminum),Reverse Tuck End (Standard),1
+249-min.jpg,Minipress,Prazosin,30,pills,2.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+250-min.jpg,Motilium,Domperidone,30,pills,10.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+251-min.jpg,Neurontin,Gabapentin,30,pills,300.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+252-min.jpg,Nitroglycerin,Nitroglycerin (Glyceryl Trinitrate),30,pills,0.4,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+253-min.jpg,Nootropil,Piracetam,30,pills,800.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+254-min.jpg,Noroxin,Norfloxacin,30,pills,400.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+255-min.jpg,Prednisolone,Prednisolone Sodium Phosphate,30,pills,10.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+256-min.jpg,Remeron,Mirtazapine,30,pills,30.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+257-min.jpg,Singulair,Montelukast,30,pills,10.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+258-min.jpg,Stromectol,Ivermectin,30,pills,3.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+259-min.jpg,Suprax,Cefixime,30,pills,400.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+260-min.jpg,Tenormin,Atenolol,30,pills,50.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+261-min.jpg,Topamax,Topiramate,30,pills,50.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+262-min.jpg,Torsemide Generic,Torsemide,30,pills,10.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+263-min.jpg,Toradol,Ketorolac,30,pills,10.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+265-min.jpg,Benadryl,Diphenhydramine,30,pills,25.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+266-min.jpg,Sominex,Diphenhydramine,60,pills,50.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),60
+267-min.jpg,Unisom,Diphenhydramine,30,pills,50.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+268-min.jpg,Ventolin,Albuterol,1,inhaler,100.0,mg,Inhaler (HFA/Generic),Reverse Tuck End (Standard),1
+269-min.jpg,Xalatan,Latanoprost,1,bottle,0.005,ml,Bottle (HDPE),Reverse Tuck End (Standard),1
+270-min.jpg,Zebeta,Bisoprolol,30,pills,5.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+271-min.jpg,Zofran,Ondansetron,30,pills,8.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+272-min.jpg,Valium Brand,Diazepam,30,pills,5.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+275-min.jpg,Pariet,Rabeprazole,20,pills,20.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),20
+277-min.jpg,Procardia,Nifedipine,60,pills,30.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),60
+278-min.jpg,Avalide,Irbesartan,30,pills,150.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+279-min.jpg,Lopressor,Metoprolol,30,pills,50.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+281-min.jpg,Hyzaar,Losartan,30,pills,50.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+282-min.jpg,Oxytrol,Oxybutynin,30,pills,5.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+283-min.jpg,Pristiq,Venlafaxine,30,pills,50.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+284-min.jpg,Endep,Amitriptyline,30,pills,25.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+285-min.jpg,Emsam,Selegiline,60,pills,6.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),60
+286-min.jpg,Glycomet,Metformin,30,pills,500.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+287-min.jpg,Calan,Verapamil,30,pills,80.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+288-min.jpg,Aleve,Naproxen,30,pills,220.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+290-min.jpg,Sarafem,Fluoxetine,60,pills,20.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),60
+291-min.jpg,Avana,Avanafil,10,pills,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),10
+293-min.jpg,Proventil,Albuterol,1,inhaler,90.0,mcg,Inhaler (HFA/Generic),Reverse Tuck End (Standard),1
+295-min.jpg,Wellbutrin,Bupropion,30,pills,150.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+296-min.jpg,Dexanil,Escitalopram,30,pills,10.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+297-min.jpg,Selgin,Selegiline,60,pills,5.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),60
+298-min.jpg,Anaridex,Anastrozole,30,pills,1.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+299-min.jpg,Dutas,Dutasteride,30,pills,0.5,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+300-min.jpg,Trinex,Triclabendazole,30,pills,250.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+301-min.jpg,Sumycin,Tetracycline,30,pills,250.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+302-min.jpg,Aurogra,Sildenafil,30,pills,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+303-min.jpg,Lunesta,Eszopiclone,30,pills,3.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+304-min.jpg,Sonata,Zaleplon,30,pills,10.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+305-min.jpg,Progesterone,Utrogestan,30,pills,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+307-min.jpg,Centrex,Valacyclovir,30,pills,500.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+308-min.jpg,Lexotanil,Bromazepam,30,pills,3.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+309-min.jpg,Evorel,Estradiol,30,pills,50.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+310-min.jpg,Kamagra Soft Tabs,Sildenafil Citrate,10,pills,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+311-min.jpg,Kamagra Gold,Sildenafil Citrate,30,pills,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+312-min.jpg,Cialis Strips,Tadalafil,1,box,20.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),1
+313-min.jpg,Viagra Strips,Sildenafil Citrate,1,box,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),1
+314-min.jpg,Super Avana,Avanafil + Dapoxetine HCl,4,pills,200.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),4
+315-min.jpg,Symmetrel,Amantadine,30,pills,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+316-min.jpg,Beconase AQ,Beclomethasone Dipropionate,1,inhaler,50.0,mg,Inhaler (HFA/Generic),Reverse Tuck End (Standard),1
+317-min.jpg,Benzac 2.5%,Benzoyl,1,tube,5.0,g,Tube (Aluminum),Reverse Tuck End (Standard),1
+318-min.jpg,Duricef,Cefadroxil,30,pills,500.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+319-min.jpg,Chloromycetin,Chloramphenicol,30,pills,250.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+320-min.jpg,Clozaril,Clozapine,30,pills,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+321-min.jpg,Cardizem,Diltiazem,30,pills,60.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+322-min.jpg,Eulexin,Flutamide,30,pills,250.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+323-min.jpg,Hoodia,Hoodia Gordonii Extract,30,pills,400.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+324-min.jpg,Hyzyd,Isoniazid,30,pills,300.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+325-min.jpg,Trexall,Methotrexate,30,pills,2.5,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+326-min.jpg,Minocin,Minocycline,30,pills,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+327-min.jpg,Macrobid,Nitrofurantoin,30,pills,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+328-min.jpg,Floxin,Ofloxacin,30,pills,400.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+329-min.jpg,Penegra,Sildenafil,10,pills,50.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),10
+330-min.jpg,Fasigyn,Tinidazole,30,pills,500.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+331-min.jpg,Dyrenium,Triamterene,30,pills,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+332-min.jpg,Uroxatral,Alfuzosin,30,pills,10.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+333-min.jpg,Yasmin,Drospirenone,30,pills,3.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+334-min.jpg,Onax,Alprazolam,60,pills,5.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),60
+335-min.jpg,Stilnox Brand,Zolpidem Tartrate,30,pills,10.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+336-min.jpg,Premarin,Conjugated Estrogens,30,pills,0.625,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+337-min.jpg,Kamagra Effervescent,Sildenafil Citrate,7,pills,100.0,mg,Sachet (Foil),Reverse Tuck End (Standard),7
+340-min.jpg,Xanax by Pfizer,Alprazolam,30,pills,0.5,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+341-min.jpg,Etizest,Etizolam,30,pills,1.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+344-min.jpg,Modafinil Generic,Modafinil,30,pills,200.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+345-min.jpg,Vilafinil,Modafinil,30,pills,200.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+346-min.jpg,Modvigil,Modafinil,30,pills,200.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+347-min.jpg,Test Pack L-VC,Sildenafil / Tadalafil / Vardenafil (Specimen Mix),10,multipack,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),10
+348-min.jpg,Test Pack L-VL,Sildenafil / Tadalafil / Vardenafil / Avanafil (Specimen Mix),10,multipack,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),10
+349-min.jpg,Test Pack Mini-VCL,Sildenafil / Tadalafil / Vardenafil (Mini Specimen),10,multipack,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),10
+350-min.jpg,Test Pack XXL-VCL,Sildenafil / Tadalafil / Vardenafil (XXL Specimen Mix),10,multipack,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),10
+351-min.jpg,Original Test pack L-VC,Sildenafil / Tadalafil / Vardenafil (Original Specimen),10,multipack,50.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),10
+352-min.jpg,Aleve,Naproxen Sodium,250,pills,220.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),250
+353-min.jpg,Cepacol,Benzocaine + Cetylpyridinium Chloride,16,pills,1.4,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),16
+354-min.jpg,Advil,Ibuprofen,30,pills,200.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),300
+355-min.jpg,Cortaid 1%,Hydrocortisone Acetate,1,tube,10.0,g,Tube (Aluminum),Reverse Tuck End (Standard),1
+356-min.jpg,Morphine,Morphine Sulfate,30,pills,30.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+357-min.jpg,Adderall,Amphetamine / Dextroamphetamine Salts,30,pills,30.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+359-min.jpg,Rivotril by Martin Dow,Klonopin,30,pills,2.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+360-min.jpg,Restoril by Novartis,Temazepam,30,pills,15.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+362-min.jpg,Hydrocodone,Hydrocodone Bitartrate,30,pills,10.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+363-min.jpg,Roxicodone M30,Oxycodone HCl,30,pills,30.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+364-min.jpg,Percocet,Oxycodone HCl + Acetaminophen,30,pills,10.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+365-min.jpg,Tapentadol,Tapentadol HCl,30,pills,50.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+366-min.jpg,Acivir Cream by Cipla 5%,Acyclovir,1,tube,5.0,mg,Aluminum,Reverse Tuck End (Standard),1
+367-min.jpg,Acivir by Cipla,Acyclovir,30,pills,200.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+369-min.jpg,Ciplactin by Cipla,Periactin,30,pills,4.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+370-min.jpg,Ventolin Generic,Albuterol,30,pills,2.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+371-min.jpg,Tofranil Generic,Imipramine,30,pills,25.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+372-min.jpg,Venlor Generic,Venlafaxine,30,pills,37.5,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+373-min.jpg,Azithromycin Generic,Azithromycin,30,pills,250.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+374-min.jpg,Cephalexin Generic,Cephalexin,30,pills,500.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+375-min.jpg,Plaquenil Generic,Hydroxychloroquine,30,pills,200.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+376-min.jpg,Lisinopril Generic,Lisinopril,30,pills,10.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+377-min.jpg,Verapamil Generic,Verapamil,30,pills,80.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+378-min.jpg,Cordarone Generic,Amiodarone,30,pills,200.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+379-min.jpg,Lumigan 0.03%,Bimatoprost,1,bottle,0.03,ml,Bottle (HDPE),Reverse Tuck End (Standard),1
+380-min.jpg,Omez,Omeprazole,30,pills,20.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+381-min.jpg,Pepcid Generic,Famotidine,30,pills,20.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+382-min.jpg,Allopurinol Generic,Allopurinol,30,pills,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+383-min.jpg,Chloroquine Generic,Chloroquine,30,pills,250.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+384-min.jpg,Ibuprofen Generic,Ibuprofen,30,pills,200.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+385-min.jpg,Retin-A Cream 0.05%,Tretinoin,1,tube,0.05,g,Aluminum,Reverse Tuck End (Standard),1
+386-min.jpg,Retin-A Gel 0.1%,Tretinoin,1,tube,0.1,g,Aluminum,Reverse Tuck End (Standard),1
+387-min.jpg,Addyi Generic,Flibanserin,30,pills,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+388-min.jpg,Femalefil,Female Cialis,10,pills,10.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),10
+390-min.jpg,Volini Gel,Diclofenac,1,tube,15.0,g,Aluminum,Reverse Tuck End (Standard),1
+391-min.jpg,Analgin Generic,Analgin,30,pills,500.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+392-min.jpg,Aspirin Generic,Aspirin,30,pills,325.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+393-min.jpg,Advair Diskus Inhaler,Fluticasone Propionate / Salmeterol,1,inhaler,250.0,mcg,Inhaler (HFA/Generic),Reverse Tuck End (Standard),1
+395-min.jpg,Endogest,Progesterone,30,pills,200.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+396-min.jpg,Restomed Generic,Temazepam,30,pills,15.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+398-min.jpg,Testorapid,Testosterone Propionate,10,vials,100.0,ml,Glass Type I,Reverse Tuck End (Standard),10
+399-min.jpg,Meldonium,Meldonium (Mildronate),30,pills,500.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+400-min.jpg,Ziverdo Kit,Zinc Acetate + Doxycycline + Ivermectin,1,box,50.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),1
+401-min.jpg,Oxycodone Generic,Oxycodone,10,pills,80.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+402-min.jpg,Ozempic,Semaglutide,1,pen,2.0,mg,Autoinjector Pen (COP),Reverse Tuck End (Standard),1
+403-min.jpg,Rybelsus,Semaglutide,30,pills,7.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+404-min.jpg,Ritalin,Methylphenidate,30,pills,10.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+405-min.jpg,Sibutramine,Sibutramine HCl,30,pills,15.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+406-min.jpg,Flormidal Generic,Midazolam,30,pills,15.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+407-min.jpg,Victoza,Liraglutide,1,pen,18.0,mg,Autoinjector Pen (COP),Reverse Tuck End (Standard),1
+408-min.jpg,Wegovy,Semaglutid,1,pen,2.4,mg,Autoinjector Pen (COP),Reverse Tuck End (Standard),1
+409-min.jpg,Nandrolone Decanoate Generic,Nandrolone Decanoate,1,box,200.0,mg,Glass Type I,Reverse Tuck End (Standard),1
+410-min.jpg,Sustanon,Testosterone Blend (Sustanon 250),1,box,10.0,mg,Glass Type I,Reverse Tuck End (Standard),1
+411-min.jpg,Testosterone Cypionate Generic,Testosterone Cypionate,1,box,200.0,mg,Glass Type I,Reverse Tuck End (Standard),1
+412-min.jpg,Testosterone Enanthate Generic,Testosterone Enanthate,1,box,250.0,mg,Glass Type I,Reverse Tuck End (Standard),1
+413-min.jpg,Boldenone,Boldenone Undecylenate,10,vials,200.0,mg,Glass Type I,Reverse Tuck End (Standard),10
+414-min.jpg,Nandrolone Phenylpropionate,Nandrolone,10,vials,100.0,mg,Glass Type I,Reverse Tuck End (Standard),10
+415-min.jpg,Trenbolone Acetate,Trenbolone,10,vials,100.0,mg,Glass Type I,Reverse Tuck End (Standard),10
+416-min.jpg,Trenbolone Enanthate,Trenbolone,10,vials,200.0,mg,Glass Type I,Reverse Tuck End (Standard),10
+417-min.jpg,Masteron,Drostanolone Propionate,100,pills,25.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),100
+418-min.jpg,Methandienone,Methandienone (Dianabol),100,pills,10.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),100
+419-min.jpg,Oxandrolone,Anavar,100,pills,10.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),100
+420-min.jpg,Oxymetholone,Oxymetholone (Anadrol),100,pills,50.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),100
+421-min.jpg,Stanozolol,Stanozolol (Winstrol),100,pills,10.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),100
+422-min.jpg,Methenolone,Methenolone Enanthate (Primobolan),100,pills,10.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),100
+423-min.jpg,Halcion,Triazolam,30,pills,0.25,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+424-min.jpg,Zepbound,Tirzepatide,1,pen,2.5,mg,Autoinjector Pen (COP),Reverse Tuck End (Standard),1
+425-min.jpg,Mounjaro,Tirzepatide,1,pen,5.0,mg,Autoinjector Pen (COP),Reverse Tuck End (Standard),1
+426-min.jpg,Cialis Oral Jelly,Tadalafil,7,sachets,20.0,mg,Sachet (Foil),Reverse Tuck End (Standard),7
+427-min.jpg,Kamagra Chewable,Soft,10,pills,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),10
+428-min.jpg,Cialis Black Generic,Tadalafil,30,pills,80.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+429-min.jpg,Levitra Oral Jelly,Vardenafil HCl,7,sachets,20.0,mg,Sachet (Foil),Reverse Tuck End (Standard),7
+430-min.jpg,Protonix Generic,Pantoprazole,30,pills,40.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+431-min.jpg,Mogadon,Nitrazepam,30,pills,5.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+432-min.jpg,Cytoxan,Cyclophosphamide,30,pills,50.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+433-min.jpg,Latisse Generic,Bimatoprost,1,bottle,3.0,ml,Bottle (HDPE),Reverse Tuck End (Standard),1
+434-min.jpg,Lovegra,Sildenafil Citrate,30,pills,100.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+435-min.jpg,Minoxidil,Minoxidil,30,pills,5.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),30
+436-min.jpg,Betablock XL,Metoprolol,10,pills,50.0,mg,Blister (PVC/Aluminium),Reverse Tuck End (Standard),10

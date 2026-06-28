@@ -1,0 +1,73 @@
+{
+    "sku_id": "161-min.jpg",
+    "product_name": "Apcalis Oral Jelly",
+    "render_config": {
+        "primary_render_target": "carton_box",
+        "future_dual_shot_enabled": false,
+        "scene_archetype": "sachet_carton"
+    },
+    "secondary_packaging": {
+        "box_type": "Reverse Tuck End (Standard)",
+        "material": "GZ-Cardboard (Pharmaceutical Grade)",
+        "dimensions": "130x90x40mm",
+        "features": [
+            "Braille",
+            "DataMatrix_Zone",
+            "Tamper_Evident_Seal"
+        ]
+    },
+    "render_priority": "secondary_box",
+    "dosage_ref": "mg",
+    "category_id": "19",
+    "unit_count_standard": "7",
+    "branding": {
+        "palette": {
+            "primary": "#005A9C",
+            "accent": "#C9A227",
+            "background": "#FFFFFF"
+        },
+        "design_elements": {
+            "has_logo_embossing": true,
+            "spot_uv_areas": [
+                "logo",
+                "brand_name"
+            ],
+            "is_varnished": true
+        },
+        "palette_source": "Canonical/Official_DB"
+    },
+    "label_content": {
+        "brand_name_display": "Apcalis Oral Jelly",
+        "dosage_display": "20mg",
+        "unit_count_display": "7 Sachets"
+    },
+    "internal_unit": {
+        "type": "Sachets",
+        "material": "Sachet (Foil)",
+        "layout": "28 sachets per box",
+        "leaflet": null,
+        "render": false,
+        "min_pills_per_unit": 28
+    },
+    "schema_version": "2.1",
+    "brand_name": "Apcalis Oral Jelly",
+    "active_ingredient": "Tadalafil",
+    "manufacturer": null,
+    "brand_color_verified": false,
+    "packaging_geometry": "SACHET",
+    "is_generic": false,
+    "light_sensitive": true,
+    "material_spec_override": "4-tablet or 8-tablet aluminum foil-backed PVC-PVDC blister pack in small folded carton with blue accent band",
+    "reference_url": null,
+    "primary_package": {
+        "type": null,
+        "geometry": null,
+        "width_mm": null,
+        "height_mm": null,
+        "depth_mm": null
+    },
+    "package_type": "sachets",
+    "minimal_package": 7,
+    "minimal_dosage": 20.0,
+    "category": "ED Brand"
+}

@@ -1,0 +1,996 @@
+{
+    "modules": [
+        {
+            "file": "gemini_image_generator.py",
+            "size_bytes": 78544,
+            "docstring": "\u2554\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2557",
+            "functions": [
+                {
+                    "name": "log_failure",
+                    "signature": "def log_failure(filename: str, stage: str, error: str, recovery_attempted: str, result: str)",
+                    "docstring": "Append-only deterministic failure log."
+                },
+                {
+                    "name": "create_driver",
+                    "signature": "def create_driver() -> webdriver.Chrome",
+                    "docstring": "\u0421\u043e\u0437\u0434\u0430\u0451\u0442 \u0438 \u0432\u043e\u0437\u0432\u0440\u0430\u0449\u0430\u0435\u0442 Chrome WebDriver \u0432 headless-\u0440\u0435\u0436\u0438\u043c\u0435"
+                },
+                {
+                    "name": "find_chat_input",
+                    "signature": "def find_chat_input(driver: webdriver.Chrome) -> object",
+                    "docstring": "\u0418\u0449\u0435\u0442 \u043f\u043e\u043b\u0435 \u0432\u0432\u043e\u0434\u0430 \u0442\u0435\u043a\u0441\u0442\u0430 \u0432 \u0447\u0430\u0442\u0435 Gemini."
+                },
+                {
+                    "name": "send_message",
+                    "signature": "def send_message(driver: webdriver.Chrome, text: str) -> None",
+                    "docstring": "\u041e\u0442\u043f\u0440\u0430\u0432\u043b\u044f\u0435\u0442 \u0442\u0435\u043a\u0441\u0442\u043e\u0432\u043e\u0435 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435 \u0432 \u0447\u0430\u0442 Gemini."
+                },
+                {
+                    "name": "wait_for_ready_response",
+                    "signature": "def wait_for_ready_response(driver: webdriver.Chrome) -> bool",
+                    "docstring": "\u0416\u0434\u0451\u0442 \u043e\u0442\u0432\u0435\u0442 'READY' \u043e\u0442 Gemini \u043f\u043e\u0441\u043b\u0435 \u043e\u0442\u043f\u0440\u0430\u0432\u043a\u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u043d\u043e\u0433\u043e \u043f\u0440\u043e\u043c\u043f\u0442\u0430."
+                },
+                {
+                    "name": "clean_old_chats",
+                    "signature": "def clean_old_chats(driver: webdriver.Chrome, keep_last: int=2, force: bool=False)",
+                    "docstring": "Cleans up old chats in the Gemini sidebar to avoid UI lag."
+                },
+                {
+                    "name": "get_timeout_stems_from_log",
+                    "signature": "def get_timeout_stems_from_log() -> list[str]",
+                    "docstring": "Parses failures.log and extracts stems of passports that failed with wait_for_image_generation (timeout)."
+                },
+                {
+                    "name": "print_estimate",
+                    "signature": "def print_estimate()",
+                    "docstring": "Dry-run output estimating remaining SKUs and execution ETA."
+                },
+                {
+                    "name": "prime_gemini",
+                    "signature": "def prime_gemini(driver: webdriver.Chrome) -> None",
+                    "docstring": "Role Priming: \u0437\u0430\u0433\u0440\u0443\u0436\u0430\u0435\u0442 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0443 \u0438 \u043e\u0442\u043f\u0440\u0430\u0432\u043b\u044f\u0435\u0442 \u0441\u0438\u0441\u0442\u0435\u043c\u043d\u044b\u0439 \u043f\u0440\u043e\u043c\u043f\u0442."
+                },
+                {
+                    "name": "get_current_files_in_downloads",
+                    "signature": "def get_current_files_in_downloads() -> set",
+                    "docstring": "\u0412\u043e\u0437\u0432\u0440\u0430\u0449\u0430\u0435\u0442 \u043c\u043d\u043e\u0436\u0435\u0441\u0442\u0432\u043e \u043f\u043e\u043b\u043d\u044b\u0445 \u043f\u0443\u0442\u0435\u0439 \u043a \u0444\u0430\u0439\u043b\u0430\u043c \u0432 \u043f\u0430\u043f\u043a\u0435 Downloads,"
+                },
+                {
+                    "name": "wait_for_new_download",
+                    "signature": "def wait_for_new_download(files_before: set, timeout: int=DOWNLOAD_TIMEOUT) -> str | None",
+                    "docstring": "\u041c\u043e\u043d\u0438\u0442\u043e\u0440\u0438\u0442 \u043f\u0430\u043f\u043a\u0443 Downloads \u0438 \u0436\u0434\u0451\u0442 \u043f\u043e\u044f\u0432\u043b\u0435\u043d\u0438\u044f \u043d\u043e\u0432\u043e\u0433\u043e \u043f\u043e\u043b\u043d\u043e\u0441\u0442\u044c\u044e"
+                },
+                {
+                    "name": "find_download_button",
+                    "signature": "def find_download_button(driver: webdriver.Chrome) -> object | None",
+                    "docstring": "\u0418\u0449\u0435\u0442 \u043a\u043d\u043e\u043f\u043a\u0443 \u0441\u043a\u0430\u0447\u0438\u0432\u0430\u043d\u0438\u044f \u0438\u0437\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u044f \u0432 \u0438\u043d\u0442\u0435\u0440\u0444\u0435\u0439\u0441\u0435 Gemini."
+                },
+                {
+                    "name": "get_all_blob_images",
+                    "signature": "def get_all_blob_images(driver: webdriver.Chrome) -> list",
+                    "docstring": "Returns all generated image elements with a blob URL."
+                },
+                {
+                    "name": "wait_for_chat_idle",
+                    "signature": "def wait_for_chat_idle(driver: webdriver.Chrome, timeout: int=90) -> bool",
+                    "docstring": "Waits for the Gemini chat to become idle (no longer generating, input ready)."
+                },
+                {
+                    "name": "wait_for_image_generation",
+                    "signature": "def wait_for_image_generation(driver: webdriver.Chrome, responses_before: int, timeout: int=IMAGE_GENERATION_TIMEOUT) -> bool",
+                    "docstring": "\u0416\u0434\u0451\u0442 \u0433\u0435\u043d\u0435\u0440\u0430\u0446\u0438\u0438 \u043d\u043e\u0432\u043e\u0433\u043e \u0438\u0437\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u044f \u0432 \u0447\u0430\u0442\u0435 Gemini."
+                },
+                {
+                    "name": "save_raw_image",
+                    "signature": "def save_raw_image(image_bytes: bytes, target_path: str) -> str | None",
+                    "docstring": "\u0421\u043e\u0445\u0440\u0430\u043d\u044f\u0435\u0442 \u0438\u0441\u0445\u043e\u0434\u043d\u044b\u0435 \u0431\u0430\u0439\u0442\u044b \u0438\u0437\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u044f \u0431\u0435\u0437 \u0438\u0437\u043c\u0435\u043d\u0435\u043d\u0438\u0439."
+                },
+                {
+                    "name": "download_blob_image",
+                    "signature": "def download_blob_image(driver: webdriver.Chrome, passport_stem: str) -> str | None",
+                    "docstring": "\u0421\u043e\u0445\u0440\u0430\u043d\u044f\u0435\u0442 \u0441\u0433\u0435\u043d\u0435\u0440\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u043e\u0435 \u0438\u0437\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u0435 \u0447\u0435\u0440\u0435\u0437 canvas.toDataURL(),"
+                },
+                {
+                    "name": "get_passport_files",
+                    "signature": "def get_passport_files() -> list[Path]",
+                    "docstring": "\u0412\u043e\u0437\u0432\u0440\u0430\u0449\u0430\u0435\u0442 \u043e\u0442\u0441\u043e\u0440\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0439 \u0441\u043f\u0438\u0441\u043e\u043a .md \u0444\u0430\u0439\u043b\u043e\u0432 \u0438\u0437 MD_DIR."
+                },
+                {
+                    "name": "read_passport",
+                    "signature": "def read_passport(filepath: Path) -> str",
+                    "docstring": "\u0427\u0438\u0442\u0430\u0435\u0442 \u0441\u043e\u0434\u0435\u0440\u0436\u0438\u043c\u043e\u0435 .md \u0444\u0430\u0439\u043b\u0430 \u0438 \u0432\u043e\u0437\u0432\u0440\u0430\u0449\u0430\u0435\u0442 \u0441\u0442\u0440\u043e\u043a\u0443."
+                },
+                {
+                    "name": "rename_and_move_image",
+                    "signature": "def rename_and_move_image(downloaded_file: str, passport_stem: str) -> str",
+                    "docstring": "\u041f\u0435\u0440\u0435\u0438\u043c\u0435\u043d\u043e\u0432\u044b\u0432\u0430\u0435\u0442 \u0441\u043a\u0430\u0447\u0430\u043d\u043d\u044b\u0439 \u0444\u0430\u0439\u043b \u0441\u043e\u0433\u043b\u0430\u0441\u043d\u043e \u0438\u043c\u0435\u043d\u0438 \u043f\u0430\u0441\u043f\u043e\u0440\u0442\u0430 \u0438"
+                },
+                {
+                    "name": "load_progress",
+                    "signature": "def load_progress() -> set",
+                    "docstring": "\u0417\u0430\u0433\u0440\u0443\u0436\u0430\u0435\u0442 \u0441\u043f\u0438\u0441\u043e\u043a \u0443\u0436\u0435 \u043e\u0431\u0440\u0430\u0431\u043e\u0442\u0430\u043d\u043d\u044b\u0445 \u043f\u0430\u0441\u043f\u043e\u0440\u0442\u043e\u0432 \u0438\u0437 \u0444\u0430\u0439\u043b\u0430 \u043f\u0440\u043e\u0433\u0440\u0435\u0441\u0441\u0430,"
+                },
+                {
+                    "name": "save_progress",
+                    "signature": "def save_progress(passport_stem: str) -> None",
+                    "docstring": "\u0417\u0430\u043f\u0438\u0441\u044b\u0432\u0430\u0435\u0442 \u0438\u043c\u044f \u043e\u0431\u0440\u0430\u0431\u043e\u0442\u0430\u043d\u043d\u043e\u0433\u043e \u043f\u0430\u0441\u043f\u043e\u0440\u0442\u0430 \u0432 \u0444\u0430\u0439\u043b \u043f\u0440\u043e\u0433\u0440\u0435\u0441\u0441\u0430."
+                },
+                {
+                    "name": "main",
+                    "signature": "def main()",
+                    "docstring": ""
+                }
+            ],
+            "classes": []
+        },
+        {
+            "file": "image_postprocessor.py",
+            "size_bytes": 4278,
+            "docstring": "PHARMAGEN PRO: Image Post-Processor",
+            "functions": [
+                {
+                    "name": "process_image",
+                    "signature": "def process_image(input_path: Path, output_dir: Path, failed_dir: Path=DEFAULT_FAILED_DIR) -> tuple[bool, str]",
+                    "docstring": "Process a single image:"
+                },
+                {
+                    "name": "main",
+                    "signature": "def main()",
+                    "docstring": ""
+                }
+            ],
+            "classes": []
+        },
+        {
+            "file": "pass_tomd.py",
+            "size_bytes": 57463,
+            "docstring": "",
+            "functions": [
+                {
+                    "name": "_load_sku_csv",
+                    "signature": "def _load_sku_csv() -> dict",
+                    "docstring": "Load SSOT/SKU.csv into a dict keyed by picture filename."
+                },
+                {
+                    "name": "_load_ssot_master",
+                    "signature": "def _load_ssot_master() -> dict",
+                    "docstring": "Load SSOT/master.json. Returns empty dict if not found."
+                },
+                {
+                    "name": "_load_design_specs",
+                    "signature": "def _load_design_specs() -> dict",
+                    "docstring": "Load master_pharma_design_specs.json. Returns empty dict if not found."
+                },
+                {
+                    "name": "hex_to_rgb",
+                    "signature": "def hex_to_rgb(hex_color: str) -> tuple[int, int, int] | None",
+                    "docstring": ""
+                },
+                {
+                    "name": "relative_luminance",
+                    "signature": "def relative_luminance(rgb: tuple[int, int, int]) -> float",
+                    "docstring": ""
+                },
+                {
+                    "name": "contrast_ratio",
+                    "signature": "def contrast_ratio(hex1: str, hex2: str) -> float",
+                    "docstring": "WCAG contrast ratio between two hex colors. Range: 1.0\u201321.0."
+                },
+                {
+                    "name": "hex_to_name_hint",
+                    "signature": "def hex_to_name_hint(hex_color: str) -> str",
+                    "docstring": ""
+                },
+                {
+                    "name": "is_liquid_or_device",
+                    "signature": "def is_liquid_or_device(product_name: str, geom: str) -> bool",
+                    "docstring": ""
+                },
+                {
+                    "name": "agent_1_router",
+                    "signature": "def agent_1_router(data: dict) -> tuple[str, bool]",
+                    "docstring": "Determines template (T1, T2, T3, T_BOTTLE_BOX) and whether bottle override is active."
+                },
+                {
+                    "name": "get_primary_package",
+                    "signature": "def get_primary_package(data: dict) -> PrimaryPackage",
+                    "docstring": "Gets or estimates the PrimaryPackage from passport JSON."
+                },
+                {
+                    "name": "purge_forms",
+                    "signature": "def purge_forms(text: str) -> str",
+                    "docstring": "Remove dosage-form suffixes, leaving only the numeric portion."
+                },
+                {
+                    "name": "resolve_unit_label",
+                    "signature": "def resolve_unit_label(sku_id: str, unit_count_raw: str) -> str",
+                    "docstring": "Returns the correctly formatted quantity label for the front panel."
+                },
+                {
+                    "name": "is_vertical_container",
+                    "signature": "def is_vertical_container(package_type: str, primary_geometry: str, geom_json: str) -> bool",
+                    "docstring": "Returns True if the primary container is vertical (tall and narrow),"
+                },
+                {
+                    "name": "detect_sub_brand",
+                    "signature": "def detect_sub_brand(product_name: str) -> str | None",
+                    "docstring": ""
+                },
+                {
+                    "name": "detect_material_override",
+                    "signature": "def detect_material_override(product_name: str, geom: str, pkg_type: str='') -> str | None",
+                    "docstring": "Return a material safety spec string if the product requires light-protective packaging."
+                },
+                {
+                    "name": "is_rx_product",
+                    "signature": "def is_rx_product(product_name: str, internal_type: str) -> bool",
+                    "docstring": ""
+                },
+                {
+                    "name": "sanitize_text",
+                    "signature": "def sanitize_text(text)",
+                    "docstring": ""
+                },
+                {
+                    "name": "agent_3_passport_architect",
+                    "signature": "def agent_3_passport_architect(data: dict, template_id: str, is_override: bool, secondary: SecondaryPackageTemplate, verify_result: dict) -> str",
+                    "docstring": ""
+                },
+                {
+                    "name": "main",
+                    "signature": "def main()",
+                    "docstring": ""
+                }
+            ],
+            "classes": []
+        },
+        {
+            "file": "render_qa.py",
+            "size_bytes": 16993,
+            "docstring": "PHARMAGEN PRO \u2014 Render QA (OCR Post-Render Quality Assurance)",
+            "functions": [
+                {
+                    "name": "extract_text",
+                    "signature": "def extract_text(image_path: Path) -> tuple[bool, str]",
+                    "docstring": "Run OCR on a single image."
+                },
+                {
+                    "name": "load_passport",
+                    "signature": "def load_passport(sku_stem: str, passports_dir: Path) -> dict | None",
+                    "docstring": "Load the JSON passport for a given SKU stem."
+                },
+                {
+                    "name": "extract_numeric",
+                    "signature": "def extract_numeric(s: str) -> str",
+                    "docstring": "Extract the first numeric value (including decimals) from a string."
+                },
+                {
+                    "name": "check_image",
+                    "signature": "def check_image(image_path: Path, passport: dict) -> dict",
+                    "docstring": "Run OCR and perform QA checks against passport data."
+                },
+                {
+                    "name": "bool_icon",
+                    "signature": "def bool_icon(value) -> str",
+                    "docstring": "Convert bool/None to a readable icon for Markdown."
+                },
+                {
+                    "name": "dup_icon",
+                    "signature": "def dup_icon(value) -> str",
+                    "docstring": "Convert brand_duplicated bool/None to a readable icon for Markdown. True means FAIL (DUPLICATE)."
+                },
+                {
+                    "name": "write_report",
+                    "signature": "def write_report(results: list[dict], report_path: Path)",
+                    "docstring": "Write a Markdown QA report."
+                },
+                {
+                    "name": "main",
+                    "signature": "def main()",
+                    "docstring": ""
+                }
+            ],
+            "classes": []
+        },
+        {
+            "file": "verification_agent.py",
+            "size_bytes": 14170,
+            "docstring": "AGENT 2: VERIFICATION AGENT",
+            "functions": [
+                {
+                    "name": "_load_ssot",
+                    "signature": "def _load_ssot() -> dict",
+                    "docstring": ""
+                },
+                {
+                    "name": "_load_sku_csv",
+                    "signature": "def _load_sku_csv() -> dict",
+                    "docstring": "Load SSOT/SKU.csv keyed by picture filename."
+                },
+                {
+                    "name": "_hex_to_rgb",
+                    "signature": "def _hex_to_rgb(hex_color: str) -> tuple[int, int, int] | None",
+                    "docstring": "Convert #RRGGBB or RRGGBB to (R, G, B) tuple. Returns None on failure."
+                },
+                {
+                    "name": "_relative_luminance",
+                    "signature": "def _relative_luminance(rgb: tuple[int, int, int]) -> float",
+                    "docstring": "WCAG relative luminance formula."
+                },
+                {
+                    "name": "contrast_ratio",
+                    "signature": "def contrast_ratio(hex1: str, hex2: str) -> float",
+                    "docstring": "WCAG contrast ratio between two hex colors."
+                },
+                {
+                    "name": "agent_2_verifier",
+                    "signature": "def agent_2_verifier(data: dict) -> VerificationResult",
+                    "docstring": "Deterministic heuristic verifier for passport v2.1 data."
+                }
+            ],
+            "classes": [
+                {
+                    "name": "VerificationResult",
+                    "docstring": "",
+                    "methods": [],
+                    "fields": [
+                        "data: dict",
+                        "confidence: float",
+                        "warnings: list[str]",
+                        "verified: bool",
+                        "sku_registry_match: bool",
+                        "template_validated: bool",
+                        "checks_passed: int",
+                        "checks_total: int"
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "pharma_pkg/__init__.py",
+            "size_bytes": 25,
+            "docstring": "",
+            "functions": [],
+            "classes": []
+        },
+        {
+            "file": "pharma_pkg/dimension_resolver.py",
+            "size_bytes": 5279,
+            "docstring": "",
+            "functions": [
+                {
+                    "name": "load_mapping",
+                    "signature": "def load_mapping() -> dict",
+                    "docstring": ""
+                },
+                {
+                    "name": "resolve_secondary",
+                    "signature": "def resolve_secondary(primary: PrimaryPackage) -> SecondaryPackageTemplate",
+                    "docstring": ""
+                },
+                {
+                    "name": "validate_fit",
+                    "signature": "def validate_fit(primary: PrimaryPackage, secondary: SecondaryPackageTemplate) -> None",
+                    "docstring": ""
+                },
+                {
+                    "name": "estimate_primary_from_secondary",
+                    "signature": "def estimate_primary_from_secondary(package_type: PrimaryPackageType, sec_w: float, sec_h: float, sec_d: float) -> PrimaryPackage",
+                    "docstring": "Estimates primary package dimensions by reversing the secondary packaging dimensions logic."
+                }
+            ],
+            "classes": []
+        },
+        {
+            "file": "pharma_pkg/geometry_mapping.py",
+            "size_bytes": 5341,
+            "docstring": "PHARMAGEN PRO: Geometry Mapping & Taxonomy Bridge",
+            "functions": [
+                {
+                    "name": "map_geometry_to_family",
+                    "signature": "def map_geometry_to_family(geom_str: str, product_name: str) -> PackagingFamily",
+                    "docstring": "Deterministic translation from raw packaging geometry strings and product names"
+                }
+            ],
+            "classes": [
+                {
+                    "name": "RouteStatus",
+                    "docstring": "",
+                    "methods": [],
+                    "fields": [
+                        "PRODUCTION",
+                        "PLACEHOLDER_ROUTE"
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "pharma_pkg/primary_classifier.py",
+            "size_bytes": 998,
+            "docstring": "",
+            "functions": [],
+            "classes": [
+                {
+                    "name": "PrimaryPackageType",
+                    "docstring": "",
+                    "methods": [],
+                    "fields": [
+                        "BLISTER",
+                        "SYRINGE",
+                        "BOTTLE"
+                    ]
+                },
+                {
+                    "name": "PrimaryPackage",
+                    "docstring": "",
+                    "methods": [
+                        {
+                            "name": "__post_init__",
+                            "signature": "def __post_init__(self)",
+                            "docstring": ""
+                        }
+                    ],
+                    "fields": [
+                        "type: PrimaryPackageType",
+                        "geometry: str",
+                        "width_mm: float",
+                        "height_mm: float",
+                        "depth_mm: float"
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "pharma_pkg/secondary_templates.py",
+            "size_bytes": 315,
+            "docstring": "",
+            "functions": [],
+            "classes": [
+                {
+                    "name": "SecondaryPackageTemplate",
+                    "docstring": "",
+                    "methods": [],
+                    "fields": [
+                        "name: str",
+                        "box_width_mm: float",
+                        "box_height_mm: float",
+                        "box_depth_mm: float",
+                        "render_shape: str"
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "schemas/analysis_passport.py",
+            "size_bytes": 477,
+            "docstring": "",
+            "functions": [],
+            "classes": [
+                {
+                    "name": "ObservedZone",
+                    "docstring": "",
+                    "methods": [],
+                    "fields": [
+                        "raw_text: Optional[str]",
+                        "bbox: UVBox",
+                        "ocr_confidence: float",
+                        "visual_score: float"
+                    ]
+                },
+                {
+                    "name": "AnalysisPassport",
+                    "docstring": "",
+                    "methods": [],
+                    "fields": [
+                        "image_path: str",
+                        "detected_family: PackagingFamily",
+                        "zones: Dict[str, ObservedZone]",
+                        "palette: ObservedPalette"
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "schemas/common.py",
+            "size_bytes": 3368,
+            "docstring": "",
+            "functions": [],
+            "classes": [
+                {
+                    "name": "UVBox",
+                    "docstring": "\u041d\u043e\u0440\u043c\u0430\u043b\u0438\u0437\u043e\u0432\u0430\u043d\u043d\u044b\u0435 \u043a\u043e\u043e\u0440\u0434\u0438\u043d\u0430\u0442\u044b UV [0, 1]. \u0414\u043b\u044f CV-\u0441\u043b\u043e\u044f.",
+                    "methods": [
+                        {
+                            "name": "validate_geometry",
+                            "signature": "def validate_geometry(self) -> 'UVBox'",
+                            "docstring": ""
+                        }
+                    ],
+                    "fields": [
+                        "y1: float",
+                        "x1: float",
+                        "y2: float",
+                        "x2: float"
+                    ]
+                },
+                {
+                    "name": "PackagingFamily",
+                    "docstring": "",
+                    "methods": [],
+                    "fields": [
+                        "BOX_VERTICAL_STANDARD",
+                        "BOX_VERTICAL_SLIM",
+                        "BOX_HORIZONTAL_FLAT",
+                        "BOX_SQUARE",
+                        "BOTTLE_PLASTIC_ROUND",
+                        "BOTTLE_PLASTIC_TALL",
+                        "BOTTLE_GLASS_ROUND",
+                        "VIAL_GLASS_SMALL",
+                        "TUBE_STANDARD",
+                        "SACHET_FLAT",
+                        "BLISTER_CARD",
+                        "FOIL_STRIP",
+                        "JAR_WIDE"
+                    ]
+                },
+                {
+                    "name": "TypographySpec",
+                    "docstring": "",
+                    "methods": [],
+                    "fields": [
+                        "font_family: AllowedFonts",
+                        "font_weight: int",
+                        "case: Literal['uppercase', 'lowercase', 'titlecase', 'original']",
+                        "tracking: float",
+                        "max_font_scale: float",
+                        "min_font_scale: float",
+                        "line_clamp: int",
+                        "allow_multiline: bool"
+                    ]
+                },
+                {
+                    "name": "ObservedPalette",
+                    "docstring": "",
+                    "methods": [],
+                    "fields": [
+                        "dominant_colors: List[str]",
+                        "detected_background: Optional[str]",
+                        "color_confidence: float"
+                    ]
+                },
+                {
+                    "name": "RenderPalette",
+                    "docstring": "",
+                    "methods": [],
+                    "fields": [
+                        "primary_bg: str",
+                        "text_primary: str",
+                        "accent_color: Optional[str]"
+                    ]
+                },
+                {
+                    "name": "SurfaceFinishSpec",
+                    "docstring": "",
+                    "methods": [],
+                    "fields": [
+                        "lamination: Literal['matte', 'glossy']",
+                        "spot_uv: bool",
+                        "foil: bool",
+                        "embossing: bool"
+                    ]
+                },
+                {
+                    "name": "NormalizedBox",
+                    "docstring": "",
+                    "methods": [],
+                    "fields": [
+                        "x: float",
+                        "y: float",
+                        "width: float",
+                        "height: float",
+                        "anchor: Literal['top_left', 'center']"
+                    ]
+                }
+            ]
+        }
+    ],
+    "constants": {
+        "BROWSER_PROFILE_DIR": "'LOCAL_HOME\\\\.gemini\\\\antigravity-browser-profile\\\\Profile 1'",
+        "BROWSER_PROFILE_NAME": "'Profile 1'",
+        "MD_DIR": "'c:\\\\pharma_v2\\\\pipeline\\\\passports.markdown'",
+        "DOWNLOADS_DIR": "'LOCAL_HOME\\\\Downloads'",
+        "RAW_DIR": "'c:\\\\pharma_v2\\\\render_output\\\\raw'",
+        "PROCESSED_DIR": "'c:\\\\pharma_v2\\\\render_output\\\\processed'",
+        "FAILED_DIR": "'c:\\\\pharma_v2\\\\render_output\\\\failed'",
+        "BATCH_SIZE": "2",
+        "IMAGE_GENERATION_TIMEOUT": "180",
+        "DOWNLOAD_TIMEOUT": "60",
+        "READY_TIMEOUT": "30",
+        "POST_CLICK_DELAY": "2",
+        "GEMINI_URL": "'https://gemini.google.com/app'",
+        "SYSTEM_PROMPT": "'You are a silent image generation engine. Rules: Accept incoming text prompts and generate images immediately. No commentary, no questions, no explanations before or after generation. Do not modify, interpret, or summarize the prompt. Do not add elements not specified in the prompt. If the prompt is accepted, generate the image silently. Treat every incoming message as a direct image generation instruction. Confirm readiness with one word: READY'",
+        "LOG_FILE": "os.path.join(os.path.dirname(os.path.abspath(__file__)), f\"gemini_rpa_{datetime.now().strftime('%Y%m%d_%H%M%S')}.log\")",
+        "PROGRESS_FILE": "os.path.join(os.path.dirname(os.path.abspath(__file__)), 'gemini_rpa_progress_v23.txt')",
+        "CHUNK": "100"
+    },
+    "sku_csv": {
+        "exists": true,
+        "total_rows": 389,
+        "package_types": {
+            "pills": 334,
+            "tubes": 11,
+            "sachets": 6,
+            "vials": 12,
+            "bottles": 2,
+            "inhalers": 2,
+            "bottle": 2,
+            "units": 2,
+            "boxes": 6,
+            "strips": 1,
+            "packs": 6,
+            "tube": 1,
+            "pens": 4
+        },
+        "unique_primary_geometries": [
+            "Aluminum",
+            "Autoinjector Pen (COP)",
+            "Blister (Alu-Alu)",
+            "Blister (PVC/Aluminium)",
+            "Bottle (HDPE)",
+            "Glass Type I",
+            "Inhaler (HFA/Generic)",
+            "Sachet (Foil)",
+            "Tube (Aluminum)"
+        ]
+    },
+    "passports": {
+        "total_passports": 389,
+        "template_distribution": {
+            "T1": 334,
+            "T_BOTTLE_BOX": 33,
+            "T3": 22
+        },
+        "scene_archetypes": {
+            "thick_blister_carton": 255,
+            "hdpe_bottle_carton": 13,
+            "slim_blister_carton": 80,
+            "tube_carton": 16,
+            "vial_tray_carton": 16,
+            "sachet_carton": 6,
+            "hdpe_dropper_carton": 2,
+            "inhaler_carton": 1
+        },
+        "empty_active_ingredient_count": 0,
+        "empty_active_ingredient_stems": [],
+        "low_confidence_stems": []
+    },
+    "design_specs": {
+        "exists": true,
+        "sub_brands": [
+            {
+                "key": "black_edition",
+                "triggers": [
+                    "black"
+                ],
+                "finish_override": "matte_luxury_soft_touch",
+                "surface_treatment": "Soft-touch matte coating with Spot UV gloss on logo and brand name zone"
+            },
+            {
+                "key": "gold_edition",
+                "triggers": [
+                    "gold"
+                ],
+                "finish_override": "metallic_premium_gloss",
+                "surface_treatment": "High-gloss metallic gold base with embossed brand name in relief"
+            },
+            {
+                "key": "professional_grade",
+                "triggers": [
+                    "professional"
+                ],
+                "finish_override": "clinical_precision_matte",
+                "surface_treatment": "Matte base with structured data grid layout, minimal decorative elements"
+            },
+            {
+                "key": "super_active",
+                "triggers": [
+                    "super active",
+                    "super-active"
+                ],
+                "finish_override": "high_energy_gloss",
+                "surface_treatment": "High-gloss finish with dynamic diagonal graphic element suggesting speed/absorption"
+            },
+            {
+                "key": "oral_jelly",
+                "triggers": [
+                    "oral jelly",
+                    "oral-jelly"
+                ],
+                "finish_override": "",
+                "surface_treatment": "Flexible foil/laminate sachet, multi-color flavor stripe coding"
+            },
+            {
+                "key": "strips",
+                "triggers": [
+                    "strips",
+                    "strip"
+                ],
+                "finish_override": "",
+                "surface_treatment": "Slim card format, minimalist layout, premium matte or soft-touch laminate"
+            },
+            {
+                "key": "soft_tabs",
+                "triggers": [
+                    "soft tabs",
+                    "soft-tabs"
+                ],
+                "finish_override": "pastel_soft_matte",
+                "surface_treatment": "Soft pastel color palette, rounded pill motif as graphic element on packaging"
+            },
+            {
+                "key": "forte",
+                "triggers": [
+                    "forte"
+                ],
+                "finish_override": "",
+                "surface_treatment": ""
+            },
+            {
+                "key": "plus_combination",
+                "triggers": [
+                    "plus",
+                    "dxt plus",
+                    "fxt plus"
+                ],
+                "finish_override": "",
+                "surface_treatment": ""
+            },
+            {
+                "key": "super_kamagra",
+                "triggers": [
+                    "super kamagra"
+                ],
+                "finish_override": "",
+                "surface_treatment": ""
+            },
+            {
+                "key": "super_p_force",
+                "triggers": [
+                    "super p force",
+                    "super p-force"
+                ],
+                "finish_override": "",
+                "surface_treatment": ""
+            },
+            {
+                "key": "original_edition",
+                "triggers": [
+                    "original"
+                ],
+                "finish_override": "",
+                "surface_treatment": ""
+            }
+        ],
+        "photosensitive_compounds": [
+            {
+                "key": "nitroglycerin_class",
+                "triggers": [
+                    "nitroglycerin",
+                    "nitro",
+                    "glyceryl trinitrate"
+                ],
+                "container_required": "VIAL",
+                "material": "amber_glass_type_I"
+            },
+            {
+                "key": "sodium_nitroprusside_class",
+                "triggers": [
+                    "nitroprusside",
+                    "sodium nitroprusside",
+                    "nipride"
+                ],
+                "container_required": "VIAL",
+                "material": "amber_glass_type_I_opaque_overwrap"
+            },
+            {
+                "key": "epinephrine_class",
+                "triggers": [
+                    "epinephrine",
+                    "adrenaline",
+                    "adrenalin",
+                    "epipen"
+                ],
+                "container_required": "VIAL",
+                "material": "amber_glass_type_I"
+            },
+            {
+                "key": "injectable_hormones",
+                "triggers": [
+                    "testosterone",
+                    "estradiol",
+                    "progesterone",
+                    "hcg",
+                    "hgh",
+                    "somatropin",
+                    "insulin"
+                ],
+                "container_required": "VIAL",
+                "material": "amber_glass_type_I"
+            },
+            {
+                "key": "ophthalmic_drops",
+                "triggers": [
+                    "eye drop",
+                    "ophthalmic",
+                    "ocular",
+                    "bimatoprost",
+                    "latanoprost",
+                    "timolol",
+                    "dorzolamide",
+                    "prednisolone"
+                ],
+                "container_required": "DROPPER",
+                "material": "opaque_ldpe_white_or_amber_hdpe"
+            },
+            {
+                "key": "albuterol_inhalers",
+                "triggers": [
+                    "albuterol",
+                    "salbutamol",
+                    "ventolin",
+                    "inhaler",
+                    "turbuhaler",
+                    "diskus"
+                ],
+                "container_required": "INHALER",
+                "material": "opaque_plastic_inhaler_housing"
+            },
+            {
+                "key": "ergotamine_class",
+                "triggers": [
+                    "ergotamine",
+                    "ergot",
+                    "cafergot"
+                ],
+                "container_required": "BLISTER",
+                "material": "alu_alu_cold_form"
+            },
+            {
+                "key": "light_sensitive_antibiotics",
+                "triggers": [
+                    "doxycycline",
+                    "ciprofloxacin solution",
+                    "levofloxacin solution",
+                    "amphotericin"
+                ],
+                "container_required": "BOTTLE",
+                "material": "amber_hdpe_or_glass_type_II"
+            },
+            {
+                "key": "high_sensitivity_standard",
+                "triggers": [
+                    "furosemide injection",
+                    "sodium nitroprusside",
+                    "dacarbazine",
+                    "chlorpromazine"
+                ],
+                "container_required": "VIAL",
+                "material": "amber_glass_type_I_carton"
+            },
+            {
+                "key": "general_light_sensitive",
+                "triggers": [
+                    "injection",
+                    "injectable",
+                    "hormone",
+                    "hormonal",
+                    "insulin",
+                    "hgh",
+                    "hcg",
+                    "testosterone",
+                    "estradiol",
+                    "progesterone",
+                    "interferon",
+                    "epinephrine",
+                    "adrenaline",
+                    "eye drop",
+                    "ophthalmic",
+                    "ocular",
+                    "ear drop",
+                    "solution",
+                    "ampoule",
+                    "ampule"
+                ],
+                "container_required": "BOTTLE",
+                "material": "dynamic_amber_glass_or_hdpe"
+            }
+        ]
+    },
+    "render_state": {
+        "raw_images_count": 389,
+        "processed_images_count": 389,
+        "failed_images_count": 79,
+        "progress_count": 389,
+        "failure_breakdown": {
+            "wait_for_image_generation": 95,
+            "send_message": 1
+        },
+        "coverage_missing": [],
+        "coverage_extra": [],
+        "coverage_percentage": 100.0
+    },
+    "routing": {
+        "templates": [
+            "T1",
+            "T2",
+            "T3",
+            "T_BOTTLE_BOX"
+        ],
+        "router_doc": "Determines template (T1, T2, T3, T_BOTTLE_BOX) and whether bottle override is active.\n    Uses geometry_mapping.py to determine routing and placeholder policy.\n    Also checks SKU_REGISTRY for vertical container types (bottles, vials, inhalers, pens)."
+    },
+    "verification": {
+        "threshold": 0.75,
+        "checks": [
+            {
+                "number": 1,
+                "description": "active_ingredient == product_name",
+                "weight": -0.15
+            },
+            {
+                "number": 2,
+                "description": "active_ingredient empty",
+                "weight": -0.15
+            },
+            {
+                "number": 3,
+                "description": "primary_color == background_white",
+                "weight": -0.3
+            },
+            {
+                "number": 4,
+                "description": "dosage no numeric value",
+                "weight": -0.2
+            },
+            {
+                "number": 5,
+                "description": "unit_count empty",
+                "weight": -0.1
+            },
+            {
+                "number": 6,
+                "description": "geometry \u2194 template consistency",
+                "weight": -0.2
+            },
+            {
+                "number": 7,
+                "description": "product_name empty",
+                "weight": -0.25
+            },
+            {
+                "number": 8,
+                "description": "SSOT master.json color cross-validation",
+                "weight": -0.1
+            },
+            {
+                "number": 9,
+                "description": "SKU.csv package_type\u2194unit_count label",
+                "weight": -0.15
+            },
+            {
+                "number": 10,
+                "description": "vertical container template validation",
+                "weight": -0.15
+            },
+            {
+                "number": 11,
+                "description": "accent_hex contrast ratio vs white",
+                "weight": -0.1
+            },
+            {
+                "number": 12,
+                "description": "SKU.csv \u2194 JSON record existence",
+                "weight": -0.1
+            }
+        ]
+    }
+}

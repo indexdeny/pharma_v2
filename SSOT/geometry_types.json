@@ -1,0 +1,43 @@
+{
+  "secondary_geometry": {
+    "box_types": [
+      "Reverse Tuck End (Standard)",
+      "Straight Tuck End",
+      "Display Box"
+    ],
+    "materials": [
+      "GZ-Cardboard (Pharmaceutical Grade)",
+      "Kraft Cardboard",
+      "SBB Paperboard"
+    ]
+  },
+  "primary_geometry": {
+    "containers": [
+      "Blister (PVC/Aluminium)",
+      "Blister (Alu-Alu)",
+      "Bottle (HDPE)",
+      "Bottle (Amber Glass)",
+      "Tube (Aluminum)",
+      "Sachet (Foil)",
+      "Vial (Glass Type I)",
+      "Autoinjector Pen (COP)",
+      "Inhaler (HFA/Generic)"
+    ],
+    "internal_components": [
+      "IFU Leaflet (Standard Fold)",
+      "Measuring Spoon",
+      "Desiccant Canister"
+    ]
+  },
+  "render_infrastructure": {
+    "targets": [
+      "carton_box",
+      "standalone_container"
+    ],
+    "archetypes": [
+      "box_with_internal_components",
+      "standalone_bottle_render",
+      "dual_shot_composite"
+    ]
+  }
+}

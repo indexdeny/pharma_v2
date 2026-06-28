@@ -1,0 +1,68 @@
+{
+    "sku_id": "293-min.jpg",
+    "product_name": "Proventil",
+    "render_config": {
+        "primary_render_target": "standalone_container",
+        "future_dual_shot_enabled": false,
+        "scene_archetype": "slim_blister_carton"
+    },
+    "secondary_packaging": {
+        "box_type": "Reverse Tuck End (Standard)",
+        "material": "PP / Glass Type I",
+        "dimensions": "110x50x18mm",
+        "features": []
+    },
+    "render_priority": "primary_container",
+    "dosage_ref": "mcg",
+    "category_id": "13",
+    "unit_count_standard": "1",
+    "branding": {
+        "palette": {
+            "primary": "#003366",
+            "accent": "#0D5FB8",
+            "background": "#FFFFFF"
+        },
+        "design_elements": {
+            "has_logo_embossing": true,
+            "spot_uv_areas": [
+                "brand_name"
+            ],
+            "is_varnished": true
+        },
+        "palette_source": "Canonical/Official_DB"
+    },
+    "label_content": {
+        "brand_name_display": "Proventil",
+        "dosage_display": "90mcg",
+        "unit_count_display": "1 Inhaler"
+    },
+    "internal_unit": {
+        "type": "Inhaler",
+        "material": "Blister (PVC/Aluminium)",
+        "layout": "10 pills per blister, 1 blisters",
+        "leaflet": null,
+        "render": false,
+        "min_pills_per_unit": 10
+    },
+    "schema_version": "2.1",
+    "brand_name": "Proventil",
+    "active_ingredient": "Albuterol",
+    "manufacturer": null,
+    "brand_color_verified": false,
+    "packaging_geometry": "BOX",
+    "is_generic": false,
+    "light_sensitive": true,
+    "material_spec_override": "Opaque colored plastic inhaler housing with aluminum pressurized canister inside. Push-button plastic actuator in blue or grey. L-shaped mouthpiece.",
+    "reference_url": null,
+    "primary_package": {
+        "type": null,
+        "geometry": null,
+        "width_mm": null,
+        "height_mm": null,
+        "depth_mm": null
+    },
+    "package_type": "inhaler",
+    "minimal_package": 1,
+    "minimal_dosage": 90.0,
+    "category": "Asthma Relief & Management"
+}

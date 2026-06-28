@@ -1,0 +1,68 @@
+{
+    "sku_id": "379-min.jpg",
+    "product_name": "Lumigan 0.03%",
+    "render_config": {
+        "primary_render_target": "standalone_container",
+        "future_dual_shot_enabled": false,
+        "scene_archetype": "hdpe_dropper_carton"
+    },
+    "secondary_packaging": {
+        "box_type": "Reverse Tuck End (Standard)",
+        "material": "LDPE",
+        "dimensions": "110x50x18mm",
+        "features": []
+    },
+    "render_priority": "primary_container",
+    "dosage_ref": "ml",
+    "category_id": "2",
+    "unit_count_standard": "1",
+    "branding": {
+        "palette": {
+            "primary": "#003366",
+            "accent": "#0D5FB8",
+            "background": "#FFFFFF"
+        },
+        "design_elements": {
+            "has_logo_embossing": false,
+            "spot_uv_areas": [
+                "brand_name"
+            ],
+            "is_varnished": false
+        },
+        "palette_source": "Canonical/Official_DB"
+    },
+    "label_content": {
+        "brand_name_display": "Lumigan 0.03%",
+        "dosage_display": "0.03ml/0.03%",
+        "unit_count_display": "1 Bottle"
+    },
+    "internal_unit": {
+        "type": "Bottle",
+        "material": "Bottle (HDPE)",
+        "layout": "10 pills per blister, 1 blisters",
+        "leaflet": null,
+        "render": false,
+        "min_pills_per_unit": 10
+    },
+    "schema_version": "2.1",
+    "brand_name": "Lumigan 0.03%",
+    "active_ingredient": "Bimatoprost",
+    "manufacturer": null,
+    "brand_color_verified": false,
+    "packaging_geometry": "BOTTLE",
+    "is_generic": false,
+    "light_sensitive": true,
+    "material_spec_override": "Opaque white LDPE dropper bottle with snap-cap or opaque amber HDPE dropper, light-protective. LDPE nozzle tip with tamper-evident PP overcap.",
+    "reference_url": null,
+    "primary_package": {
+        "type": null,
+        "geometry": null,
+        "width_mm": null,
+        "height_mm": null,
+        "depth_mm": null
+    },
+    "package_type": "bottle",
+    "minimal_package": 1,
+    "minimal_dosage": 0.03,
+    "category": "Women's Health"
+}

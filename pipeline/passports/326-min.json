@@ -1,0 +1,70 @@
+{
+    "sku_id": "326-min.jpg",
+    "product_name": "Minocin",
+    "render_config": {
+        "primary_render_target": "carton_box",
+        "future_dual_shot_enabled": false,
+        "scene_archetype": "thick_blister_carton"
+    },
+    "secondary_packaging": {
+        "box_type": "Reverse Tuck End (Standard)",
+        "material": "GZ-Cardboard (Pharmaceutical Grade)",
+        "dimensions": "115x55x48mm",
+        "features": [
+            "Braille",
+            "DataMatrix_Zone",
+            "Tamper_Evident_Seal"
+        ]
+    },
+    "render_priority": "secondary_box",
+    "dosage_ref": "mg",
+    "category_id": "9",
+    "unit_count_standard": "30",
+    "branding": {
+        "palette": {
+            "primary": "#003366",
+            "accent": "#0D5FB8",
+            "background": "#FFFFFF"
+        },
+        "design_elements": {
+            "has_logo_embossing": false,
+            "spot_uv_areas": [
+                "brand_name"
+            ],
+            "is_varnished": true
+        },
+        "palette_source": "Canonical/Official_DB"
+    },
+    "label_content": {
+        "brand_name_display": "Minocin",
+        "dosage_display": "100mg",
+        "unit_count_display": "30 Pills"
+    },
+    "internal_unit": {
+        "type": "Pills",
+        "material": "Blister (PVC/Aluminium)",
+        "layout": "15 pills per blister, 4 blisters",
+        "leaflet": null,
+        "render": false,
+        "min_pills_per_unit": 15
+    },
+    "schema_version": "2.1",
+    "brand_name": "Minocin",
+    "active_ingredient": "Minocycline",
+    "manufacturer": null,
+    "brand_color_verified": false,
+    "packaging_geometry": "BLISTER",
+    "is_generic": false,
+    "reference_url": null,
+    "primary_package": {
+        "type": null,
+        "geometry": null,
+        "width_mm": null,
+        "height_mm": null,
+        "depth_mm": null
+    },
+    "package_type": "pills",
+    "minimal_package": 30,
+    "minimal_dosage": 100.0,
+    "category": "Antibiotics"
+}

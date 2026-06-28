@@ -1,0 +1,426 @@
+{
+  "_meta": {
+    "schema_version": "1.0",
+    "generated": "2026-05-26",
+    "sources": [
+      "USP Chapter <660> Containers—Glass",
+      "USP Chapter <671> Containers—Performance Testing",
+      "FDA Guidance: Safety Considerations for Container Labels and Carton Labeling Design to Minimize Medication Errors (21 CFR 201.10(g)(2))",
+      "EU Directive 2001/83/EC — Medicinal Products for Human Use",
+      "EMA Guideline on the Readability of the Labelling and Package Leaflet (2009/C 229/01)",
+      "EMA Quality Review of Documents (QRD) Templates",
+      "ISO 15378: Primary packaging materials for medicinal products",
+      "FDA 21 CFR Part 211 — Current Good Manufacturing Practice",
+      "DailyMed (NIH) — Official FDA drug labeling database",
+      "Schott Pharma glass classification standards",
+      "Industry standards: Swiftpak, SED Pharma, Amcor Flexibles"
+    ],
+    "usage": "Static reference for Agent 2 Verifier in convert_passports_to_md.py. Do not modify without re-running deep research validation."
+  },
+
+  "sub_brand_visual_rules": {
+    "_note": "Brand Identity Retention principle: base palette is preserved across all sub-brands. Only surface treatment, finish, and accent differentiation change.",
+
+    "black_edition": {
+      "triggers": ["black"],
+      "finish_override": "matte_luxury_soft_touch",
+      "surface_treatment": "Soft-touch matte coating with Spot UV gloss on logo and brand name zone",
+      "primary_color_override": "#111111",
+      "primary_color_desc": "Deep Matte Black",
+      "accent_contrast": "metallic_gold_or_silver",
+      "accent_hex_canonical": "#C9A84C",
+      "accent_desc": "Premium Gold Metallic",
+      "typography_weight": "bold_condensed_high_contrast_white",
+      "compliance_note": "All regulatory text (dosage, warnings, Rx) must appear on high-contrast white or light panel — black background is FORBIDDEN for regulatory text zones",
+      "imagen_anchor": "Deep matte black luxury pharmaceutical packaging. Premium dark edition. Gold foil accent on brand name. Soft-touch surface. Clinical authority aesthetic."
+    },
+
+    "gold_edition": {
+      "triggers": ["gold"],
+      "finish_override": "metallic_premium_gloss",
+      "surface_treatment": "High-gloss metallic gold base with embossed brand name in relief",
+      "primary_color_override": "#B8860B",
+      "primary_color_desc": "Dark Goldenrod / Metallic Gold",
+      "accent_contrast": "deep_navy_or_black",
+      "accent_hex_canonical": "#1A1A2E",
+      "accent_desc": "Deep Navy",
+      "typography_weight": "bold_serif_or_elegant_sans",
+      "imagen_anchor": "Metallic gold premium pharmaceutical packaging. Warm amber color accents. Luxury gloss finish. Embossed brand name. High-end retail aesthetic."
+    },
+
+    "professional_grade": {
+      "triggers": ["professional"],
+      "finish_override": "clinical_precision_matte",
+      "surface_treatment": "Matte base with structured data grid layout, minimal decorative elements",
+      "design_language": "Clinical authority, structured hierarchy, maximum data density on front panel",
+      "typography_weight": "medium_weight_technical_sans",
+      "imagery_cue": "No lifestyle imagery — geometric precision patterns or molecular/scientific iconography only",
+      "imagen_anchor": "Clinical precision pharmaceutical packaging. Professional grade. Structured data layout with clear typographic hierarchy. Authoritative clean design. No decorative flourishes."
+    },
+
+    "super_active": {
+      "triggers": ["super active", "super-active"],
+      "finish_override": "high_energy_gloss",
+      "surface_treatment": "High-gloss finish with dynamic diagonal graphic element suggesting speed/absorption",
+      "design_language": "Vibrant, energetic, conveys ultra-fast action",
+      "accent_strategy": "Vivid contrasting accent stripe (electric blue #0047FF or vivid orange #FF5500)",
+      "primary_modification": "Retain brand base color; add vivid accent stripe as 30% panel element",
+      "imagen_anchor": "Super Active pharmaceutical packaging. Vibrant energetic design. High-gloss finish. Dynamic diagonal accent stripe. Gelcap format motif. Conveys rapid absorption and high potency."
+    },
+
+    "oral_jelly": {
+      "triggers": ["oral jelly", "oral-jelly"],
+      "packaging_geometry_override": "SACHET",
+      "spatial_layout": "ultra_flexible_sachet_format",
+      "surface_treatment": "Flexible foil/laminate sachet, multi-color flavor stripe coding",
+      "design_language": "Playful flavor-coded color stripes. No hard tablet or blister references whatsoever.",
+      "material_spec": "Aluminum-PE laminate flexible sachet with tear notch, multi-layer barrier",
+      "unit_format": "Individual sachets in secondary box, each sachet 5-7g",
+      "imagen_anchor": "Pharmaceutical oral jelly secondary packaging box. Colorful flavor-stripe design. Sachet format motif on front panel. Playful but clinical. No tablets, no blisters in imagery."
+    },
+
+    "strips": {
+      "triggers": ["strips", "strip"],
+      "packaging_geometry_override": "SACHET",
+      "spatial_layout": "ultra_slim_pocket_card",
+      "surface_treatment": "Slim card format, minimalist layout, premium matte or soft-touch laminate",
+      "unit_format": "Credit-card-sized blister strip or foil pouch, pocket-sized presentation",
+      "design_language": "Ultra-minimal. Pocket-sized format emphasized. Discreet consumer lifestyle branding.",
+      "imagen_anchor": "Slim pocket-sized pharmaceutical strip packaging. Ultra-minimalist card format. Discreet lifestyle design. No standard blister or box shape."
+    },
+
+    "soft_tabs": {
+      "triggers": ["soft tabs", "soft-tabs"],
+      "finish_override": "pastel_soft_matte",
+      "surface_treatment": "Soft pastel color palette, rounded pill motif as graphic element on packaging",
+      "design_language": "Approachable, soft-edge design. Rounded corners on typography and graphic elements.",
+      "accent_strategy": "Pastel secondary color paired with brand primary",
+      "imagen_anchor": "Pharmaceutical Soft Tabs packaging. Pastel soft-color scheme. Rounded pill-shaped motif. Approachable gentle design. Soft matte finish."
+    },
+
+    "forte": {
+      "triggers": ["forte"],
+      "design_language": "Oversized dosage number as the hero graphic element on front panel — extremely large, bold",
+      "typography_emphasis": "Dosage number at 200-300% normal size, occupies 40% of front panel",
+      "imagen_anchor": "Pharmaceutical Forte packaging. Bold oversized dosage number as dominant hero graphic. High-potency visual emphasis. Strong weight typography."
+    },
+
+    "plus_combination": {
+      "triggers": ["plus", "dxt plus", "fxt plus"],
+      "design_language": "Two-part split color band design indicating dual active ingredient combination",
+      "layout_spec": "Front panel divided into two horizontal zones, each color-coded to one active ingredient",
+      "imagen_anchor": "Combination pharmaceutical packaging. Two-part split color band. Dual active ingredient formula. Structured two-zone layout on front panel."
+    },
+
+    "super_kamagra": {
+      "triggers": ["super kamagra"],
+      "design_language": "Dual-compound bold graphic, two-tone vertical split color scheme",
+      "primary_modification": "50/50 vertical color split on front panel between two compound colors",
+      "imagen_anchor": "Super Kamagra pharmaceutical packaging. Bold two-tone vertical split color scheme. Dual compound formula. Dynamic premium design."
+    },
+    "super_p_force": {
+      "triggers": ["super p force", "super p-force"],
+      "design_language": "Dual-action premium dark packaging layout with a structured grid",
+      "imagen_anchor": "The entire box uses a dual-action premium dark packaging layout with a structured grid. The series name is seamlessly integrated into the structural brand typography."
+    },
+    "original_edition": {
+      "triggers": ["original"],
+      "design_language": "Clean clinical white pharmacy design with a singular solid accent line",
+      "imagen_anchor": "Clean clinical white pharmacy design with a singular solid accent line. The series name is seamlessly integrated into the structural brand typography."
+    }
+  },
+
+  "photosensitive_compounds": {
+    "_reference": "USP <660>, USP <671>, DailyMed FDA-approved labeling, USP spectral transmission limits: ≤10% at 290-450nm range",
+    "_rule": "If product_name contains any trigger term AND geometry is BOTTLE/VIAL/AMPOULE/DROPPER → enforce material override",
+
+    "nitroglycerin_class": {
+      "triggers": ["nitroglycerin", "nitro", "glyceryl trinitrate"],
+      "container_required": "VIAL",
+      "material": "amber_glass_type_I",
+      "material_render_spec": "Dark amber borosilicate glass Type I vial, light-protective, original glass container",
+      "usp_reference": "USP <660> Type I — highest hydrolytic resistance",
+      "note": "Must remain in original glass container. UV degradation occurs within minutes in clear glass."
+    },
+
+    "sodium_nitroprusside_class": {
+      "triggers": ["nitroprusside", "sodium nitroprusside", "nipride"],
+      "container_required": "VIAL",
+      "material": "amber_glass_type_I_opaque_overwrap",
+      "material_render_spec": "Amber glass vial Type I with opaque aluminum foil overwrap sleeve. Highly light-sensitive.",
+      "note": "Decomposition begins within minutes of light exposure. Diluted solutions must be wrapped in opaque sleeve."
+    },
+
+    "epinephrine_class": {
+      "triggers": ["epinephrine", "adrenaline", "adrenalin", "epipen"],
+      "container_required": "VIAL",
+      "material": "amber_glass_type_I",
+      "material_render_spec": "Amber glass autoinjector or vial Type I, UV-protective packaging",
+      "note": "Light exposure causes oxidation and loss of potency. EpiPen packaging uses opaque outer carton mandatory."
+    },
+
+    "injectable_hormones": {
+      "triggers": ["testosterone", "estradiol", "progesterone", "hcg", "hgh", "somatropin", "insulin"],
+      "container_required": "VIAL",
+      "material": "amber_glass_type_I",
+      "material_render_spec": "Amber glass vial Type I, UV-protective coating, rubber stopper, aluminum crimp cap",
+      "usp_reference": "USP <660> Type I parenteral standard",
+      "note": "Liquid hormone formulations degrade under UV. Amber glass blocks 290-450nm range per USP <671>."
+    },
+
+    "ophthalmic_drops": {
+      "triggers": ["eye drop", "ophthalmic", "ocular", "bimatoprost", "latanoprost", "timolol", "dorzolamide", "prednisolone"],
+      "container_required": "DROPPER",
+      "material": "opaque_ldpe_white_or_amber_hdpe",
+      "material_render_spec": "Opaque white LDPE dropper bottle with snap-cap or opaque amber HDPE dropper, light-protective",
+      "note": "Most ophthalmic solutions photodegrade. LDPE opaque white is industry standard for eye drop bottles."
+    },
+
+    "albuterol_inhalers": {
+      "triggers": ["albuterol", "salbutamol", "ventolin", "inhaler", "turbuhaler", "diskus"],
+      "container_required": "INHALER",
+      "material": "opaque_plastic_inhaler_housing",
+      "material_render_spec": "Opaque colored plastic inhaler housing with aluminum pressurized canister inside",
+      "note": "Metered-dose inhalers use aluminum canisters providing full light protection. Outer housing is opaque polymer."
+    },
+
+    "ergotamine_class": {
+      "triggers": ["ergotamine", "ergot", "cafergot"],
+      "container_required": "BLISTER",
+      "material": "alu_alu_cold_form",
+      "material_render_spec": "Aluminum-Aluminum (Alu-Alu) cold-form blister — full moisture and light barrier",
+      "note": "Ergot alkaloids are moisture and light sensitive. Alu-Alu provides near-zero MVTR and full light block."
+    },
+
+    "light_sensitive_antibiotics": {
+      "triggers": ["doxycycline", "ciprofloxacin solution", "levofloxacin solution", "amphotericin"],
+      "container_required": "BOTTLE",
+      "material": "amber_hdpe_or_glass_type_II",
+      "material_render_spec": "Amber HDPE or Type II amber glass bottle, child-resistant cap",
+      "note": "Liquid antibiotic formulations require amber containers. Tablet forms in standard blister are acceptable."
+    },
+
+    "high_sensitivity_standard": {
+      "triggers": ["furosemide injection", "sodium nitroprusside", "dacarbazine", "chlorpromazine"],
+      "container_required": "VIAL",
+      "material": "amber_glass_type_I_carton",
+      "material_render_spec": "Amber glass Type I vial stored in protective outer carton. Secondary carton is mandatory light barrier.",
+      "note": "Spectral transmission ≤10% at 290-450nm per USP <671>. Outer carton must remain on until administration."
+    },
+    "general_light_sensitive": {
+      "triggers": ["injection", "injectable", "hormone", "hormonal", "insulin", "hgh", "hcg", "testosterone", "estradiol", "progesterone", "interferon", "epinephrine", "adrenaline", "eye drop", "ophthalmic", "ocular", "ear drop", "solution", "ampoule", "ampule"],
+      "container_required": "BOTTLE",
+      "material": "dynamic_amber_glass_or_hdpe",
+      "material_render_spec": "Amber HDPE or opaque light-protective plastic bottle, child-resistant cap (or amber glass Type I vial/ampoule depending on form factor)",
+      "note": "General light sensitive category containing general pharmaceutical form indicators and hormone triggers."
+    }
+  },
+
+  "regulatory_layout_zones": {
+    "_reference": "FDA 21 CFR 201.10, EMA Readability Guideline 2009, EU Directive 2001/83/EC Article 54-65",
+
+    "typography_minimums": {
+      "ema_minimum_font_size_pt": 9,
+      "ema_alternative_x_height_mm": 1.4,
+      "ema_minimum_line_spacing_mm": 3.0,
+      "fda_warning_text_minimum_pt": 8,
+      "font_category": "Non-stylized, clearly readable sans-serif (Arial, Helvetica equivalent)",
+      "forbidden_styles": ["extensive_capitals", "italics_for_body_text", "ornate_decorative_fonts", "similar_character_confusion"],
+      "tall_man_lettering": "Required for look-alike/sound-alike drug names per FDA guidance (e.g., vinBLAStine vs vinCRIStine)"
+    },
+
+    "contrast_requirements": {
+      "wcag_aa_minimum_ratio": 4.5,
+      "wcag_aaa_preferred_ratio": 7.0,
+      "critical_elements_minimum_ratio": 7.0,
+      "note": "Critical medical information (dosage, active ingredient, warnings) must meet WCAG AAA 7:1 wherever possible",
+      "black_background_rule": "When using dark/black backgrounds, regulatory text MUST appear on high-contrast white zone — not on black directly",
+      "color_as_sole_identifier": "PROHIBITED — color cannot be the only differentiator. Must pair with text."
+    },
+
+    "mandatory_label_zones": {
+      "rx_marker": {
+        "text": "Rx Only",
+        "position": "upper-right corner of front panel or prominent front face position",
+        "font_size_minimum_pt": 8,
+        "style": "high-contrast sans-serif, bold",
+        "regulatory_basis": "21 CFR 201.100 (US) / EU Directive 2001/83/EC Article 54(b)"
+      },
+      "child_safety_warning": {
+        "text": "Keep out of reach of children",
+        "position": "side panel or back panel — NOT required on front face",
+        "regulatory_basis": "EU Directive 2001/83/EC Article 63",
+        "braille_requirement": "Product name in Braille is MANDATORY on outer carton per EU Directive — minimum Marburg Medium standard: dot height 0.5mm, pitch 2.5mm"
+      },
+      "datamatrix_zone": {
+        "standard": "GS1 DataMatrix ECC200",
+        "minimum_size_mm": "10x10",
+        "position": "Side or back panel, never obscuring brand or dosage on front",
+        "regulatory_basis": "EU FMD (Falsified Medicines Directive) — mandatory for prescription drugs"
+      },
+      "expiry_zone": {
+        "format": "EXP MM/YYYY or EXP DD/MM/YYYY",
+        "position": "Carton flap or side panel, minimum 15x30mm dedicated white window",
+        "note": "Must remain accessible after dispensing label application by pharmacy"
+      }
+    },
+
+    "strength_differentiation": {
+      "fda_guidance": "If a drug is available in multiple strengths, labels must be designed to be easily differentiable",
+      "recommended_methods": [
+        "distinct_color_coding_per_strength",
+        "large_bold_dosage_number_as_hero_element",
+        "numerical_size_scaling_proportional_to_strength"
+      ],
+      "note": "Color differentiation is encouraged between strengths of the same product, but must always be paired with clear text"
+    }
+  },
+
+  "material_specifications": {
+    "_reference": "USP <660>, Schott Pharma catalog, Gerresheimer classification, Amcor Flexibles technical specs",
+
+    "glass_types": {
+      "type_I_borosilicate": {
+        "hydrolytic_resistance": "Highest",
+        "boron_oxide_content_pct": 10,
+        "applications": ["all_parenteral_products", "biologics", "vaccines", "injectable_hormones", "ophthalmic_solutions"],
+        "render_color": "Amber (when light-protected) or clear (when light-stable)",
+        "amber_uv_cutoff_nm": 450,
+        "usp_spectral_limit": "≤10% transmission at 290-450nm for non-parenteral; tiered by volume for parenteral"
+      },
+      "type_II_treated_sodalime": {
+        "hydrolytic_resistance": "High (surface treated)",
+        "applications": ["aqueous_infusion_solutions", "moderately_sensitive_parenteral"],
+        "render_color": "Typically clear; amber when light protection needed"
+      },
+      "type_III_sodalime": {
+        "hydrolytic_resistance": "Moderate",
+        "applications": ["oral_liquids", "syrups", "dry_powders", "non_injectable_solids"],
+        "render_color": "Amber or clear depending on photosensitivity"
+      }
+    },
+
+    "plastic_types": {
+      "hdpe_opaque": {
+        "name": "High-Density Polyethylene — Opaque",
+        "barrier": "Excellent moisture barrier",
+        "light_protection": "Full (opaque white or pigmented)",
+        "applications": ["tablet_bottles", "capsule_bottles", "OTC_containers"],
+        "render_spec": "Opaque white cylindrical bottle with child-resistant push-and-turn cap"
+      },
+      "ldpe_opaque": {
+        "name": "Low-Density Polyethylene — Opaque",
+        "applications": ["eye_drops", "nasal_drops", "ear_drops"],
+        "render_spec": "Opaque white flexible squeeze dropper bottle with integrated dropper tip"
+      },
+      "cop_coc": {
+        "name": "Cyclic Olefin Polymer / Copolymer",
+        "barrier": "Near-glass clarity, superior moisture resistance",
+        "applications": ["prefilled_syringes", "biologics_vials", "high_purity_parenteral"],
+        "render_spec": "Crystal-clear glass-like appearance with zero haze"
+      },
+      "pet": {
+        "name": "Polyethylene Terephthalate",
+        "applications": ["syrups", "oral_liquids", "OTC_liquids"],
+        "render_spec": "Clear light plastic bottle"
+      }
+    },
+
+    "blister_types": {
+      "pvc_standard": {
+        "material": "PVC/Aluminium thermoformed",
+        "mvtr": "moderate",
+        "light_barrier": "None — transparent forming film",
+        "applications": ["stable_solid_oral_forms", "climate_zone_I_II"],
+        "render_spec": "Standard transparent PVC forming pocket with silver aluminum push-through lidding"
+      },
+      "pvdc_coated": {
+        "material": "PVC/PVDC/Aluminium",
+        "mvtr": "Low (5-10x better than plain PVC)",
+        "light_barrier": "Partial (PVDC layer adds some UV protection)",
+        "applications": ["hygroscopic_drugs", "tropical_climate_zone_III_IV"],
+        "render_spec": "Slightly opaque forming layer with silver aluminum lidding"
+      },
+      "alu_alu_cold_form": {
+        "material": "OPA/Aluminium/PVC cold-form",
+        "mvtr": "Near-zero",
+        "light_barrier": "Full (100% aluminum forming)",
+        "cost_premium_vs_pvc_pct": "300-500%",
+        "size_increase_vs_pvc_pct": "30-50% larger due to forming technology",
+        "applications": ["highly_sensitive_drugs", "oncology", "ergot_alkaloids", "hygroscopic_biologics"],
+        "render_spec": "Matte silver-grey opaque forming sheet with silver foil lidding — no transparency"
+      }
+    }
+  },
+
+  "packaging_geometry_render_specs": {
+    "_note": "Canonical render behavior per geometry type for Imagen prompts",
+    "BOX": {
+      "camera": "3/4 isometric, 25° pitch, 35° rotation front-dominant",
+      "lens": "85mm f/8",
+      "shadow": "Soft contact shadow 60% opacity beneath base"
+    },
+    "BOTTLE": {
+      "camera": "3/4 front-profile, 15° pitch — emphasizes cylindrical label",
+      "render_note": "Cylindrical label wrap physics. Cap visible at top. Label wraps 270° of cylinder.",
+      "lens": "85mm f/8"
+    },
+    "VIAL": {
+      "camera": "Slight 10° side angle to show neck and cap",
+      "render_note": "Amber glass render. Rubber stopper and aluminum crimp cap visible. Label on body.",
+      "lens": "100mm macro f/11"
+    },
+    "AMPOULE": {
+      "camera": "Slight 15° angle showing neck score line",
+      "render_note": "Sealed amber glass. Score ring at neck. Pharmaceutical blue or white text on body.",
+      "lens": "100mm macro f/11"
+    },
+    "BLISTER": {
+      "camera": "Top-down 45° angle showing pocket array",
+      "render_note": "Blister always shown inside secondary box render — box is the primary render target",
+      "lens": "85mm f/8"
+    },
+    "TUBE": {
+      "camera": "3/4 panoramic horizontal, 20° pitch — dominant horizontal length",
+      "render_note": "Crimped aluminum or laminate tube. Flip cap visible.",
+      "lens": "85mm f/8"
+    },
+    "INHALER": {
+      "camera": "3/4 front-dominant upright, 20° pitch",
+      "render_note": "Plastic inhaler housing with actuator visible at top. Mouthpiece cap on.",
+      "lens": "85mm f/8"
+    },
+    "PEN": {
+      "camera": "Horizontal panoramic, 10° pitch — pen format horizontal",
+      "render_note": "Cylindrical pen-injector. Dose window visible. Cap on injection end.",
+      "lens": "85mm f/8"
+    },
+    "SACHET": {
+      "camera": "3/4 angle showing front face and gusset",
+      "render_note": "Flexible foil sachet. Tear notch visible on one edge. Heat-sealed top.",
+      "lens": "85mm f/8"
+    },
+    "DROPPER": {
+      "camera": "3/4 front-profile, 15° pitch",
+      "render_note": "Opaque bottle with dropper tip insert. Child-resistant cap.",
+      "lens": "85mm f/8"
+    },
+    "SPRAY": {
+      "camera": "3/4 isometric, 20° pitch — tall vertical composition",
+      "render_note": "Pump actuator visible at top. Nozzle prominent. Vertical label.",
+      "lens": "85mm f/8"
+    }
+  },
+
+  "brand_identity_retention": {
+    "_principle": "Same brand → same base palette. Sub-brand differentiation is surface/finish/accent ONLY — not palette replacement.",
+    "color_consistency_rule": "Identical primary hex across a product line is CORRECT behavior — Brand Identity Retention.",
+    "penalty_rule": "NO confidence penalty for same-brand palette sharing. Penalty ONLY for WCAG 4.5:1 text-background contrast failure.",
+    "sub_brand_hierarchy": [
+      "Master brand anchor (logo, palette) — unchanged across all sub-brands",
+      "Sub-brand finish tier (matte/gloss/metallic) — differentiates series visually",
+      "Accent color — single contrasting highlight per series edition",
+      "Dosage number prominence — scales with potency tier (Forte > Professional > Standard)"
+    ]
+  }
+}

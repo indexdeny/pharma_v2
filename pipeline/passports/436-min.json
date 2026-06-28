@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.1",
+  "sku_id": "436-min.jpg",
+  "product_name": "Betablock XL",
+  "brand_name": "Betablock XL",
+  "active_ingredient": "Metoprolol",
+  "manufacturer": null,
+  "dosage_display": "50mg",
+  "is_generic": false,
+  "series_type": null,
+  "packaging_geometry": "BLISTER",
+  "branding": {
+    "palette": {
+      "primary": "#003366",
+      "accent": "#0D5FB8",
+      "background": "#FFFFFF"
+    },
+    "design_elements": {
+      "has_logo_embossing": false,
+      "spot_uv_areas": ["brand_name"],
+      "is_varnished": true
+    },
+    "palette_source": "Canonical/Official_DB"
+  },
+  "label_content": {
+    "brand_name_display": "Betablock XL",
+    "dosage_display": "50mg",
+    "unit_count_display": "10 Pills"
+  },
+  "secondary_packaging": {
+    "box_type": "Reverse Tuck End (Standard)",
+    "material": "GZ-Cardboard (Pharmaceutical Grade)",
+    "dimensions": "80x40x12mm",
+    "features": [
+      "Braille",
+      "DataMatrix_Zone",
+      "Tamper_Evident_Seal"
+    ]
+  },
+  "internal_unit": {
+    "type": "Blister",
+    "material": "Blister (PVC/Aluminium)",
+    "layout": "10 pills per unit",
+    "leaflet": "IFU_Included_Standard_Fold"
+  },
+  "render_config": {
+    "primary_render_target": "carton_box",
+    "future_dual_shot_enabled": true,
+    "scene_archetype": "box_with_internal_components"
+  },
+  "primary_package": {
+    "type": "BLISTER",
+    "geometry": "flat_rectangular",
+    "width_mm": 65,
+    "height_mm": 30,
+    "depth_mm": 7
+  },
+  "brand_color_verified": false,
+  "reference_url": null,
+  "category_id": "9",
+  "unit_count_standard": "10",
+  "package_type": "pills",
+  "minimal_package": 10,
+  "minimal_dosage": 50.0,
+  "category": "Heart & Cholesterol"
+}

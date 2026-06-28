@@ -1,0 +1,67 @@
+{
+  "sku_id": "355-min.jpg",
+  "product_name": "Cortaid",
+  "render_config": {
+    "primary_render_target": "standalone_container",
+    "future_dual_shot_enabled": false,
+    "scene_archetype": "tube_carton"
+  },
+  "secondary_packaging": {
+    "box_type": "Reverse Tuck End (Standard)",
+    "material": "Aluminum / Laminated",
+    "dimensions": "140x35x25mm",
+    "features": []
+  },
+  "render_priority": "primary_container",
+  "dosage_ref": "g",
+  "category_id": "11",
+  "unit_count_standard": "1",
+  "branding": {
+    "palette": {
+      "primary": "#E2583E",
+      "accent": "#4B4632",
+      "background": "#FFFFFF"
+    },
+    "design_elements": {
+      "has_logo_embossing": true,
+      "spot_uv_areas": [
+        "logo",
+        "brand_name"
+      ],
+      "is_varnished": true
+    },
+    "palette_source": "Canonical/Official_DB"
+  },
+  "label_content": {
+    "brand_name_display": "Cortaid",
+    "dosage_display": "10g/1%",
+    "unit_count_display": "1 Tube"
+  },
+  "internal_unit": {
+    "type": "Tube",
+    "material": "Tube (Aluminum)",
+    "layout": "1 tube",
+    "leaflet": null,
+    "render": false,
+    "min_pills_per_unit": 1
+  },
+  "schema_version": "2.1",
+  "brand_name": "Cortaid",
+  "active_ingredient": "Hydrocortisone Acetate",
+  "manufacturer": null,
+  "brand_color_verified": false,
+  "packaging_geometry": "TUBE",
+  "is_generic": false,
+  "reference_url": null,
+  "primary_package": {
+    "type": null,
+    "geometry": null,
+    "width_mm": null,
+    "height_mm": null,
+    "depth_mm": null
+  },
+  "package_type": "tube",
+  "minimal_package": 1,
+  "minimal_dosage": 10.0,
+  "category": "Beauty & Skin Care"
+}

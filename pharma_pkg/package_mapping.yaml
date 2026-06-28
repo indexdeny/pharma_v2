@@ -1,0 +1,14 @@
+BLISTER:
+  template: TEMPLATE_BLISTER_BOX
+  clearance_mm: 5
+  geometry_hint: "low, wide, rectangular"
+
+SYRINGE:
+  template: TEMPLATE_SYRINGE_BOX
+  clearance_mm: 8
+  geometry_hint: "elongated, increased length, minimal height"
+
+BOTTLE:
+  template: TEMPLATE_BOTTLE_BOX
+  clearance_mm: 10
+  geometry_hint: "increased height, cylindrical interior volume"

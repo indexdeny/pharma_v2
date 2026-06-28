@@ -1,0 +1,69 @@
+{
+    "sku_id": "268-min.jpg",
+    "product_name": "Ventolin",
+    "render_config": {
+        "primary_render_target": "standalone_container",
+        "future_dual_shot_enabled": false,
+        "scene_archetype": "inhaler_carton"
+    },
+    "secondary_packaging": {
+        "box_type": "Reverse Tuck End (Standard)",
+        "material": "PP / Glass Type I",
+        "dimensions": "115x55x48mm",
+        "features": []
+    },
+    "render_priority": "primary_container",
+    "dosage_ref": "mg",
+    "category_id": "23",
+    "unit_count_standard": "1",
+    "branding": {
+        "palette": {
+            "primary": "#003366",
+            "accent": "#0D5FB8",
+            "background": "#FFFFFF"
+        },
+        "design_elements": {
+            "has_logo_embossing": true,
+            "spot_uv_areas": [
+                "logo",
+                "brand_name"
+            ],
+            "is_varnished": true
+        },
+        "palette_source": "Canonical/Official_DB"
+    },
+    "label_content": {
+        "brand_name_display": "Ventolin",
+        "dosage_display": "100mg",
+        "unit_count_display": "1 Inhaler"
+    },
+    "internal_unit": {
+        "type": "Inhaler",
+        "material": "Inhaler (HFA/Generic)",
+        "layout": "15 pills per blister, 6 blisters",
+        "leaflet": null,
+        "render": false,
+        "min_pills_per_unit": 15
+    },
+    "schema_version": "2.1",
+    "brand_name": "Ventolin",
+    "active_ingredient": "Albuterol",
+    "manufacturer": null,
+    "brand_color_verified": false,
+    "packaging_geometry": "INHALER",
+    "is_generic": false,
+    "light_sensitive": true,
+    "material_spec_override": "Opaque colored plastic inhaler housing with aluminum pressurized canister inside. Push-button plastic actuator in blue or grey. L-shaped mouthpiece.",
+    "reference_url": null,
+    "primary_package": {
+        "type": null,
+        "geometry": null,
+        "width_mm": null,
+        "height_mm": null,
+        "depth_mm": null
+    },
+    "package_type": "inhaler",
+    "minimal_package": 1,
+    "minimal_dosage": 100.0,
+    "category": "Asthma Relief & Management"
+}

@@ -1,0 +1,67 @@
+{
+    "sku_id": "312-min.jpg",
+    "product_name": "Cialis Strips",
+    "render_config": {
+        "primary_render_target": "standalone_container",
+        "future_dual_shot_enabled": false,
+        "scene_archetype": "slim_blister_carton"
+    },
+    "secondary_packaging": {
+        "box_type": "Reverse Tuck End (Standard)",
+        "material": "Cold-form Aluminium",
+        "dimensions": "110x50x18mm",
+        "features": []
+    },
+    "render_priority": "primary_container",
+    "dosage_ref": "mg",
+    "category_id": "25",
+    "unit_count_standard": "1",
+    "branding": {
+        "palette": {
+            "primary": "#006A4E",
+            "accent": "#C9A227",
+            "background": "#FFFFFF"
+        },
+        "design_elements": {
+            "has_logo_embossing": true,
+            "spot_uv_areas": [
+                "brand_name",
+                "logo"
+            ],
+            "is_varnished": true
+        },
+        "palette_source": "Canonical/Official_DB"
+    },
+    "label_content": {
+        "brand_name_display": "Cialis Strips",
+        "dosage_display": "20mg",
+        "unit_count_display": "1 Pills"
+    },
+    "internal_unit": {
+        "type": "Box",
+        "material": "Blister (PVC/Aluminium)",
+        "layout": "10 pills per blister, 1 blisters",
+        "leaflet": null,
+        "render": false,
+        "min_pills_per_unit": 10
+    },
+    "schema_version": "2.1",
+    "brand_name": "Cialis Strips",
+    "active_ingredient": "Tadalafil",
+    "manufacturer": null,
+    "brand_color_verified": false,
+    "packaging_geometry": "BOX",
+    "is_generic": false,
+    "reference_url": null,
+    "primary_package": {
+        "type": null,
+        "geometry": null,
+        "width_mm": null,
+        "height_mm": null,
+        "depth_mm": null
+    },
+    "package_type": "box",
+    "minimal_package": 1,
+    "minimal_dosage": 20.0,
+    "category": "ED Brand"
+}

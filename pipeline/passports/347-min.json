@@ -1,0 +1,70 @@
+{
+    "sku_id": "347-min.jpg",
+    "product_name": "Test Pack L-VC",
+    "render_config": {
+        "primary_render_target": "standalone_container",
+        "future_dual_shot_enabled": false,
+        "scene_archetype": "slim_blister_carton"
+    },
+    "secondary_packaging": {
+        "box_type": "Reverse Tuck End (Standard)",
+        "material": "GZ-Cardboard (Pharmaceutical Grade)",
+        "dimensions": "110x50x18mm",
+        "features": []
+    },
+    "render_priority": "primary_container",
+    "dosage_ref": "mg",
+    "category_id": "24",
+    "unit_count_standard": "10",
+    "branding": {
+        "palette": {
+            "primary": "#005A9C",
+            "accent": "#C9A227",
+            "background": "#FFFFFF"
+        },
+        "design_elements": {
+            "has_logo_embossing": false,
+            "spot_uv_areas": [
+                "brand_name"
+            ],
+            "is_varnished": true
+        },
+        "palette_source": "Canonical/Official_DB"
+    },
+    "label_content": {
+        "brand_name_display": "Test Pack L-VC",
+        "dosage_display": "100mg",
+        "unit_count_display": "Assorted Pack"
+    },
+    "internal_unit": {
+        "type": "Multipack",
+        "material": "Blister (PVC/Aluminium)",
+        "layout": "7 pills per blister, 4 blisters",
+        "leaflet": null,
+        "render": false,
+        "min_pills_per_unit": 7
+    },
+    "schema_version": "2.1",
+    "brand_name": "Test Pack L-VC",
+    "active_ingredient": "Sildenafil / Tadalafil / Vardenafil (Specimen Mix)",
+    "manufacturer": "Ajanta Pharma / Cipla / Sun Pharma (Specimen Lot)",
+    "brand_color_verified": false,
+    "packaging_geometry": "BOX",
+    "is_generic": false,
+    "series_type": "Clinical Trial Sample Pack",
+    "_specimen_note": "Specimen pack L-VC: Mixed PDE5-inhibitor sampler — Sildenafil 50mg + Vardenafil 20mg + Cialis 20mg; 7-tablet assorted blister",
+    "light_sensitive": true,
+    "material_spec_override": "4-tablet or 8-tablet aluminum foil-backed PVC-PVDC blister pack in small folded carton with blue accent band",
+    "reference_url": null,
+    "primary_package": {
+        "type": null,
+        "geometry": null,
+        "width_mm": null,
+        "height_mm": null,
+        "depth_mm": null
+    },
+    "package_type": "multipack",
+    "minimal_package": 10,
+    "minimal_dosage": 100.0,
+    "category": "ED Brand"
+}

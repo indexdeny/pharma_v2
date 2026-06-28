@@ -1,0 +1,66 @@
+{
+  "schema_version": "2.1",
+  "sku_id": "435-min.jpg",
+  "product_name": "Minoxidil",
+  "brand_name": "Minoxidil",
+  "active_ingredient": "Minoxidil",
+  "manufacturer": null,
+  "dosage_display": "5mg",
+  "is_generic": true,
+  "series_type": null,
+  "packaging_geometry": "BLISTER",
+  "branding": {
+    "palette": {
+      "primary": "#E2583E",
+      "accent": "#4B4632",
+      "background": "#FFFFFF"
+    },
+    "design_elements": {
+      "has_logo_embossing": false,
+      "spot_uv_areas": ["brand_name"],
+      "is_varnished": true
+    },
+    "palette_source": "Canonical/Official_DB"
+  },
+  "label_content": {
+    "brand_name_display": "Minoxidil",
+    "dosage_display": "5mg",
+    "unit_count_display": "30 Pills"
+  },
+  "secondary_packaging": {
+    "box_type": "Reverse Tuck End (Standard)",
+    "material": "GZ-Cardboard (Pharmaceutical Grade)",
+    "dimensions": "100x45x17mm",
+    "features": [
+      "Braille",
+      "DataMatrix_Zone",
+      "Tamper_Evident_Seal"
+    ]
+  },
+  "internal_unit": {
+    "type": "Blister",
+    "material": "Blister (PVC/Aluminium)",
+    "layout": "10 pills per unit",
+    "leaflet": "IFU_Included_Standard_Fold"
+  },
+  "render_config": {
+    "primary_render_target": "carton_box",
+    "future_dual_shot_enabled": true,
+    "scene_archetype": "box_with_internal_components"
+  },
+  "primary_package": {
+    "type": "BLISTER",
+    "geometry": "flat_rectangular",
+    "width_mm": 85,
+    "height_mm": 55,
+    "depth_mm": 8
+  },
+  "brand_color_verified": false,
+  "reference_url": null,
+  "category_id": "9",
+  "unit_count_standard": "30",
+  "package_type": "pills",
+  "minimal_package": 30,
+  "minimal_dosage": 5.0,
+  "category": "Beauty & Skin Care"
+}

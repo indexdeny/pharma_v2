@@ -1,0 +1,64 @@
+{
+    "sku_id": "410-min.jpg",
+    "product_name": "Sustanon",
+    "render_config": {
+        "primary_render_target": "standalone_container",
+        "future_dual_shot_enabled": false,
+        "scene_archetype": "slim_blister_carton"
+    },
+    "secondary_packaging": {
+        "box_type": "Reverse Tuck End (Standard)",
+        "material": "Glass Type I",
+        "dimensions": "110x50x18mm",
+        "features": []
+    },
+    "render_priority": "primary_container",
+    "dosage_ref": "mg",
+    "category_id": "25",
+    "unit_count_standard": "1",
+    "branding": {
+        "palette": {
+            "primary": "#003366",
+            "accent": "#0D5FB8",
+            "background": "#FFFFFF"
+        },
+        "design_elements": {
+            "has_logo_embossing": false,
+            "spot_uv_areas": [],
+            "is_varnished": false
+        },
+        "palette_source": "Canonical/Official_DB"
+    },
+    "label_content": {
+        "brand_name_display": "Sustanon",
+        "dosage_display": "10mg",
+        "unit_count_display": "1 Pills"
+    },
+    "internal_unit": {
+        "type": "Box",
+        "material": "Blister (PVC/Aluminium)",
+        "layout": "10 pills per blister, 1 blisters",
+        "leaflet": null,
+        "render": false,
+        "min_pills_per_unit": 10
+    },
+    "schema_version": "2.1",
+    "brand_name": "Sustanon",
+    "active_ingredient": "Testosterone Blend (Sustanon 250)",
+    "manufacturer": null,
+    "brand_color_verified": false,
+    "packaging_geometry": "BOX",
+    "is_generic": false,
+    "reference_url": null,
+    "primary_package": {
+        "type": null,
+        "geometry": null,
+        "width_mm": null,
+        "height_mm": null,
+        "depth_mm": null
+    },
+    "package_type": "box",
+    "minimal_package": 1,
+    "minimal_dosage": 10.0,
+    "category": "Steroids"
+}
