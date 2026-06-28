@@ -1,6 +1,12 @@
 # PHARMAGEN PRO — ARCHITECTURE v2.3
 > **Last Updated:** 2026-06-04 | **Pipeline Version:** P8.0 | **Schema:** v2.1
 
+> **Note:** This document describes the internal Stage logic (agents, templates,
+> routing) which is unchanged. For the **current repository layout and how to run
+> the Pipeline**, the authoritative sources are the project [README](../README.md)
+> and [REPO_AUDIT.md](REPO_AUDIT.md). Some folder/command references in the older
+> sections below predate the unified `main.py` + `src/` structure.
+
 ---
 
 ## 1. Production Pipeline Overview
@@ -231,18 +237,26 @@ v3.0 introduces: `cv`, `kb`, `llm`, `validation` nested blocks, normalized bbox 
 
 ## 8. Running the Pipeline
 
+The Pipeline now runs through the unified entry point `main.py` (see the
+project [README](../README.md) for full usage). The internal Stage logic
+documented above is unchanged.
+
 ```bash
-# 1. Pre-run QA (optional but recommended)
-# Use /project_reviewer workflow in IDE
+# Whole catalogue, all three Stages (resume-safe)
+python main.py --full --resume
 
-# 2. Generate all Markdown passports
-python pass_tomd.py
-# Expected: [DONE] Successfully converted 389/389 passports. 0 entries in failures log.
-
-# 3. Generate images (requires Chrome + Gemini session)
-python gemini_image_generator.py --resume
-# Images saved to: render_output/processed/
+# Individual Stages
+python main.py --passports-only            # Stage 1: JSON -> Markdown
+python main.py --render-only               # Stage 2: Markdown -> raw PNG (Chrome + Gemini)
+python main.py --process-images-only       # Stage 3: raw PNG -> final WEBP (output/)
 ```
+
+> The legacy single-script commands still work via back-compat shims
+> (`python pass_tomd.py`, `python gemini_image_generator.py`,
+> `python webp_converter.py`), but `main.py` is the canonical entry point.
+> Note: the canonical final Stage writes WEBP to `output/` (via
+> `src/image_processor.py`); `scripts/image_postprocessor.py` is a non-canonical
+> alternative.
 
 ---
 

@@ -20,8 +20,12 @@ from datetime import datetime
 from pathlib import Path
 from collections import Counter
 
-ROOT_DIR = Path("c:/pharma_v2")
+# Project root = parent of this scripts/ directory (anchored, not hard-coded).
+ROOT_DIR = Path(__file__).resolve().parents[1]
 DOCS_DIR = ROOT_DIR / "docs"
+# Ensure the project root is importable for `from pass_tomd import ...` etc.
+if str(ROOT_DIR) not in sys.path:
+    sys.path.insert(0, str(ROOT_DIR))
 
 # ─────────────────────────────────────────────────────────────────────────────
 # 1. AST PYTHON FILE INSPECTOR

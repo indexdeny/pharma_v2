@@ -1,10 +1,10 @@
 import unittest
 from unittest.mock import patch
 from pathlib import Path
-from render_qa import check_image
+from scripts.render_qa import check_image
 
 class TestRenderQA(unittest.TestCase):
-    @patch('render_qa.extract_text')
+    @patch('scripts.render_qa.extract_text')
     def test_dosage_word_boundary_matching(self, mock_extract):
         # Test case: dosage "5" in "500mg" should be False, but "5" in "5 mg" should be True
         passport = {
@@ -30,7 +30,7 @@ class TestRenderQA(unittest.TestCase):
         res = check_image(Path("dummy.png"), passport)
         self.assertTrue(res["dosage_found"], "Dosage '5' should match with surrounding punctuation")
 
-    @patch('render_qa.extract_text')
+    @patch('scripts.render_qa.extract_text')
     def test_unit_count_word_boundary_matching(self, mock_extract):
         passport = {
             "brand_name": "TestDrug",

@@ -1,0 +1,36 @@
+%% PharmaGen PRO — Component architecture & orchestration
+%% Render: mermaid-cli  ->  mmdc -i architecture.mmd -o ../images/architecture.svg
+flowchart TD
+    CLI["main.py<br/>(CLI · orchestrator)"]:::entry
+    CFG["config.yaml<br/>src/utils.py"]:::cfg
+    CLI -. reads .-> CFG
+
+    subgraph STAGES["Pipeline stages (run as subprocesses)"]
+        direction TB
+        P["src/passport_generator.py"]:::mod
+        R["src/rpa_orchestrator.py"]:::mod
+        I["src/image_processor.py"]:::mod
+    end
+
+    CLI ==> P
+    CLI ==> R
+    CLI ==> I
+
+    P -- uses --> PKG["pharma_pkg/<br/>routing · geometry · classifier"]:::lib
+    P -- uses --> VER["verification_agent.py"]:::lib
+    P -- reads --> SSOT["SSOT/"]:::data
+    R -- reads --> SSOTm["pipeline/passports.markdown/"]:::data
+    I -- reads --> RAW["render_output/raw/"]:::data
+    I -- writes --> OUT["output/ (WEBP)"]:::data
+
+    SHIM["Root shims<br/>pass_tomd.py · gemini_image_generator.py · webp_converter.py"]:::shim
+    SHIM -. re-export .-> P
+    SHIM -. re-export .-> R
+    SHIM -. re-export .-> I
+
+    classDef entry fill:#e8f0fe,stroke:#4285f4,color:#000;
+    classDef cfg fill:#fef7e0,stroke:#f9ab00,color:#000;
+    classDef mod fill:#fff4e5,stroke:#f5a623,color:#000;
+    classDef lib fill:#f3e8fd,stroke:#a142f4,color:#000;
+    classDef data fill:#f1f3f4,stroke:#9aa0a6,color:#000;
+    classDef shim fill:#e6f4ea,stroke:#34a853,color:#000;
