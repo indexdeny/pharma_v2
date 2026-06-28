@@ -1,0 +1,56 @@
+# ════════════════════════════════════════════════════════════════════════════
+#  PharmaGen PRO — central configuration
+#  All paths are relative to the project root (the folder containing main.py)
+#  unless given as an absolute path. Anything omitted falls back to the built-in
+#  defaults in src/utils.py (which mirror the original scripts exactly), so the
+#  pipeline still runs even if this file is deleted.
+# ════════════════════════════════════════════════════════════════════════════
+
+paths:
+  # ── Single Source of Truth (SSOT) ──────────────────────────────────────────
+  ssot_sku_csv:        "SSOT/SKU.csv"                         # routing authority
+  ssot_master_json:    "SSOT/master.json"                     # brand specs
+  ssot_design_specs:   "SSOT/master_pharma_design_specs.json" # design specs
+
+  # ── Stage I/O (kept at their existing locations — no data migration) ────────
+  passports_json:      "pipeline/passports"            # input  (Stage 1)  JSON v2.1
+  passports_md:        "pipeline/passports.markdown"   # output (Stage 1)  MD prompts
+  renders_raw:         "render_output/raw"             # output (Stage 2)  raw PNG
+  renders_failed:      "render_output/failed"          # Stage 2 failure screenshots
+  renders_failed_logs: "render_output/failed_logs"     # Stage 2 failure log
+  renders_final:       "output"                        # output (Stage 3)  final WEBP
+
+  # ── Bookkeeping ─────────────────────────────────────────────────────────────
+  logs:                "logs"                          # unified run logs
+  failures_log:        "verification_failures.log"     # Stage 1 verifier warnings
+  progress_file:       "gemini_rpa_progress_v23.txt"   # Stage 2 resume tracker
+
+# ── Stage 2: Selenium / Gemini RPA renderer ──────────────────────────────────
+rpa:
+  # Pre-authenticated Chrome profile (Gemini session must already be logged in).
+  browser_profile_dir:  'LOCAL_HOME\.gemini\antigravity-browser-profile\Profile 1'
+  browser_profile_name: "Profile 1"
+  downloads_dir:        'LOCAL_HOME\Downloads'
+  gemini_url:           "https://gemini.google.com/app"
+  # WARNING: Gemini blocks image generation in headless mode. Leave false.
+  # (--headless on the CLI forces this true and main.py prints a loud warning.)
+  headless:                 false
+  batch_size:               1     # passports per chat session before context reset
+  image_generation_timeout: 180   # seconds
+  download_timeout:         60     # seconds
+  ready_timeout:            30     # seconds
+  post_click_delay:         2      # seconds
+
+# ── Stage 3: final image processor (webp_converter behaviour — canonical) ────
+image_processor:
+  source_dir:       "render_output/raw"
+  output_dir:       "output"
+  target_size:      [1600, 1600]   # px (LANCZOS upscale, square 1:1)
+  max_file_size_kb: 500            # hard weight cap; quality is auto-tuned
+
+# ── Orchestration ─────────────────────────────────────────────────────────────
+pipeline:
+  render_retries: 1   # stage-level retries for the render stage on hard failure
+
+logging:
+  level: "INFO"       # INFO | DEBUG | WARNING | ERROR  (--debug forces DEBUG)

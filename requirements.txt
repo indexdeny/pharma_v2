@@ -1,0 +1,13 @@
+# PharmaGen PRO — runtime dependencies
+# Install:  python -m pip install -r requirements.txt
+
+selenium>=4.44.0           # Stage 2: Gemini RPA (Selenium browser automation)
+webdriver-manager>=4.1.0   # Stage 2: ChromeDriver provisioning
+Pillow>=10.0.0             # Stage 3: image processing -> WEBP
+PyYAML>=6.0                # central configuration (config.yaml)
+rich>=13.0                 # pretty console logging + run summary report
+
+# ── Optional ────────────────────────────────────────────────────────────────
+# Only needed for the OCR QA diagnostic (render_qa.py), NOT the core pipeline.
+# Requires a system Tesseract OCR install on PATH.
+# pytesseract>=0.3.10
