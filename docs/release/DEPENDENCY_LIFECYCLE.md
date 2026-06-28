@@ -15,6 +15,7 @@
 | **Pillow** | Stage 3 image processing → WEBP | ✅ | Yes (other imaging libs) | Low |
 | **PyYAML** | `config.yaml` loading | ✅ | Yes; absence degrades to built-in defaults | None |
 | **rich** | Console logging + run summary | ✅ | Yes; absence degrades to plain logging | None |
+| **pydantic** | Stage 1 schema models (`schemas/common.py`, used by `pharma_pkg` routing) | ✅ | Yes (plain dataclasses) | None |
 
 ## External service
 

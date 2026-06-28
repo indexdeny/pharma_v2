@@ -14,6 +14,7 @@
 | Pillow | Stage 3 — image processing → WEBP | 12.2.0 | ✅ |
 | PyYAML | `config.yaml` loading | 6.0.3 | ✅ (falls back to defaults if absent) |
 | rich | Console logging + run summary | 15.0.0 | ✅ (degrades to plain logging if absent) |
+| pydantic | Stage 1 schema models (`schemas/common.py`, via `pharma_pkg` routing) | 2.13.x | ✅ (required for routing) |
 
 Pinned loosely in [`requirements.txt`](../../requirements.txt).
 
