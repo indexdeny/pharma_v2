@@ -132,7 +132,7 @@ cleanly, and `--resume` continues from where it stopped.
 
 ## Project Status
 
-- **391 SKU processed**
+- **391 SKU rendered** (389 final WEBP)
 - **Production Ready**
 - **Unified Pipeline** (single entry point)
 - **Resume Supported**
@@ -298,7 +298,7 @@ python main.py --full --debug              # подробное логирова
 
 ## Статус проекта (Project Status)
 
-- **391 SKU обработано**
+- **391 SKU отрендерено** (389 финальных WEBP)
 - **Production Ready**
 - **Единый конвейер (Unified Pipeline)**
 - **Поддержка возобновления (Resume Supported)**

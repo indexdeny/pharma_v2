@@ -3,12 +3,22 @@
 All notable changes to **PharmaGen PRO** are documented here.
 Format inspired by [Keep a Changelog](https://keepachangelog.com/).
 
+## [v1.0.1] — Patch — June 2026
+
+### Fixed
+- **Declared the missing `pydantic` runtime dependency** in `requirements.txt`.
+  `pydantic` is required by Stage 1 (`schemas/common.py`, via `pharma_pkg`
+  routing) but was absent from the dependency list, so a from-scratch install
+  per the README would fail Stage 1 with `ModuleNotFoundError`. Found by a
+  clean-machine reproducibility test. No pipeline/architecture/logic change — a
+  pure packaging fix (SemVer patch).
+
 ## [v1.0.0] — Initial Production Release — June 2026
 
 **PharmaGen PRO — Version 1.0 — Production Release.**
 
 ### Highlights
-- **391 SKU** rendered end to end and delivered as final WEBP assets.
+- **391 SKU rendered** to PNG; **389 delivered** as final WEBP assets (`output/`).
 - **Unified Pipeline** — one entry point (`main.py`) over three stages (passports → render → final images).
 - **Resume** — interruption-safe; re-running continues without duplicating work.
 - **QA** — rule-based verifier plus a unit-test suite.
