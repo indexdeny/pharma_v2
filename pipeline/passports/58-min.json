@@ -22,8 +22,11 @@
     "unit_count_standard": "4",
     "branding": {
         "palette": {
-            "primary": "#006A4E",
-            "accent": "#C9A227",
+            "primary": "#F5D5BE",
+            "accent": "#197D02",
+            "secondary": "#197D02",
+            "name_text": "#000000",
+            "body_text": "#000000",
             "background": "#FFFFFF"
         },
         "design_elements": {
@@ -45,10 +48,13 @@
     "internal_unit": {
         "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per blister, 1 blisters",
+        "layout": "4 pills per blister, 1 blisters",
         "leaflet": null,
-        "render": false,
-        "min_pills_per_unit": 10
+        "render": true,
+        "min_pills_per_unit": 4,
+        "pill_total": 4,
+        "pill_shape": "OVAL",
+        "pill_color": "YELLOW"
     },
     "schema_version": "2.1",
     "brand_name": "Cialis Brand",

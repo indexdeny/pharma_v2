@@ -22,8 +22,10 @@
     "unit_count_standard": "4",
     "branding": {
         "palette": {
-            "primary": "#005A9C",
-            "accent": "#C9A227",
+            "primary": "#667E4F",
+            "accent": "#667E4F",
+            "name_text": "#496A2A",
+            "body_text": "#000000",
             "background": "#FFFFFF"
         },
         "design_elements": {
@@ -44,10 +46,13 @@
     "internal_unit": {
         "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per blister, 2 blisters",
+        "layout": "4 pills per blister, 1 blisters",
         "leaflet": null,
-        "render": false,
-        "min_pills_per_unit": 10
+        "render": true,
+        "min_pills_per_unit": 4,
+        "pill_total": 4,
+        "pill_shape": "OBLONG",
+        "pill_color": "BLUE"
     },
     "schema_version": "2.1",
     "brand_name": "Super P Force",

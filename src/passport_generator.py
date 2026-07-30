@@ -530,11 +530,15 @@ _PURITY_ANCHOR = (
 _RENDER_CONSTRAINTS = (
     "[ISOLATION ANCHOR]: One sealed box only. "
     "True seamless pure solid white studio background with no gradients, no horizon line, no floor textures, and no environmental ambient lighting. "
-    "No loose elements, no props, no cropping of packaging edges. "
-    "Soft contact shadow beneath box only. "
+    "No loose elements, no props. Every subject is shown complete: neither the packaging "
+    "nor any blister strip touches or crosses the frame edge. "
+    "Soft contact shadow beneath the subject group only. "
     "Square composition optimized for e-commerce catalog rendering. "
-    "Object occupies approximately half of the frame with generous surrounding negative space. "
-    "Neutral commercial product photography perspective with no wide-angle distortion. 1024×1024 px, 1:1 ratio, PNG format."
+    "The complete subject group — the carton together with any blister strips — is centred "
+    "in the frame, spans approximately two thirds of the frame width, and keeps a clear "
+    "margin of at least 8% of the frame size on all four sides. Framing is planned around "
+    "the whole group, not around the carton alone. "
+    "Neutral commercial product photography with natural linear perspective — edges converge correctly and the object reads as a real volume. 1024×1024 px, 1:1 ratio, PNG format."
 )
 
 _ATTENTION_ANCHOR = (
@@ -548,6 +552,21 @@ _TERMINOLOGY_MAP = (
     "- The quantity label '{unit_count}' appears exactly once on the entire package "
     "within the tight label in the bottom-right corner. "
     "It is strictly forbidden to repeat, clone, or output this quantity label anywhere else."
+)
+
+# One canonical, FRAME-relative anchor for the blister zone. Defined once and used
+# by both branches, so the position cannot drift between templates: the previous
+# wording anchored the blister to the carton's front face, which resolved to a
+# different point in frame for every carton format and camera angle.
+_FRAME_ANCHOR = (
+    "- Frame zone: the blister always occupies the SAME zone of the frame, whatever the "
+    "carton format. The centre of the blister group sits at approximately 60% of the "
+    "frame width from the left edge and approximately 76% of the frame height from the "
+    "top edge. The blister group spans no more than 42% of the frame width. This zone is "
+    "fixed and identical in every image.\n"
+    "- Frame safety: the whole blister group stays inside the frame with a clear margin "
+    "of at least 8% of the frame size between it and every edge. The far end of the "
+    "blister is fully inside the picture with empty white background beyond it.\n"
 )
 
 _SHARED_FORBIDDEN = """\
@@ -567,7 +586,7 @@ _SHARED_FORBIDDEN = """\
 """
 
 TEMPLATE_T1 = """\
-[SCENE HARDWARE]: 3/4 isometric, 25° pitch, box rotated 35°, 85mm lens, f/8.
+{scene_hardware}
 Softbox top-left (key) + soft fill right. No specular on text zones. 
 #FFFFFF background. Contact shadow soft 60% opacity.
 
@@ -578,7 +597,7 @@ Primary object — EU standard pharmaceutical medicine carton box. \
 STRICT PROPORTIONS: width:height:depth = 3.6:2.2:1 ratio. The box is WIDER than it is tall. Landscape orientation. NOT square. NOT portrait. \
 Surface: BRIGHT WHITE (#FFFFFF) matte laminate cardboard. The box base colour is PURE WHITE — no grey tones, no off-white, no neutral grey wash. Fold lines visible. {surface_finish}.
 
-[SURFACE COLOUR MANDATE]: The carton is WHITE. The ONLY non-white colour on the front face is the brand accent stripe (Row 6) in {accent_hex} and the brand badge block. All other surfaces remain pure white #FFFFFF.
+{surface_mandate}
 
 {geometry_override}
 [FRONT PANEL GRID]:
@@ -589,15 +608,15 @@ Surface: BRIGHT WHITE (#FFFFFF) matte laminate cardboard. The box base colour is
 
 [COLOR]:
 - Brand Badge/Graphic Colour: {primary_hex} ({primary_desc}) — used ONLY for corner badge icon, NOT for any text
-- All Text Ink: #000000 (solid black) — name, ingredient, dosage, quantity all printed in black
-- Accent Stripe: {accent_hex} ({accent_desc}) — Row 6 only
+{ink_lines}
+- Accent Stripe: {accent_hex} ({accent_desc}) — Row 6 only{secondary_color_line}
 - Box Surface: #FFFFFF pure white — NEVER grey, NEVER off-white, NEVER monochrome
 
-[PURITY]:
+{blister_block}[PURITY]:
 {purity_anchor}
 {regulatory_rules}
 
-{_SHARED_FORBIDDEN}
+{shared_forbidden}
 
 Batch Stability Anchor: [ID-hash-{sku_hash}]. Render with maximum typographic fidelity. No creative interpretation of text placement or label hierarchy. All typography must remain fully legible, correctly spelled, and typographically coherent.
 
@@ -605,7 +624,7 @@ Batch Stability Anchor: [ID-hash-{sku_hash}]. Render with maximum typographic fi
 """
 
 TEMPLATE_T1_SMALL = """\
-[SCENE HARDWARE]: 3/4 isometric, 25° pitch, box rotated 35°, 85mm lens, f/8.
+{scene_hardware}
 Softbox top-left (key) + soft fill right. No specular on text zones. 
 #FFFFFF background. Contact shadow soft 60% opacity.
 
@@ -616,7 +635,7 @@ Primary object — EU standard thin landscape pharmaceutical medicine carton box
 STRICT PROPORTIONS: width:height:depth = 4.2:2.4:0.6 ratio. The box is a very thin, flat landscape carton, optimized for small blister counts. NOT square. NOT portrait. \
 Surface: BRIGHT WHITE (#FFFFFF) matte laminate cardboard. The box base colour is PURE WHITE — no grey tones, no off-white, no neutral grey wash. Fold lines visible. {surface_finish}.
 
-[SURFACE COLOUR MANDATE]: The carton is WHITE. The ONLY non-white colour on the front face is the brand accent stripe (Row 6) in {accent_hex} and the brand badge block. All other surfaces remain pure white #FFFFFF.
+{surface_mandate}
 
 {geometry_override}
 [FRONT PANEL GRID]:
@@ -627,15 +646,15 @@ Surface: BRIGHT WHITE (#FFFFFF) matte laminate cardboard. The box base colour is
 
 [COLOR]:
 - Brand Badge/Graphic Colour: {primary_hex} ({primary_desc}) — used ONLY for corner badge icon, NOT for any text
-- All Text Ink: #000000 (solid black) — name, ingredient, dosage, quantity all printed in black
-- Accent Stripe: {accent_hex} ({accent_desc}) — Row 6 only
+{ink_lines}
+- Accent Stripe: {accent_hex} ({accent_desc}) — Row 6 only{secondary_color_line}
 - Box Surface: #FFFFFF pure white — NEVER grey, NEVER off-white, NEVER monochrome
 
-[PURITY]:
+{blister_block}[PURITY]:
 {purity_anchor}
 {regulatory_rules}
 
-{_SHARED_FORBIDDEN}
+{shared_forbidden}
 
 Batch Stability Anchor: [ID-hash-{sku_hash}]. Render with maximum typographic fidelity. No creative interpretation of text placement or label hierarchy. All typography must remain fully legible, correctly spelled, and typographically coherent.
 
@@ -643,7 +662,7 @@ Batch Stability Anchor: [ID-hash-{sku_hash}]. Render with maximum typographic fi
 """
 
 TEMPLATE_T1_LARGE = """\
-[SCENE HARDWARE]: 3/4 isometric, 25° pitch, box rotated 35°, 85mm lens, f/8.
+{scene_hardware}
 Softbox top-left (key) + soft fill right. No specular on text zones. 
 #FFFFFF background. Contact shadow soft 60% opacity.
 
@@ -654,7 +673,7 @@ Primary object — EU standard deep landscape pharmaceutical medicine carton box
 STRICT PROPORTIONS: width:height:depth = 3.2:2.4:1.6 ratio. The box is a deep, thick landscape carton with substantial depth, designed for high blister counts. NOT square. NOT portrait. \
 Surface: BRIGHT WHITE (#FFFFFF) matte laminate cardboard. The box base colour is PURE WHITE — no grey tones, no off-white, no neutral grey wash. Fold lines visible. {surface_finish}.
 
-[SURFACE COLOUR MANDATE]: The carton is WHITE. The ONLY non-white colour on the front face is the brand accent stripe (Row 6) in {accent_hex} and the brand badge block. All other surfaces remain pure white #FFFFFF.
+{surface_mandate}
 
 {geometry_override}
 [FRONT PANEL GRID]:
@@ -665,15 +684,15 @@ Surface: BRIGHT WHITE (#FFFFFF) matte laminate cardboard. The box base colour is
 
 [COLOR]:
 - Brand Badge/Graphic Colour: {primary_hex} ({primary_desc}) — used ONLY for corner badge icon, NOT for any text
-- All Text Ink: #000000 (solid black) — name, ingredient, dosage, quantity all printed in black
-- Accent Stripe: {accent_hex} ({accent_desc}) — Row 6 only
+{ink_lines}
+- Accent Stripe: {accent_hex} ({accent_desc}) — Row 6 only{secondary_color_line}
 - Box Surface: #FFFFFF pure white — NEVER grey, NEVER off-white, NEVER monochrome
 
-[PURITY]:
+{blister_block}[PURITY]:
 {purity_anchor}
 {regulatory_rules}
 
-{_SHARED_FORBIDDEN}
+{shared_forbidden}
 
 Batch Stability Anchor: [ID-hash-{sku_hash}]. Render with maximum typographic fidelity. No creative interpretation of text placement or label hierarchy. All typography must remain fully legible, correctly spelled, and typographically coherent.
 
@@ -681,7 +700,7 @@ Batch Stability Anchor: [ID-hash-{sku_hash}]. Render with maximum typographic fi
 """
 
 TEMPLATE_T2 = """\
-[SCENE HARDWARE]: 3/4 isometric, 25° pitch, box rotated 35°, 85mm lens, f/8.
+{scene_hardware}
 Softbox top-left (key) + soft fill right. No specular on text zones. 
 #FFFFFF background. Contact shadow soft 60% opacity.
 
@@ -691,7 +710,7 @@ Softbox top-left (key) + soft fill right. No specular on text zones.
 Primary object — EU standard vertical slender pharmaceutical medicine carton box. \
 Surface: BRIGHT WHITE (#FFFFFF) matte laminate cardboard. The box base colour is PURE WHITE — no grey tones, no off-white, no neutral grey wash. Fold lines visible. {surface_finish}.
 
-[SURFACE COLOUR MANDATE]: The carton is WHITE. The ONLY non-white colour on the front face is the brand accent stripe (Row 6) in {accent_hex} and the brand badge block. All other surfaces remain pure white #FFFFFF.
+{surface_mandate}
 
 {geometry_override}
 [FRONT PANEL GRID (VERTICAL HIERARCHY)]:
@@ -702,15 +721,15 @@ Surface: BRIGHT WHITE (#FFFFFF) matte laminate cardboard. The box base colour is
 
 [COLOR]:
 - Brand Badge/Graphic Colour: {primary_hex} ({primary_desc}) — used ONLY for corner badge icon, NOT for any text
-- All Text Ink: #000000 (solid black) — name, ingredient, dosage, quantity all printed in black
-- Accent Stripe: {accent_hex} ({accent_desc}) — Row 6 only
+{ink_lines}
+- Accent Stripe: {accent_hex} ({accent_desc}) — Row 6 only{secondary_color_line}
 - Box Surface: #FFFFFF pure white — NEVER grey, NEVER off-white, NEVER monochrome
 
-[PURITY]:
+{blister_block}[PURITY]:
 {purity_anchor}
 {regulatory_rules}
 
-{_SHARED_FORBIDDEN}
+{shared_forbidden}
 
 Batch Stability Anchor: [ID-hash-{sku_hash}]. Render with maximum typographic fidelity. No creative interpretation of text placement or label hierarchy. All typography must remain fully legible, correctly spelled, and typographically coherent.
 
@@ -718,7 +737,7 @@ Batch Stability Anchor: [ID-hash-{sku_hash}]. Render with maximum typographic fi
 """
 
 TEMPLATE_T3 = """\
-[SCENE HARDWARE]: 3/4 isometric, 25° pitch, box rotated 35°, 85mm lens, f/8.
+{scene_hardware}
 Softbox top-left (key) + soft fill right. No specular on text zones. 
 #FFFFFF background. Contact shadow soft 60% opacity.
 
@@ -728,7 +747,7 @@ Softbox top-left (key) + soft fill right. No specular on text zones.
 Primary object — EU standard long horizontal pharmaceutical medicine carton box. \
 Surface: BRIGHT WHITE (#FFFFFF) matte laminate cardboard. The box base colour is PURE WHITE — no grey tones, no off-white, no neutral grey wash. Fold lines visible. {surface_finish}.
 
-[SURFACE COLOUR MANDATE]: The carton is WHITE. The ONLY non-white colour on the front face is the brand accent stripe (Row 6) in {accent_hex} and the brand badge block. All other surfaces remain pure white #FFFFFF.
+{surface_mandate}
 
 {geometry_override}
 [FRONT PANEL GRID (HORIZONTAL LAYOUT)]:
@@ -739,15 +758,15 @@ Surface: BRIGHT WHITE (#FFFFFF) matte laminate cardboard. The box base colour is
 
 [COLOR]:
 - Brand Badge/Graphic Colour: {primary_hex} ({primary_desc}) — used ONLY for corner badge icon, NOT for any text
-- All Text Ink: #000000 (solid black) — name, ingredient, dosage, quantity all printed in black
-- Accent Stripe: {accent_hex} ({accent_desc}) — Row 6 only
+{ink_lines}
+- Accent Stripe: {accent_hex} ({accent_desc}) — Row 6 only{secondary_color_line}
 - Box Surface: #FFFFFF pure white — NEVER grey, NEVER off-white, NEVER monochrome
 
-[PURITY]:
+{blister_block}[PURITY]:
 {purity_anchor}
 {regulatory_rules}
 
-{_SHARED_FORBIDDEN}
+{shared_forbidden}
 
 Batch Stability Anchor: [ID-hash-{sku_hash}]. Render with maximum typographic fidelity. No creative interpretation of text placement or label hierarchy. All typography must remain fully legible, correctly spelled, and typographically coherent.
 
@@ -755,7 +774,7 @@ Batch Stability Anchor: [ID-hash-{sku_hash}]. Render with maximum typographic fi
 """
 
 TEMPLATE_T_BOTTLE_BOX = """\
-[SCENE HARDWARE]: 3/4 isometric, 20° pitch, box rotated 25°, 85mm lens, f/8.
+{scene_hardware}
 Softbox top-left (key) + vertical strip fill right. No specular on text zones.
 #FFFFFF background. Contact shadow soft 60% opacity.
 
@@ -766,7 +785,7 @@ Primary object — EU standard VERTICAL pharmaceutical medicine carton box desig
 STRICT PROPORTIONS: width:height:depth = 1:2.2:1 ratio. The box is TALLER than it is wide. Portrait orientation. NOT landscape. NOT square. \
 Surface: BRIGHT WHITE (#FFFFFF) matte laminate cardboard. The box base colour is PURE WHITE — no grey tones, no off-white, no neutral grey wash. Fold lines visible. {surface_finish}.
 
-[SURFACE COLOUR MANDATE]: The carton is WHITE. The ONLY non-white colour on the front face is the brand accent stripe (Row 6) in {accent_hex} and the brand badge block. All other surfaces remain pure white #FFFFFF.
+{surface_mandate}
 
 {geometry_override}
 [FRONT PANEL GRID (PORTRAIT / VERTICAL HIERARCHY)]:
@@ -777,15 +796,15 @@ Surface: BRIGHT WHITE (#FFFFFF) matte laminate cardboard. The box base colour is
 
 [COLOR]:
 - Brand Badge/Graphic Colour: {primary_hex} ({primary_desc}) — used ONLY for corner badge icon, NOT for any text
-- All Text Ink: #000000 (solid black) — name, ingredient, dosage, quantity all printed in black
-- Accent Stripe: {accent_hex} ({accent_desc}) — Row 6 only
+{ink_lines}
+- Accent Stripe: {accent_hex} ({accent_desc}) — Row 6 only{secondary_color_line}
 - Box Surface: #FFFFFF pure white — NEVER grey, NEVER off-white, NEVER monochrome
 
-[PURITY]:
+{blister_block}[PURITY]:
 {purity_anchor}
 {regulatory_rules}
 
-{_SHARED_FORBIDDEN}
+{shared_forbidden}
 
 Batch Stability Anchor: [ID-hash-{sku_hash}]. Render with maximum typographic fidelity. No creative interpretation of text placement or label hierarchy. All typography must remain fully legible, correctly spelled, and typographically coherent.
 
@@ -793,7 +812,7 @@ Batch Stability Anchor: [ID-hash-{sku_hash}]. Render with maximum typographic fi
 """
 
 TEMPLATE_T_MULTIPACK = """\
-[SCENE HARDWARE]: 3/4 isometric, 20° pitch, box rotated 30°, 85mm lens, f/8.
+{scene_hardware}
 Softbox top-left (key) + soft fill right. No specular on text zones. 
 #FFFFFF background. Contact shadow soft 60% opacity.
 
@@ -804,7 +823,7 @@ Primary object — EU standard elongated multi-blister pharmaceutical medicine c
 STRICT PROPORTIONS: width:height:depth = 4.5:2.0:1 ratio. The box is significantly wider than it is tall, designed to fit multiple blister packs side-by-side. \
 Surface: BRIGHT WHITE (#FFFFFF) matte laminate cardboard. The box base colour is PURE WHITE — no grey tones, no off-white, no neutral grey wash. Fold lines visible. {surface_finish}.
 
-[SURFACE COLOUR MANDATE]: The carton is WHITE. The ONLY non-white colour on the front face is the brand accent stripe (Row 6) in {accent_hex} and the brand badge block. All other surfaces remain pure white #FFFFFF.
+{surface_mandate}
 
 {geometry_override}
 [FRONT PANEL GRID (MULTIPACK HORIZONTAL LAYOUT)]:
@@ -815,15 +834,15 @@ Surface: BRIGHT WHITE (#FFFFFF) matte laminate cardboard. The box base colour is
 
 [COLOR]:
 - Brand Badge/Graphic Colour: {primary_hex} ({primary_desc}) — used ONLY for corner badge icon, NOT for any text
-- All Text Ink: #000000 (solid black) — name, ingredient, dosage, quantity all printed in black
-- Accent Stripe: {accent_hex} ({accent_desc}) — Row 6 only
+{ink_lines}
+- Accent Stripe: {accent_hex} ({accent_desc}) — Row 6 only{secondary_color_line}
 - Box Surface: #FFFFFF pure white — NEVER grey, NEVER off-white, NEVER monochrome
 
-[PURITY]:
+{blister_block}[PURITY]:
 {purity_anchor}
 {regulatory_rules}
 
-{_SHARED_FORBIDDEN}
+{shared_forbidden}
 
 Batch Stability Anchor: [ID-hash-{sku_hash}]. Render with maximum typographic fidelity. No creative interpretation of text placement or label hierarchy. All typography must remain fully legible, correctly spelled, and typographically coherent.
 
@@ -831,7 +850,7 @@ Batch Stability Anchor: [ID-hash-{sku_hash}]. Render with maximum typographic fi
 """
 
 TEMPLATE_T_VERT_VIAL = """\
-[SCENE HARDWARE]: 3/4 isometric, 20° pitch, box rotated 25°, 85mm lens, f/8.
+{scene_hardware}
 Softbox top-left (key) + vertical strip fill right. No specular on text zones.
 #FFFFFF background. Contact shadow soft 60% opacity.
 
@@ -842,7 +861,7 @@ Primary object — EU standard portrait pharmaceutical medicine carton box desig
 STRICT PROPORTIONS: width:height:depth = 1.0:1.4:1.0 ratio. The box is a compact, small, relatively squat portrait carton. NOT landscape. NOT square. \
 Surface: BRIGHT WHITE (#FFFFFF) matte laminate cardboard. The box base colour is PURE WHITE — no grey tones, no off-white, no neutral grey wash. Fold lines visible. {surface_finish}.
 
-[SURFACE COLOUR MANDATE]: The carton is WHITE. The ONLY non-white colour on the front face is the brand accent stripe (Row 6) in {accent_hex} and the brand badge block. All other surfaces remain pure white #FFFFFF.
+{surface_mandate}
 
 {geometry_override}
 [FRONT PANEL GRID (PORTRAIT / VERTICAL HIERARCHY)]:
@@ -853,15 +872,15 @@ Surface: BRIGHT WHITE (#FFFFFF) matte laminate cardboard. The box base colour is
 
 [COLOR]:
 - Brand Badge/Graphic Colour: {primary_hex} ({primary_desc}) — used ONLY for corner badge icon, NOT for any text
-- All Text Ink: #000000 (solid black) — name, ingredient, dosage, quantity all printed in black
-- Accent Stripe: {accent_hex} ({accent_desc}) — Row 6 only
+{ink_lines}
+- Accent Stripe: {accent_hex} ({accent_desc}) — Row 6 only{secondary_color_line}
 - Box Surface: #FFFFFF pure white — NEVER grey, NEVER off-white, NEVER monochrome
 
-[PURITY]:
+{blister_block}[PURITY]:
 {purity_anchor}
 {regulatory_rules}
 
-{_SHARED_FORBIDDEN}
+{shared_forbidden}
 
 Batch Stability Anchor: [ID-hash-{sku_hash}]. Render with maximum typographic fidelity. No creative interpretation of text placement or label hierarchy. All typography must remain fully legible, correctly spelled, and typographically coherent.
 
@@ -869,7 +888,7 @@ Batch Stability Anchor: [ID-hash-{sku_hash}]. Render with maximum typographic fi
 """
 
 TEMPLATE_T_VERT_DROPPER = """\
-[SCENE HARDWARE]: 3/4 isometric, 20° pitch, box rotated 25°, 85mm lens, f/8.
+{scene_hardware}
 Softbox top-left (key) + vertical strip fill right. No specular on text zones.
 #FFFFFF background. Contact shadow soft 60% opacity.
 
@@ -880,7 +899,7 @@ Primary object — EU standard vertical pharmaceutical medicine carton box desig
 STRICT PROPORTIONS: width:height:depth = 1.0:2.2:1.0 ratio. The box is tall and narrow. Portrait orientation. NOT landscape. NOT square. \
 Surface: BRIGHT WHITE (#FFFFFF) matte laminate cardboard. The box base colour is PURE WHITE — no grey tones, no off-white, no neutral grey wash. Fold lines visible. {surface_finish}.
 
-[SURFACE COLOUR MANDATE]: The carton is WHITE. The ONLY non-white colour on the front face is the brand accent stripe (Row 6) in {accent_hex} and the brand badge block. All other surfaces remain pure white #FFFFFF.
+{surface_mandate}
 
 {geometry_override}
 [FRONT PANEL GRID (PORTRAIT / VERTICAL HIERARCHY)]:
@@ -891,15 +910,15 @@ Surface: BRIGHT WHITE (#FFFFFF) matte laminate cardboard. The box base colour is
 
 [COLOR]:
 - Brand Badge/Graphic Colour: {primary_hex} ({primary_desc}) — used ONLY for corner badge icon, NOT for any text
-- All Text Ink: #000000 (solid black) — name, ingredient, dosage, quantity all printed in black
-- Accent Stripe: {accent_hex} ({accent_desc}) — Row 6 only
+{ink_lines}
+- Accent Stripe: {accent_hex} ({accent_desc}) — Row 6 only{secondary_color_line}
 - Box Surface: #FFFFFF pure white — NEVER grey, NEVER off-white, NEVER monochrome
 
-[PURITY]:
+{blister_block}[PURITY]:
 {purity_anchor}
 {regulatory_rules}
 
-{_SHARED_FORBIDDEN}
+{shared_forbidden}
 
 Batch Stability Anchor: [ID-hash-{sku_hash}]. Render with maximum typographic fidelity. No creative interpretation of text placement or label hierarchy. All typography must remain fully legible, correctly spelled, and typographically coherent.
 
@@ -907,7 +926,7 @@ Batch Stability Anchor: [ID-hash-{sku_hash}]. Render with maximum typographic fi
 """
 
 TEMPLATE_T_VERT_INHALER = """\
-[SCENE HARDWARE]: 3/4 isometric, 20° pitch, box rotated 25°, 85mm lens, f/8.
+{scene_hardware}
 Softbox top-left (key) + vertical strip fill right. No specular on text zones.
 #FFFFFF background. Contact shadow soft 60% opacity.
 
@@ -918,7 +937,7 @@ Primary object — EU standard vertical pharmaceutical medicine carton box desig
 STRICT PROPORTIONS: width:height:depth = 1.2:1.8:1.2 ratio. The box is a substantial, wide portrait carton. Portrait orientation. NOT landscape. NOT square. \
 Surface: BRIGHT WHITE (#FFFFFF) matte laminate cardboard. The box base colour is PURE WHITE — no grey tones, no off-white, no neutral grey wash. Fold lines visible. {surface_finish}.
 
-[SURFACE COLOUR MANDATE]: The carton is WHITE. The ONLY non-white colour on the front face is the brand accent stripe (Row 6) in {accent_hex} and the brand badge block. All other surfaces remain pure white #FFFFFF.
+{surface_mandate}
 
 {geometry_override}
 [FRONT PANEL GRID (PORTRAIT / VERTICAL HIERARCHY)]:
@@ -929,15 +948,15 @@ Surface: BRIGHT WHITE (#FFFFFF) matte laminate cardboard. The box base colour is
 
 [COLOR]:
 - Brand Badge/Graphic Colour: {primary_hex} ({primary_desc}) — used ONLY for corner badge icon, NOT for any text
-- All Text Ink: #000000 (solid black) — name, ingredient, dosage, quantity all printed in black
-- Accent Stripe: {accent_hex} ({accent_desc}) — Row 6 only
+{ink_lines}
+- Accent Stripe: {accent_hex} ({accent_desc}) — Row 6 only{secondary_color_line}
 - Box Surface: #FFFFFF pure white — NEVER grey, NEVER off-white, NEVER monochrome
 
-[PURITY]:
+{blister_block}[PURITY]:
 {purity_anchor}
 {regulatory_rules}
 
-{_SHARED_FORBIDDEN}
+{shared_forbidden}
 
 Batch Stability Anchor: [ID-hash-{sku_hash}]. Render with maximum typographic fidelity. No creative interpretation of text placement or label hierarchy. All typography must remain fully legible, correctly spelled, and typographically coherent.
 
@@ -1145,8 +1164,255 @@ def agent_3_passport_architect(data: dict, template_id: str,
     #   Row 4  — Dosage
     #   Row 5  — Unit count, bottom-right
     #   Row 6  — Accent stripe, very bottom edge
+
+
+    # --- PERSPECTIVE-PATCH: two-point linear perspective ---
+    # "Isometric" has no vanishing points — it IS the flat look. Build a real
+    # two-point perspective description instead, per template camera values.
+    _CAM = {
+        "T1": (25, 35), "T1_SMALL": (25, 35), "T1_LARGE": (25, 35),
+        "T2": (25, 35), "T3": (25, 35),
+        "T_BOTTLE_BOX": (20, 25), "T_MULTIPACK": (20, 30),
+        "T_VERT_VIAL": (20, 25), "T_VERT_DROPPER": (20, 25),
+        "T_VERT_INHALER": (20, 25),
+    }
+    _pitch, _rot = _CAM.get(template_id, (25, 35))
+    _scene_hardware = (
+        "[SCENE HARDWARE]: true TWO-POINT LINEAR PERSPECTIVE, 3/4 product view. "
+        "Camera " + str(_pitch) + "° above the carton, carton rotated " + str(_rot) +
+        "° away from frontal. 50mm full-frame lens, f/8.\n"
+        "[PERSPECTIVE]: both families of horizontal edges converge toward two "
+        "vanishing points on an implied eye-level; the eye-level is implied by the "
+        "geometry only and is never drawn or visible against the background. "
+        "Vertical edges stay vertical and parallel. The front face is visibly "
+        "foreshortened: its far vertical edge is clearly shorter than its near "
+        "vertical edge, and the front face recedes toward its vanishing point. The "
+        "top face and one side face are both clearly visible and read as genuine "
+        "carton thickness. The carton reads as a solid three-dimensional volume "
+        "standing on a surface. The stated width:height:depth ratio describes the "
+        "PHYSICAL carton measured along its near edges — on the image the far edges "
+        "appear shorter than the near edges. Straight edges stay perfectly straight: "
+        "natural convergence only, no barrel bulge, no fisheye, no lens curvature."
+    )
+
+    # --- PHARMA-PATCH: secondary stripe / coloured type / blister ---
+    # All three features are driven purely by data already present in the
+    # passport JSON, so regenerating never loses them again.
+    _secondary_hex = (palette.get("secondary") or "").strip()
+    _name_text_hex = (palette.get("name_text") or "#000000").strip().upper()
+    _body_text_hex = (palette.get("body_text") or "#000000").strip().upper()
+    _coloured_type = (_name_text_hex != "#000000" or _body_text_hex != "#000000")
+
+    _iu = data.get("internal_unit") or {}
+    _blister_on = bool(_iu.get("render")) and str(_iu.get("type", "")).lower() == "pills"
+
+    # -- [SURFACE COLOUR MANDATE]
+    _items = ["the brand accent stripe (Row 6) in " + accent_hex]
+    if _secondary_hex:
+        _items.append("the left vertical accent stripe in " + _secondary_hex.upper())
+    if _coloured_type:
+        _items.append("the coloured type specified in the FRONT PANEL GRID")
+    _items.append("the brand badge block")
+    if len(_items) == 2:
+        _body = ("The ONLY non-white colour on the front face is "
+                 + _items[0] + " and " + _items[1] + ".")
+    else:
+        _body = ("The ONLY non-white colours on the front face are "
+                 + ", ".join(_items[:-1]) + ", and " + _items[-1] + ".")
+    _surface_mandate = ("[SURFACE COLOUR MANDATE]: The carton is WHITE. " + _body
+                        + " All other surfaces remain pure white #FFFFFF.")
+
+    # -- [COLOR] ink lines
+    if _coloured_type:
+        _ink_lines = ("- Commercial Name Ink: " + _name_text_hex + " — Row 1 only\n"
+                      "- Dosage & Quantity Ink: " + _body_text_hex + " — Rows 4 and 5\n"
+                      "- Active Ingredient Ink: #000000 (solid black) — Row 2")
+        _text_colour_mandate = (
+            "- TEXT COLOUR MANDATE: the Commercial Name (Row 1) is printed in "
+            + _name_text_hex + ". Dosage (Row 4) and Quantity (Row 5) are printed in "
+            + _body_text_hex + ". The Active Ingredient (Row 2) stays solid BLACK "
+            "#000000. No element uses a colour other than the one named for its own row.")
+    else:
+        _ink_lines = ("- All Text Ink: #000000 (solid black) — name, ingredient, "
+                      "dosage, quantity all printed in black")
+        _text_colour_mandate = (
+            "- TEXT COLOUR MANDATE: All printed information text on the front face "
+            "(Commercial Name, Active Ingredient, Dosage, Quantity) is solid BLACK "
+            "#000000 ink. Brand colour is used ONLY for the corner badge and the "
+            "Row 6 accent stripe — NEVER for the text characters themselves.")
+
+    # -- Left Vertical Accent Stripe
+    # Wording is deliberately positive ("overlaps", "extends", "runs continuously"):
+    # the renderer follows affirmative scene descriptions far better than bans.
+    if _secondary_hex:
+        _sh = _secondary_hex.upper()
+        _vstripe_line = (
+            "- Left Vertical Accent Stripe: solid vertical colour band (" + _sh +
+            "), width EXACTLY 12 mm. The stripe is FLUSH with the extreme left edge "
+            "of the FRONT FACE. No white margin on its left side. The stripe runs "
+            "continuously from the top edge of the front panel to the bottom edge. "
+            "The vertical stripe OVERLAPS the horizontal bottom stripe, visually "
+            "covering it at the intersection. The vertical stripe is rendered above "
+            "the horizontal stripe in the print hierarchy. Maintain a minimum 4 mm "
+            "clear text gap to the right of the vertical stripe. Front face only.")
+        _secondary_color_line = ("\n- Left Vertical Accent Stripe: " + _sh +
+                                 " — 12 mm vertical band flush with the left edge, "
+                                 "runs top to bottom, overlaps the bottom stripe, "
+                                 "4 mm clear text gap")
+    else:
+        _vstripe_line = ""
+        _secondary_color_line = ""
+
+    # -- [BLISTER PACK]
+    if _blister_on:
+        _per = _iu.get("min_pills_per_unit") or 0
+        _tot = _iu.get("pill_total") or 0
+        _bl = int(_tot // _per) if _per else 0
+        _shape_map = {"DIAMOND": "diamond-shaped (rhombus)", "OVAL": "oval",
+                      "ROUND": "round", "CAPSULE": "capsule-shaped (oblong)",
+                      "OBLONG": "oblong", "SQUARE": "square",
+                      "PENTAGON (5 SIDED)": "five-sided pentagonal"}
+        _colr_map = {"ASSORTED": "assorted pastel colours", "GRAY": "light grey"}
+        _shape = _shape_map.get(str(_iu.get("pill_shape", "")).upper(),
+                                str(_iu.get("pill_shape", "round")).lower())
+        _colr = _colr_map.get(str(_iu.get("pill_color", "")).upper(),
+                              str(_iu.get("pill_color", "white")).lower())
+        # Symmetric, physically plausible cavity grid for one strip. Two rows
+        # whenever the count divides evenly, a single row otherwise.
+        def _grid(n):
+            for rows in (2, 3):
+                if n % rows == 0 and n // rows >= rows:
+                    return rows, n // rows
+            return 1, n
+        _rows, _cols = _grid(_per)
+        _grid_txt = (f"{_rows} rows of {_cols}" if _rows > 1
+                     else f"a single row of {_cols}")
+
+        # How many strips actually appear in frame. One strip reads as the classic
+        # catalogue shot; more than one is shown as a pair so the scene stays
+        # readable even when the pack holds many strips.
+        _shown = 1 if _bl <= 1 else 2
+        if _shown == 1:
+            _qty = ("- Quantity: EXACTLY ONE blister strip. Exactly " + str(_per) +
+                    " " + _shape + " " + _colr + " tablets arranged in " + _grid_txt +
+                    ". Every cavity filled.")
+            _pos = (_FRAME_ANCHOR +
+                    "- Position: within that zone the blister lies FLAT in FRONT of the "
+                    "carton, to the RIGHT of the carton's centre line.\n"
+                    "- Rotation: rotate the blister approximately 18–25° clockwise "
+                    "relative to the front edge of the carton.\n"
+                    "- Contact: the blister lightly touches and partially overlaps "
+                    "ONLY the lower-right front edge of the carton by approximately "
+                    "5–10% of its own length.\n"
+                    "- Visibility: the blister is shown complete, from end to end, with "
+                    "clear empty background between its far end and the frame edge. "
+                    "One strip only, lying flat.")
+            _ref = ("- Composition reference: mimic the classic pharmaceutical "
+                    "catalogue composition where one single blister is casually placed "
+                    "against the lower-right corner of the package.\n"
+                    "- Visual reference: arrange the blister exactly like a typical "
+                    "European pharmaceutical product photograph — one blister resting "
+                    "against the lower-right corner of the carton with approximately "
+                    "one third of the blister overlapping the front footprint of the "
+                    "box, while all printed information stays fully visible.")
+        else:
+            _qty = ("- Quantity: the pack holds " + str(_bl) + " blister strips of " +
+                    str(_per) + " tablets (" + str(_tot) + " tablets in total, matching "
+                    "the \"" + str(unit_count) + "\" printed on the carton). Show "
+                    "EXACTLY TWO blister strips in frame. Each strip carries " +
+                    str(_per) + " " + _shape + " " + _colr + " tablets arranged in " +
+                    _grid_txt + ". Every cavity filled.")
+            _pos = (_FRAME_ANCHOR +
+                    "- Position: within that zone both blisters lie FLAT in FRONT of "
+                    "the carton, to the RIGHT of the carton's centre line. The first "
+                    "strip lies nearest the viewer; the second lies slightly behind and "
+                    "to the LEFT of it, overlapping by about half a strip so the pair "
+                    "stays compact and both remain readable. The pair keeps the same "
+                    "overall footprint as a single strip and never widens the zone.\n"
+                    "- Rotation: rotate the front strip approximately 18–25° clockwise "
+                    "relative to the front edge of the carton; the second strip sits at "
+                    "a slightly shallower angle.\n"
+                    "- Contact: the front strip lightly touches and partially overlaps "
+                    "ONLY the lower-right front edge of the carton by approximately "
+                    "5–10% of its own length.\n"
+                    "- Visibility: both blisters are shown complete, from end to end, "
+                    "with clear empty background between the far end of the pair and "
+                    "the frame edge. Exactly two strips, both lying flat.")
+            _ref = ("- Composition reference: mimic the classic pharmaceutical "
+                    "catalogue composition where blisters are casually placed against "
+                    "the lower-right corner of the package.\n"
+                    "- Visual reference: arrange the blisters exactly like a typical "
+                    "European pharmaceutical product photograph — two blisters resting "
+                    "against the lower-right corner of the carton with approximately "
+                    "one third of the front blister overlapping the front footprint of "
+                    "the box, while all printed information stays fully visible.")
+
+        _blister_block = (
+            "[BLISTER PACK]:\n"
+            + _qty + "\n"
+            "- Material: transparent thermoformed PVC front with matte silver "
+            "aluminium foil backing.\n"
+            "- Orientation: the blister lies FLAT on the tabletop (0° tilt), viewed in "
+            "perspective together with the carton.\n"
+            + _pos + "\n"
+            "- Height relationship: the blister sits completely below the visual "
+            "midpoint of the carton and never rises above the lower third of the front "
+            "panel.\n"
+            "- Depth relationship: the carton remains visually behind the blister; the "
+            "blister is clearly the foreground object.\n"
+            "- Clearance: the printed information on the front face — Commercial Name, "
+            "Active Ingredient, Dosage, Quantity and the brand badge — stays fully "
+            "visible and legible above the blister.\n"
+            + _ref + "\n"
+            "- Hierarchy: the carton is the dominant object. The blister acts only as "
+            "a supporting secondary object.\n\n")
+    else:
+        _blister_block = ""
+
+    # -- render constraints adapted to the two features
+    _shared_forbidden = _SHARED_FORBIDDEN
+    if _blister_on:
+        _shared_forbidden = _shared_forbidden.replace(
+            "- Object: secondary carton ONLY",
+            "- Object: secondary carton PLUS the blister strips specified in "
+            "[BLISTER PACK]")
+        _shared_forbidden = _shared_forbidden.replace(
+            "- FORBIDDEN: loose pills, blister pack, pill bottle, HDPE jar, any "
+            "primary container",
+            "- FORBIDDEN: loose tablets outside the blister cavities, pill bottle, "
+            "HDPE jar, tube, sachet, ampoule, or any primary container other than "
+            "the blister strips specified in [BLISTER PACK]\n"
+            "- FORBIDDEN: the blister covering any printed text or the brand badge "
+            "(a slight overlap of the very bottom edge is expected and allowed)\n"
+            "- FORBIDDEN: the blister rendered larger than, taller than, or visually "
+            "dominant over the carton\n"
+            "- FORBIDDEN: tablets outside the blister cavities, broken tablets, or "
+            "blister cavities left empty")
+    if _secondary_hex:
+        _shared_forbidden = _shared_forbidden.replace(
+            "- FORBIDDEN: accent colour stripe or band on any side panel or back "
+            "panel — accent stripe is on front face only (Row 6 of FRONT PANEL GRID)",
+            "- FORBIDDEN: accent colour stripe or band on any side panel or back "
+            "panel — accent stripe is on front face only (Row 6 of FRONT PANEL GRID)\n"
+            "- REQUIRED: the Left Vertical Accent Stripe MUST overlap the horizontal "
+            "bottom accent stripe at the lower-left corner. The vertical stripe is "
+            "visually uninterrupted from top to bottom. The horizontal stripe "
+            "terminates beneath the vertical stripe.\n"
+            "- FORBIDDEN: any text, Braille or graphic element placed inside the "
+            "12 mm vertical stripe zone or within the 4 mm clear gap to its right")
+    if _coloured_type:
+        _shared_forbidden = _shared_forbidden.replace(
+            "- FORBIDDEN: rendering the brand name, active ingredient, dosage or "
+            "quantity text in any colour other than black — no blue, purple, green, "
+            "red or tinted lettering on text. Coloured ink appears ONLY in the badge "
+            "and accent stripe.",
+            "- FORBIDDEN: rendering any text in a colour other than the one named "
+            "for its own row in the FRONT PANEL GRID — no arbitrary tinting, no "
+            "gradients on type, no colour on the Active Ingredient")
+
     grid_lines = [
-        '- TEXT COLOUR MANDATE: All printed information text on the front face (Commercial Name, Active Ingredient, Dosage, Quantity) is solid BLACK #000000 ink. Brand colour is used ONLY for the corner badge and the Row 6 accent stripe — NEVER for the text characters themselves.',
+        '- PERSPECTIVE ALIGNMENT: every printed element lies in the plane of the front face and shares its perspective. Text baselines run parallel to the top and bottom edges of the front panel and converge toward the same vanishing point as those edges. Blocks are centred on the perspective axes of the panel itself, not on the image frame. Type recedes with the surface it is printed on.',
+        _text_colour_mandate,
         f'- Top-Right Corner / Brand Badge: a small restrained square, '
         f'approximately 6–8% of panel width, filled with solid brand colour {badge_bg_hex} ({badge_bg_desc}). '
         f'Inside the block: one subtle abstract geometric mark — {badge_mark} — rendered in {badge_text_color}, '
@@ -1155,7 +1421,7 @@ def agent_3_passport_architect(data: dict, template_id: str,
         f'Badge aligned near the top-right corner with minimal margin. '
         f'The badge is visually subordinate to the brand typography and must never become the primary focal element. '
         f'No glossy app-icon aesthetics, no neumorphism, no mobile UI button styling, no startup-style logo rendering.',
-        f'- Row 1 / Commercial Name: "{brand_name}" — BOLD, largest text element on panel, maximum contrast against background, printed in solid BLACK #000000. Printed once only.',
+        f'- Row 1 / Commercial Name: "{brand_name}" — BOLD, largest text element on panel, maximum contrast against background, printed in solid {_name_text_hex}. Printed once only.',
     ]
     if ingredient_display != _ingredient_line_sentinel and ingredient_display.strip():
         grid_lines.append(
@@ -1176,11 +1442,14 @@ def agent_3_passport_architect(data: dict, template_id: str,
             f'Subtle, physically realistic pharmaceutical Braille relief — not decorative noise.'
         )
     grid_lines.extend([
-        f'- Row 4 / Dosage: "{dosage}" — bottom row, LEFT corner, printed in solid BLACK #000000. Render only the minimal dosage and dosage form joined with no separator in the bottom-left counter (e.g., "{dosage}" → "{dosage}"), with zero percentage symbols and no active-ingredient text in this zone.',
-        f'- Row 5 / Quantity: "{unit_count}" — SAME bottom row, RIGHT corner, directly opposite the dosage, maximally separated horizontally (opposite corners), printed in solid BLACK #000000. Both dosage and quantity are on the single lowest information line. Printed once only.',
-        f'- Row 6 / Accent Stripe: thin full-width horizontal colour band at the very bottom edge of the FRONT FACE, '
-        f'height ~4mm, colour {accent_hex} ({accent_desc}). This stripe is on the front face only — not on side panels.',
+        f'- Row 4 / Dosage: "{dosage}" — bottom row, LEFT corner, printed in solid {_body_text_hex}. Render only the minimal dosage and dosage form joined with no separator in the bottom-left counter (e.g., "{dosage}" → "{dosage}"), with zero percentage symbols and no active-ingredient text in this zone.',
+        f'- Row 5 / Quantity: "{unit_count}" — SAME bottom row, RIGHT corner, directly opposite the dosage, maximally separated horizontally (opposite corners), printed in solid {_body_text_hex}. Both dosage and quantity are on the single lowest information line. Printed once only.',
+        f'- Row 6 / Accent Stripe: solid horizontal colour band ({accent_hex}), full width of the FRONT FACE only, '
+        f'positioned FLUSH with the very bottom edge of the front panel. No white margin below it. '
+        f'Height approximately 4 mm.',
     ])
+    if _vstripe_line:
+        grid_lines.append(_vstripe_line)
 
     front_panel_grid_lines = "\n".join(grid_lines)
 
@@ -1207,10 +1476,15 @@ def agent_3_passport_architect(data: dict, template_id: str,
         terminology_map   = terminology_map_str,
         purity_anchor     = _PURITY_ANCHOR,
         render_constraints= _RENDER_CONSTRAINTS,
+        scene_hardware    = _scene_hardware,
+        surface_mandate   = _surface_mandate,
+        ink_lines         = _ink_lines,
+        secondary_color_line = _secondary_color_line,
+        blister_block     = _blister_block,
+        shared_forbidden  = _shared_forbidden,
         front_panel_grid_lines = front_panel_grid_lines,
         sku_hash          = sku_hash,
         regulatory_rules  = regulatory_rules,
-        _SHARED_FORBIDDEN = _SHARED_FORBIDDEN,
     )
 
     # Strip sentinel lines
@@ -1305,7 +1579,7 @@ def agent_3_passport_architect(data: dict, template_id: str,
 def main():
     if not INPUT_DIR.exists():
         print(f"[ERROR] Input directory {INPUT_DIR} not found.")
-        return
+        return 1
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -1478,5 +1752,19 @@ def main():
     print(f"\n[DONE] Successfully converted {converted}/{total} passports.")
     print(f"       Failed/Warnings logged to: {FAILURES_LOG} ({len(failures)} entries)")
 
+    # Per-file errors are caught and logged above so that one bad SKU does not
+    # abort the batch. That must NOT be reported as a clean run: without a
+    # non-zero exit code the orchestrator prints "[OK]" even when every single
+    # passport failed and nothing was written.
+    if total and converted < total:
+        print(f"[FAILED] {total - converted}/{total} passports did not convert — "
+              f"see {FAILURES_LOG}")
+        return 1
+    if total == 0:
+        print("[FAILED] no JSON passports found — nothing converted")
+        return 1
+    return 0
+
+
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

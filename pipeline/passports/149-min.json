@@ -22,8 +22,10 @@
     "unit_count_standard": "30",
     "branding": {
         "palette": {
-            "primary": "#DDA7A5",
-            "accent": "#6B2D5C",
+            "primary": "#7265E1",
+            "accent": "#7265E1",
+            "name_text": "#1600D6",
+            "body_text": "#000000",
             "background": "#FFFFFF"
         },
         "design_elements": {
@@ -44,10 +46,13 @@
     "internal_unit": {
         "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "15 pills per blister, 18 blisters",
+        "layout": "10 pills per blister, 3 blisters",
         "leaflet": null,
-        "render": false,
-        "min_pills_per_unit": 15
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 30,
+        "pill_shape": "OBLONG",
+        "pill_color": "WHITE"
     },
     "schema_version": "2.1",
     "brand_name": "Modalert",

@@ -22,8 +22,11 @@
     "unit_count_standard": "30",
     "branding": {
         "palette": {
-            "primary": "#003366",
-            "accent": "#0D5FB8",
+            "primary": "#182454",
+            "accent": "#182454",
+            "secondary": "#557B91",
+            "name_text": "#182454",
+            "body_text": "#000000",
             "background": "#FFFFFF"
         },
         "design_elements": {
@@ -44,10 +47,13 @@
     "internal_unit": {
         "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "15 pills per blister, 16 blisters",
+        "layout": "10 pills per blister, 3 blisters",
         "leaflet": null,
-        "render": false,
-        "min_pills_per_unit": 15
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 30,
+        "pill_shape": "ROUND",
+        "pill_color": "WHITE"
     },
     "schema_version": "2.1",
     "brand_name": "Lamisil",

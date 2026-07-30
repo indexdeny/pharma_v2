@@ -1,71 +1,73 @@
 {
-  "sku_id": "407-min.jpg",
-  "product_name": "Victoza",
-  "render_config": {
-    "primary_render_target": "carton_box",
-    "future_dual_shot_enabled": false,
-    "scene_archetype": "tube_carton"
-  },
-  "secondary_packaging": {
-    "box_type": "Reverse Tuck End (Standard)",
-    "material": "GZ-Cardboard (Pharmaceutical Grade)",
-    "dimensions": "140x35x25mm",
-    "features": [
-      "Braille",
-      "DataMatrix_Zone",
-      "Tamper_Evident_Seal"
-    ]
-  },
-  "render_priority": "secondary_box",
-  "dosage_ref": "mg",
-  "category_id": "26",
-  "unit_count_standard": "1",
-  "branding": {
-    "palette": {
-      "primary": "#E2583E",
-      "accent": "#4B4632",
-      "background": "#FFFFFF"
+    "sku_id": "407-min.jpg",
+    "product_name": "Victoza",
+    "render_config": {
+        "primary_render_target": "carton_box",
+        "future_dual_shot_enabled": false,
+        "scene_archetype": "tube_carton"
     },
-    "design_elements": {
-      "has_logo_embossing": true,
-      "spot_uv_areas": [
-        "brand_name",
-        "logo"
-      ],
-      "is_varnished": true
+    "secondary_packaging": {
+        "box_type": "Reverse Tuck End (Standard)",
+        "material": "GZ-Cardboard (Pharmaceutical Grade)",
+        "dimensions": "140x35x25mm",
+        "features": [
+            "Braille",
+            "DataMatrix_Zone",
+            "Tamper_Evident_Seal"
+        ]
     },
-    "palette_source": "Canonical/Official_DB"
-  },
-  "label_content": {
-    "brand_name_display": "Victoza",
-    "dosage_display": "18mg",
-    "unit_count_display": "1 Pen"
-  },
-  "internal_unit": {
-    "type": "Pen",
-    "material": "Autoinjector Pen (COP)",
-    "layout": "4 units in tray",
-    "leaflet": null,
-    "render": false,
-    "min_pills_per_unit": 4
-  },
-  "schema_version": "2.1",
-  "brand_name": "Victoza",
-  "active_ingredient": "Liraglutide",
-  "manufacturer": null,
-  "brand_color_verified": false,
-  "packaging_geometry": "PEN",
-  "is_generic": false,
-  "reference_url": null,
-  "primary_package": {
-    "type": null,
-    "geometry": null,
-    "width_mm": null,
-    "height_mm": null,
-    "depth_mm": null
-  },
-  "package_type": "pen",
-  "minimal_package": 1,
-  "minimal_dosage": 18.0,
-  "category": "Weight Loss"
+    "render_priority": "secondary_box",
+    "dosage_ref": "mg",
+    "category_id": "26",
+    "unit_count_standard": "1",
+    "branding": {
+        "palette": {
+            "primary": "#7367D7",
+            "accent": "#7367D7",
+            "name_text": "#1C06D0",
+            "body_text": "#000000",
+            "background": "#FFFFFF"
+        },
+        "design_elements": {
+            "has_logo_embossing": true,
+            "spot_uv_areas": [
+                "brand_name",
+                "logo"
+            ],
+            "is_varnished": true
+        },
+        "palette_source": "Canonical/Official_DB"
+    },
+    "label_content": {
+        "brand_name_display": "Victoza",
+        "dosage_display": "18mg",
+        "unit_count_display": "1 Pen"
+    },
+    "internal_unit": {
+        "type": "Pen",
+        "material": "Autoinjector Pen (COP)",
+        "layout": "4 units in tray",
+        "leaflet": null,
+        "render": false,
+        "min_pills_per_unit": 4
+    },
+    "schema_version": "2.1",
+    "brand_name": "Victoza",
+    "active_ingredient": "Liraglutide",
+    "manufacturer": null,
+    "brand_color_verified": false,
+    "packaging_geometry": "PEN",
+    "is_generic": false,
+    "reference_url": null,
+    "primary_package": {
+        "type": null,
+        "geometry": null,
+        "width_mm": null,
+        "height_mm": null,
+        "depth_mm": null
+    },
+    "package_type": "pen",
+    "minimal_package": 1,
+    "minimal_dosage": 18.0,
+    "category": "Weight Loss"
 }

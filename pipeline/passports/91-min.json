@@ -22,8 +22,10 @@
     "unit_count_standard": "30",
     "branding": {
         "palette": {
-            "primary": "#003366",
-            "accent": "#0D5FB8",
+            "primary": "#837649",
+            "accent": "#837649",
+            "name_text": "#6F5E24",
+            "body_text": "#000000",
             "background": "#FFFFFF"
         },
         "design_elements": {

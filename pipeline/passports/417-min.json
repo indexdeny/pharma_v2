@@ -22,8 +22,11 @@
     "unit_count_standard": "100",
     "branding": {
         "palette": {
-            "primary": "#003366",
-            "accent": "#0D5FB8",
+            "primary": "#A76824",
+            "accent": "#A76824",
+            "secondary": "#4E6AB0",
+            "name_text": "#924C00",
+            "body_text": "#000000",
             "background": "#FFFFFF"
         },
         "design_elements": {
@@ -40,11 +43,14 @@
     },
     "internal_unit": {
         "type": "Pills",
-        "material": "Glass Type I",
-        "layout": "500 units in tray",
+        "material": "Blister (PVC/Aluminium)",
+        "layout": "10 pills per blister, 10 blisters",
         "leaflet": null,
-        "render": false,
-        "min_pills_per_unit": 500
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 100,
+        "pill_shape": "ROUND",
+        "pill_color": "WHITE"
     },
     "schema_version": "2.1",
     "brand_name": "Masteron",

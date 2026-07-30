@@ -22,8 +22,11 @@
     "unit_count_standard": "250",
     "branding": {
         "palette": {
-            "primary": "#003366",
-            "accent": "#0D5FB8",
+            "primary": "#937219",
+            "accent": "#0057A0",
+            "secondary": "#388186",
+            "name_text": "#0057A0",
+            "body_text": "#000000",
             "background": "#FFFFFF"
         },
         "design_elements": {
@@ -44,10 +47,13 @@
     "internal_unit": {
         "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "15 pills per blister, 24 blisters",
+        "layout": "10 pills per blister, 25 blisters",
         "leaflet": null,
-        "render": false,
-        "min_pills_per_unit": 15
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 250,
+        "pill_shape": "OVAL",
+        "pill_color": "BLUE"
     },
     "schema_version": "2.1",
     "brand_name": "Aleve",

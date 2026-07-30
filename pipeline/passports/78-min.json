@@ -22,8 +22,11 @@
     "unit_count_standard": "10",
     "branding": {
         "palette": {
-            "primary": "#003366",
-            "accent": "#C9A227",
+            "primary": "#B525A9",
+            "accent": "#06294B",
+            "secondary": "#B525A9",
+            "name_text": "#0F4290",
+            "body_text": "#B525A9",
             "background": "#FFFFFF"
         },
         "design_elements": {
@@ -45,10 +48,13 @@
     "internal_unit": {
         "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "15 pills per blister, 16 blisters",
+        "layout": "10 pills per blister, 1 blisters",
         "leaflet": null,
-        "render": false,
-        "min_pills_per_unit": 15
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 10,
+        "pill_shape": "ROUND",
+        "pill_color": "BLUE"
     },
     "schema_version": "2.1",
     "brand_name": "Viagra Soft Tabs",

@@ -36,6 +36,18 @@ from src.utils import (  # noqa: E402
     PROJECT_ROOT, load_config, get_path, resolve_path, setup_logging,
 )
 
+# Reconfigure stdio streams to UTF-8 on Windows
+if sys.stdout and hasattr(sys.stdout, "reconfigure"):
+    try:
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
+if sys.stderr and hasattr(sys.stderr, "reconfigure"):
+    try:
+        sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
+
 # ── Stage registry ────────────────────────────────────────────────────────────
 STAGE_PASSPORTS = "passports"
 STAGE_RENDER    = "render"
@@ -225,7 +237,7 @@ def artifact_counts(cfg) -> dict:
     }
 
 
-_STATUS_LABEL = {"ok": "✅ OK", "failed": "❌ FAILED", "skipped": "⏭️  SKIPPED"}
+_STATUS_LABEL = {"ok": "[OK]", "failed": "[FAILED]", "skipped": "[SKIPPED]"}
 
 
 def print_summary(results, counts, log_path, total_dur, log):
@@ -332,6 +344,19 @@ def main(argv=None) -> int:
                 raw_n = _count(get_path(cfg, "renders_raw"), "*.png")
                 if raw_n == 0:
                     log.error("Render stage exited cleanly but produced 0 raw PNGs — treating as failure.")
+                    res["ok"] = False
+                    res["status"] = "failed"
+
+            # Same guard for Stage 1: per-file conversion errors are caught and
+            # logged, so a template bug can fail every SKU while the stage still
+            # exits 0. Stale MD files from an earlier run make the count look
+            # fine, so compare against the JSON input count.
+            if res["ok"] and stage == STAGE_PASSPORTS:
+                n_json = _count(get_path(cfg, "passports_json"), "*.json")
+                n_md = _count(get_path(cfg, "passports_md"), "*.md")
+                if n_json > 0 and n_md < n_json:
+                    log.error(f"Passports stage exited cleanly but produced {n_md} MD "
+                              f"for {n_json} JSON — treating as failure.")
                     res["ok"] = False
                     res["status"] = "failed"
 

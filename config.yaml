@@ -18,7 +18,7 @@ paths:
   renders_raw:         "render_output/raw"             # output (Stage 2)  raw PNG
   renders_failed:      "render_output/failed"          # Stage 2 failure screenshots
   renders_failed_logs: "render_output/failed_logs"     # Stage 2 failure log
-  renders_final:       "output"                        # output (Stage 3)  final WEBP
+  renders_final:       "output/test1"                  # output (Stage 3)  final WEBP
 
   # ── Bookkeeping ─────────────────────────────────────────────────────────────
   logs:                "logs"                          # unified run logs
@@ -44,7 +44,7 @@ rpa:
 # ── Stage 3: final image processor (webp_converter behaviour — canonical) ────
 image_processor:
   source_dir:       "render_output/raw"
-  output_dir:       "output"
+  output_dir:       "output/test1"
   target_size:      [1600, 1600]   # px (LANCZOS upscale, square 1:1)
   max_file_size_kb: 500            # hard weight cap; quality is auto-tuned
 

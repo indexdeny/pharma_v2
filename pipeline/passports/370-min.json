@@ -22,8 +22,11 @@
     "unit_count_standard": "30",
     "branding": {
         "palette": {
-            "primary": "#003366",
-            "accent": "#0D5FB8",
+            "primary": "#397F93",
+            "accent": "#397F93",
+            "secondary": "#368181",
+            "name_text": "#1D7FA3",
+            "body_text": "#000000",
             "background": "#FFFFFF"
         },
         "design_elements": {
@@ -43,10 +46,13 @@
     "internal_unit": {
         "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "15 pills per blister, 12 blisters",
+        "layout": "10 pills per blister, 3 blisters",
         "leaflet": null,
-        "render": false,
-        "min_pills_per_unit": 15
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 30,
+        "pill_shape": "ROUND",
+        "pill_color": "WHITE"
     },
     "schema_version": "2.1",
     "brand_name": "Ventolin Generic",

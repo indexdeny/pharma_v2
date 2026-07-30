@@ -22,8 +22,11 @@
     "unit_count_standard": "30",
     "branding": {
         "palette": {
-            "primary": "#006A4E",
-            "accent": "#C9A227",
+            "primary": "#7FAFC4",
+            "accent": "#7AACC3",
+            "secondary": "#DA9C44",
+            "name_text": "#2B4F67",
+            "body_text": "#2B4F67",
             "background": "#FFFFFF"
         },
         "design_elements": {
@@ -46,8 +49,11 @@
         "material": "Blister (PVC/Aluminium)",
         "layout": "10 pills per blister, 3 blisters",
         "leaflet": null,
-        "render": false,
-        "min_pills_per_unit": 10
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 30,
+        "pill_shape": "ROUND",
+        "pill_color": "YELLOW"
     },
     "schema_version": "2.1",
     "brand_name": "Cialis Soft Tabs",

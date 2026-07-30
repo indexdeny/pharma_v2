@@ -975,8 +975,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#DDA7A5",
-          "accent": "#6B2D5C",
+          "primary": "#547B98",
+          "accent": "#547B98",
+          "name_text": "#800000",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -1025,8 +1027,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#DDA7A5",
-          "accent": "#6B2D5C",
+          "primary": "#800000",
+          "accent": "#800000",
+          "name_text": "#800000",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -1078,8 +1082,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#806045",
+          "accent": "#806045",
+          "name_text": "#6B3FA0",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -1131,8 +1137,10 @@
       "packaging_geometry": "BOX",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#8A725A",
+          "accent": "#8A725A",
+          "name_text": "#735231",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -1184,8 +1192,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#917059",
+          "accent": "#917059",
+          "name_text": "#7A4E2F",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -1237,8 +1247,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#358181",
+          "accent": "#358181",
+          "name_text": "#137070",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -1290,8 +1302,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#82764F",
+          "accent": "#82764F",
+          "name_text": "#6D5D29",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -1343,8 +1357,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#4A7163",
+          "accent": "#4A7163",
+          "name_text": "#1A7D3F",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -1396,8 +1412,10 @@
       "packaging_geometry": "BOTTLE",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#457F84",
+          "accent": "#457F84",
+          "name_text": "#206A70",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -1449,8 +1467,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#A0657F",
+          "accent": "#003DA5",
+          "name_text": "#003DA5",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -1503,8 +1523,10 @@
       "packaging_geometry": "PEN",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#0D5FB8",
+          "accent": "#003366",
+          "name_text": "#003366",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -1553,8 +1575,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#9F59BD",
+          "accent": "#9F59BD",
+          "name_text": "#1C62B9",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -1606,8 +1630,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#807748",
+          "accent": "#807748",
+          "name_text": "#6C6124",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -1659,8 +1685,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#976D56",
+          "accent": "#976D56",
+          "name_text": "#80492B",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -1712,8 +1740,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#4A7AAA",
+          "accent": "#4A7AAA",
+          "name_text": "#1D5893",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -1762,8 +1792,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#8C7347",
+          "accent": "#8C7347",
+          "name_text": "#785820",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -1815,8 +1847,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#9D6B4D",
+          "accent": "#9D6B4D",
+          "name_text": "#864822",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -1865,8 +1899,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#407D9D",
+          "accent": "#407D9D",
+          "name_text": "#176188",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -1918,8 +1954,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#557A9E",
+          "accent": "#557A9E",
+          "name_text": "#295886",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -1971,8 +2009,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#18884A",
+          "accent": "#2D8655",
+          "name_text": "#1E5AA8",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -2024,8 +2064,10 @@
       "packaging_geometry": "BOTTLE",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#B2612E",
+          "accent": "#8E715B",
+          "name_text": "#FF8C42",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -2077,8 +2119,10 @@
       "packaging_geometry": "BOTTLE",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#AF579A",
+          "accent": "#AF579A",
+          "name_text": "#98247D",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -2130,8 +2174,10 @@
       "packaging_geometry": "BOTTLE",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#81782B",
+          "accent": "#81782B",
+          "name_text": "#71660B",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -2183,8 +2229,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#8C7343",
+          "accent": "#8C7343",
+          "name_text": "#78591D",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -2236,8 +2284,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#3C7A3C",
+          "accent": "#6A74A3",
+          "name_text": "#3C7A3C",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -2290,8 +2340,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#527B9A",
+          "accent": "#527B9A",
+          "name_text": "#275B83",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -2343,8 +2395,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#2B7F9D",
+          "accent": "#0072B5",
+          "name_text": "#0072B5",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -2396,8 +2450,11 @@
       "packaging_geometry": "BOX",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#D32B2B",
+          "accent": "#D32B2B",
+          "secondary": "#897449",
+          "name_text": "#D32B2B",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -2423,8 +2480,13 @@
       "internal_unit": {
         "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 3 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 30,
+        "pill_shape": "ROUND",
+        "pill_color": "WHITE"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -2449,8 +2511,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#5E77A1",
+          "accent": "#5E77A1",
+          "name_text": "#305188",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -2502,8 +2566,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#717B4F",
+          "accent": "#717B4F",
+          "name_text": "#59672A",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -2555,8 +2621,10 @@
       "packaging_geometry": "BOTTLE",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#C8102E",
+          "accent": "#C8102E",
+          "name_text": "#C8102E",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -2608,8 +2676,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#468080",
+          "accent": "#468080",
+          "name_text": "#226D6D",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -2661,8 +2731,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#876BA1",
+          "accent": "#876BA1",
+          "name_text": "#623889",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -2715,8 +2787,11 @@
       "packaging_geometry": "TUBE",
       "branding": {
         "palette": {
-          "primary": "#E2583E",
-          "accent": "#4B4632",
+          "primary": "#53832E",
+          "accent": "#53832E",
+          "secondary": "#627F44",
+          "name_text": "#53832E",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -2768,8 +2843,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#8E715B",
+          "accent": "#926D74",
+          "name_text": "#4FA73C",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -2821,8 +2898,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#518064",
+          "accent": "#518064",
+          "name_text": "#1D66BC",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -2874,8 +2953,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#8A4FA3",
+          "accent": "#8A4FA3",
+          "name_text": "#8A4FA3",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -2927,8 +3008,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#437BAA",
+          "accent": "#677987",
+          "name_text": "#C2185B",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -2980,8 +3063,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#B8557E",
+          "accent": "#158290",
+          "name_text": "#BE348F",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -3033,8 +3118,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#52247F",
+          "accent": "#30144C",
+          "name_text": "#52247F",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -3086,8 +3173,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#276EB5",
+          "accent": "#276EB5",
+          "name_text": "#276EB5",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -3139,8 +3228,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#E2583E",
-          "accent": "#4B4632",
+          "primary": "#8567BC",
+          "accent": "#8567BC",
+          "name_text": "#5423AE",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -3192,8 +3283,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#4A7C9D",
+          "accent": "#4A7C9D",
+          "name_text": "#205E87",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -3245,8 +3338,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#866C9F",
+          "accent": "#866C9F",
+          "name_text": "#0055A4",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -3298,8 +3393,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#1B4396",
+          "accent": "#1B4396",
+          "name_text": "#1B4396",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -3351,8 +3448,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#7070AD",
+          "accent": "#7070AD",
+          "name_text": "#343499",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -3404,8 +3503,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#7171A9",
+          "accent": "#7171A9",
+          "name_text": "#373794",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -3457,8 +3558,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#966F47",
+          "accent": "#966F47",
+          "name_text": "#81501E",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -3510,8 +3613,11 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#006A4E",
-          "accent": "#C9A227",
+          "primary": "#F5D5BE",
+          "accent": "#197D02",
+          "secondary": "#197D02",
+          "name_text": "#000000",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -3536,10 +3642,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "4 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "4 pills per blister, 1 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 4,
+        "pill_total": 4,
+        "pill_shape": "OVAL",
+        "pill_color": "YELLOW"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -3564,8 +3675,11 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#006A4E",
-          "accent": "#C9A227",
+          "primary": "#F5D5BE",
+          "accent": "#197D02",
+          "secondary": "#197D02",
+          "name_text": "#000000",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -3590,10 +3704,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 3 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 30,
+        "pill_shape": "OVAL",
+        "pill_color": "YELLOW"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -3618,8 +3737,11 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#006A4E",
-          "accent": "#C9A227",
+          "primary": "#F5D5BE",
+          "accent": "#197D02",
+          "secondary": "#DA9C44",
+          "name_text": "#197D02",
+          "body_text": "#DA9C44",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -3643,10 +3765,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 1 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 10,
+        "pill_shape": "OVAL",
+        "pill_color": "YELLOW"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -3671,8 +3798,11 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#006A4E",
-          "accent": "#C9A227",
+          "primary": "#7FAFC4",
+          "accent": "#7AACC3",
+          "secondary": "#DA9C44",
+          "name_text": "#2B4F67",
+          "body_text": "#2B4F67",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -3696,10 +3826,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 3 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 30,
+        "pill_shape": "ROUND",
+        "pill_color": "YELLOW"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -3724,8 +3859,11 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#006A4E",
-          "accent": "#C9A227",
+          "primary": "#F5D5BE",
+          "accent": "#197D02",
+          "secondary": "#DA9C44",
+          "name_text": "#197D02",
+          "body_text": "#DA9C44",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -3749,10 +3887,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 1 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 10,
+        "pill_shape": "CAPSULE",
+        "pill_color": "YELLOW"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -3777,8 +3920,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#005A9C",
-          "accent": "#C9A227",
+          "primary": "#8F60C7",
+          "accent": "#8F60C7",
+          "name_text": "#6316BF",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -3802,10 +3947,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 1 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 10,
+        "pill_shape": "ROUND",
+        "pill_color": "GRAY"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -3830,8 +3980,11 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#6B2D5C",
-          "accent": "#C9A227",
+          "primary": "#32665E",
+          "accent": "#32665E",
+          "secondary": "#AF2A35",
+          "name_text": "#32665E",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -3855,10 +4008,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 3 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 30,
+        "pill_shape": "DIAMOND",
+        "pill_color": "GREEN"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -3883,8 +4041,11 @@
       "packaging_geometry": "SACHET",
       "branding": {
         "palette": {
-          "primary": "#6B2D5C",
-          "accent": "#C9A227",
+          "primary": "#32665E",
+          "accent": "#32665E",
+          "secondary": "#AF2A35",
+          "name_text": "#32665E",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -3936,8 +4097,11 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#005A9C",
-          "accent": "#C9A227",
+          "primary": "#472954",
+          "accent": "#472954",
+          "secondary": "#CA642A",
+          "name_text": "#472954",
+          "body_text": "#CA642A",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -3961,10 +4125,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 1 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 10,
+        "pill_shape": "ROUND",
+        "pill_color": "ORANGE"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -3989,8 +4158,11 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#005A9C",
-          "accent": "#C9A227",
+          "primary": "#472954",
+          "accent": "#472954",
+          "secondary": "#CA642A",
+          "name_text": "#472954",
+          "body_text": "#CA642A",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -4014,10 +4186,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "4 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "4 pills per blister, 1 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 4,
+        "pill_total": 4,
+        "pill_shape": "ROUND",
+        "pill_color": "ORANGE"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -4042,8 +4219,11 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#005A9C",
-          "accent": "#C9A227",
+          "primary": "#DCE216",
+          "accent": "#DCE216",
+          "secondary": "#D8176B",
+          "name_text": "#E68536",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -4067,10 +4247,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "4 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "4 pills per blister, 1 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 4,
+        "pill_total": 4,
+        "pill_shape": "OBLONG",
+        "pill_color": "WHITE"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -4095,8 +4280,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#005A9C",
-          "accent": "#C9A227",
+          "primary": "#667E4F",
+          "accent": "#667E4F",
+          "name_text": "#496A2A",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -4120,10 +4307,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "4 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "4 pills per blister, 1 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 4,
+        "pill_total": 4,
+        "pill_shape": "OBLONG",
+        "pill_color": "BLUE"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -4148,8 +4340,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#005A9C",
-          "accent": "#C9A227",
+          "primary": "#6146A0",
+          "accent": "#6146A0",
+          "name_text": "#3D1C8A",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -4173,10 +4367,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 1 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 10,
+        "pill_shape": "OVAL",
+        "pill_color": "ORANGE"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -4201,8 +4400,11 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#C9A227",
+          "primary": "#007FAC",
+          "accent": "#06294B",
+          "secondary": "#B1D6E5",
+          "name_text": "#0F4290",
+          "body_text": "#229CB7",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -4226,10 +4428,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "4 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "4 pills per blister, 1 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 4,
+        "pill_total": 4,
+        "pill_shape": "DIAMOND",
+        "pill_color": "BLUE"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -4254,8 +4461,11 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#C9A227",
+          "primary": "#007FAC",
+          "accent": "#06294B",
+          "secondary": "#06294B",
+          "name_text": "#0F4290",
+          "body_text": "#229CB7",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -4279,10 +4489,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 3 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 30,
+        "pill_shape": "DIAMOND",
+        "pill_color": "BLUE"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -4307,8 +4522,11 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#C9A227",
+          "primary": "#F6AA21",
+          "accent": "#06294B",
+          "secondary": "#F6AA21",
+          "name_text": "#F6AA21",
+          "body_text": "#229CB7",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -4333,10 +4551,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 1 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 10,
+        "pill_shape": "DIAMOND",
+        "pill_color": "BLUE"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -4361,8 +4584,11 @@
       "packaging_geometry": "SACHET",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#C9A227",
+          "primary": "#F5DB2E",
+          "accent": "#06294B",
+          "secondary": "#F5DB2E",
+          "name_text": "#0F4290",
+          "body_text": "#229CB7",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -4414,8 +4640,11 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#C9A227",
+          "primary": "#8476AA",
+          "accent": "#06294B",
+          "secondary": "#8476AA",
+          "name_text": "#0F4290",
+          "body_text": "#229CB7",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -4440,10 +4669,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 1 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 10,
+        "pill_shape": "DIAMOND",
+        "pill_color": "BLUE"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -4468,8 +4702,11 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#C9A227",
+          "primary": "#B525A9",
+          "accent": "#06294B",
+          "secondary": "#B525A9",
+          "name_text": "#0F4290",
+          "body_text": "#B525A9",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -4494,10 +4731,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 1 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 10,
+        "pill_shape": "ROUND",
+        "pill_color": "BLUE"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -4522,8 +4764,11 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#C9A227",
+          "primary": "#B525A9",
+          "accent": "#06294B",
+          "secondary": "#B1D6E5",
+          "name_text": "#0F4290",
+          "body_text": "#B525A9",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -4548,10 +4793,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 3 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 30,
+        "pill_shape": "CAPSULE",
+        "pill_color": "BLUE"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -4576,8 +4826,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#005A9C",
-          "accent": "#C9A227",
+          "primary": "#797941",
+          "accent": "#797941",
+          "name_text": "#67671F",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -4601,10 +4853,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 3 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 30,
+        "pill_shape": "DIAMOND",
+        "pill_color": "BLUE"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -4629,8 +4886,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#51815D",
+          "accent": "#51815D",
+          "name_text": "#2B6C3B",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -4682,8 +4941,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#816DA2",
+          "accent": "#816DA2",
+          "name_text": "#57388B",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -4735,8 +4996,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#6B7C4F",
+          "accent": "#6B7C4F",
+          "name_text": "#51682A",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -4788,8 +5051,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#957100",
+          "accent": "#003C84",
+          "name_text": "#003C84",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -4841,8 +5106,11 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#005A9C",
-          "accent": "#C9A227",
+          "primary": "#472954",
+          "accent": "#472954",
+          "secondary": "#A65064",
+          "name_text": "#472954",
+          "body_text": "#CA642A",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -4866,10 +5134,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 1 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 10,
+        "pill_shape": "ROUND",
+        "pill_color": "ORANGE"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -4894,8 +5167,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#A36B0A",
+          "accent": "#A36B0A",
+          "name_text": "#7D4F00",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -4947,8 +5222,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#503F67",
+          "accent": "#503F67",
+          "name_text": "#382157",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -5000,8 +5277,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#567A9D",
+          "accent": "#567A9D",
+          "name_text": "#2A5885",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -5052,8 +5331,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#005A9C",
-          "accent": "#C9A227",
+          "primary": "#9A6D45",
+          "accent": "#9A6D45",
+          "name_text": "#854D1C",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -5077,10 +5358,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 1 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 10,
+        "pill_shape": "OVAL",
+        "pill_color": "BLUE"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -5105,8 +5391,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#837649",
+          "accent": "#837649",
+          "name_text": "#6F5E24",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -5158,8 +5446,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#005A9C",
-          "accent": "#C9A227",
+          "primary": "#956E5D",
+          "accent": "#956E5D",
+          "name_text": "#D84330",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -5183,10 +5473,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 1 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 10,
+        "pill_shape": "OVAL",
+        "pill_color": "YELLOW"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -5211,8 +5506,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#9F6C0E",
+          "accent": "#9F6C0E",
+          "name_text": "#7D5100",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -5264,8 +5561,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#2E7FA1",
+          "accent": "#2E7FA1",
+          "name_text": "#07668E",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -5317,8 +5616,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#00185B",
+          "accent": "#B55E3E",
+          "name_text": "#00185B",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -5370,8 +5671,11 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#83764D",
+          "accent": "#83764D",
+          "secondary": "#94703D",
+          "name_text": "#00185B",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -5423,8 +5727,11 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#83764D",
+          "accent": "#83764D",
+          "secondary": "#617E5A",
+          "name_text": "#00185B",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -5477,8 +5784,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#5F812B",
+          "accent": "#5F812B",
+          "name_text": "#49710B",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -5530,8 +5839,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#CC0000",
+          "accent": "#CC0000",
+          "name_text": "#CC0000",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -5582,8 +5893,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#886AA6",
+          "accent": "#886AA6",
+          "name_text": "#623490",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -5635,8 +5948,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#8D7424",
+          "accent": "#8D7424",
+          "name_text": "#0070BF",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -5688,8 +6003,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#017EB6",
+          "accent": "#017EB6",
+          "name_text": "#0293D5",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -5741,8 +6058,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#9D6969",
+          "accent": "#9D6969",
+          "name_text": "#843838",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -5794,8 +6113,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#7F7841",
+          "accent": "#7F7841",
+          "name_text": "#6C641E",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -5847,8 +6168,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#C45433",
+          "accent": "#8B4E29",
+          "name_text": "#F1683F",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -5900,8 +6223,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#457F88",
+          "accent": "#457F88",
+          "name_text": "#1F6974",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -5953,8 +6278,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#877456",
+          "accent": "#877456",
+          "name_text": "#71572E",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -6006,8 +6333,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#8F1C1F",
+          "accent": "#8F1C1F",
+          "name_text": "#C8102E",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -6059,8 +6388,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#417F8A",
+          "accent": "#417F8A",
+          "name_text": "#1C6976",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -6112,8 +6443,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#E2583E",
-          "accent": "#4B4632",
+          "primary": "#007AC2",
+          "accent": "#007AC2",
+          "name_text": "#007AC2",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -6165,8 +6498,11 @@
       "packaging_geometry": "TUBE",
       "branding": {
         "palette": {
-          "primary": "#E2583E",
-          "accent": "#4B4632",
+          "primary": "#0860D4",
+          "accent": "#0860D4",
+          "secondary": "#966F48",
+          "name_text": "#0860D4",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -6218,8 +6554,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#57799D",
+          "accent": "#57799D",
+          "name_text": "#2B5785",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -6271,8 +6609,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#996A6A",
+          "accent": "#996A6A",
+          "name_text": "#803B3B",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -6324,8 +6664,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#5978A2",
+          "accent": "#5978A2",
+          "name_text": "#1B60A5",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -6377,8 +6719,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#24828F",
+          "accent": "#1B4F8C",
+          "name_text": "#1B4F8C",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -6430,8 +6774,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#767676",
+          "accent": "#5C7F60",
+          "name_text": "#90C695",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -6480,8 +6826,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#7D783B",
+          "accent": "#7D783B",
+          "name_text": "#6B6519",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -6533,8 +6881,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#8C7258",
+          "accent": "#8C7258",
+          "name_text": "#75522F",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -6586,8 +6936,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#797940",
+          "accent": "#797940",
+          "name_text": "#67671E",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -6639,8 +6991,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#657E52",
+          "accent": "#657E52",
+          "name_text": "#47692C",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -6692,8 +7046,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#8E7417",
+          "accent": "#0A5E3C",
+          "name_text": "#0A5E3C",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -6745,8 +7101,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#977000",
+          "accent": "#817563",
+          "name_text": "#FCBC00",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -6795,8 +7153,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#005A9C",
-          "accent": "#C9A227",
+          "primary": "#710B74",
+          "accent": "#710B74",
+          "name_text": "#6D0070",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -6848,8 +7208,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#7272A5",
+          "accent": "#7272A5",
+          "name_text": "#3A3A8F",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -6901,8 +7263,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#BA5477",
+          "accent": "#BA5477",
+          "name_text": "#A71C4B",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -6954,8 +7318,10 @@
       "packaging_geometry": "TUBE",
       "branding": {
         "palette": {
-          "primary": "#E2583E",
-          "accent": "#4B4632",
+          "primary": "#A36666",
+          "accent": "#A36666",
+          "name_text": "#8B3333",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -7007,8 +7373,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#005A9C",
-          "accent": "#C9A227",
+          "primary": "#7171A8",
+          "accent": "#7171A8",
+          "name_text": "#383893",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -7060,8 +7428,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#005A9C",
-          "accent": "#C9A227",
+          "primary": "#5D75B3",
+          "accent": "#5D75B3",
+          "name_text": "#25479F",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -7113,8 +7483,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#005A9C",
-          "accent": "#C9A227",
+          "primary": "#A56A00",
+          "accent": "#A56A00",
+          "name_text": "#FFA500",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -7166,8 +7538,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#005A9C",
-          "accent": "#C9A227",
+          "primary": "#0F7377",
+          "accent": "#D6146E",
+          "name_text": "#D6146E",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -7191,10 +7565,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 1 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 10,
+        "pill_shape": "DIAMOND",
+        "pill_color": "PINK"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -7219,8 +7598,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#005A9C",
-          "accent": "#C9A227",
+          "primary": "#4C834C",
+          "accent": "#4C834C",
+          "name_text": "#266F26",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -7272,8 +7653,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#9A6975",
+          "accent": "#9A6975",
+          "name_text": "#4169B2",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -7326,8 +7709,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#458080",
+          "accent": "#458080",
+          "name_text": "#FFA500",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -7380,8 +7765,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#657E4B",
+          "accent": "#0D3C5A",
+          "name_text": "#2A00BE",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -7434,8 +7821,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#4A807A",
+          "accent": "#4A807A",
+          "name_text": "#256C64",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -7488,8 +7877,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#3F8089",
+          "accent": "#3F8089",
+          "name_text": "#1A6B76",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -7542,8 +7933,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#AF6060",
+          "accent": "#AF6060",
+          "name_text": "#FFFFFF",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -7596,8 +7989,10 @@
       "packaging_geometry": "VIAL",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#1D80A2",
+          "accent": "#1D80A2",
+          "name_text": "#28B1DF",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -7650,8 +8045,10 @@
       "packaging_geometry": "TUBE",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#00446C",
+          "accent": "#00446C",
+          "name_text": "#00446C",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -7704,8 +8101,10 @@
       "packaging_geometry": "VIAL",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#308286",
+          "accent": "#308286",
+          "name_text": "#358F93",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -7758,8 +8157,10 @@
       "packaging_geometry": "VIAL",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#1A7CBB",
+          "accent": "#1A7CBB",
+          "name_text": "#1E8DD4",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -7812,8 +8213,10 @@
       "packaging_geometry": "VIAL",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#DC392C",
+          "accent": "#DC392C",
+          "name_text": "#E63C2E",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -7866,8 +8269,10 @@
       "packaging_geometry": "VIAL",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#3A6A87",
+          "accent": "#3A6A87",
+          "name_text": "#165175",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -7919,8 +8324,10 @@
       "packaging_geometry": "VIAL",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#A76824",
+          "accent": "#A76824",
+          "name_text": "#924C00",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -7973,8 +8380,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#DDA7A5",
-          "accent": "#6B2D5C",
+          "primary": "#7265E1",
+          "accent": "#7265E1",
+          "name_text": "#1600D6",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -7998,10 +8407,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 3 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 30,
+        "pill_shape": "OBLONG",
+        "pill_color": "WHITE"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -8026,8 +8440,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#DDA7A5",
-          "accent": "#6B2D5C",
+          "primary": "#7A63DD",
+          "accent": "#7A63DD",
+          "name_text": "#2800D6",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -8051,10 +8467,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 3 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 30,
+        "pill_shape": "OVAL",
+        "pill_color": "WHITE"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -8079,8 +8500,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#DDA7A5",
-          "accent": "#6B2D5C",
+          "primary": "#8B7251",
+          "accent": "#8B7251",
+          "name_text": "#755429",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -8104,10 +8527,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 3 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 30,
+        "pill_shape": "CAPSULE",
+        "pill_color": "WHITE"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -8132,8 +8560,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#DDA7A5",
-          "accent": "#6B2D5C",
+          "primary": "#79793A",
+          "accent": "#79793A",
+          "name_text": "#686819",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -8157,10 +8587,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 3 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 30,
+        "pill_shape": "ROUND",
+        "pill_color": "WHITE"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -8185,8 +8620,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#0000C8",
+          "accent": "#0000C8",
+          "name_text": "#0000C8",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -8238,8 +8675,11 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#052053",
+          "accent": "#052053",
+          "secondary": "#546174",
+          "name_text": "#052053",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -8263,10 +8703,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 3 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 30,
+        "pill_shape": "PENTAGON (5 SIDED)",
+        "pill_color": "WHITE"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -8291,8 +8736,11 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#7C6DAF",
+          "accent": "#7C6DAF",
+          "secondary": "#9A6C4F",
+          "name_text": "#7C6DAF",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -8316,10 +8764,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 3 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 30,
+        "pill_shape": "ROUND",
+        "pill_color": "WHITE"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -8344,8 +8797,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#7A7A22",
+          "accent": "#8067C5",
+          "name_text": "#9678E6",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -8397,8 +8852,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#0072BC",
+          "accent": "#0072BC",
+          "name_text": "#0072BC",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -8451,8 +8908,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#005A9C",
-          "accent": "#C9A227",
+          "primary": "#8C724F",
+          "accent": "#8C724F",
+          "name_text": "#775527",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -8477,10 +8936,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 3 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 30,
+        "pill_shape": "OVAL",
+        "pill_color": "YELLOW"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -8505,8 +8969,10 @@
       "packaging_geometry": "SACHET",
       "branding": {
         "palette": {
-          "primary": "#005A9C",
-          "accent": "#C9A227",
+          "primary": "#8B1A1A",
+          "accent": "#1E3A9C",
+          "name_text": "#1E3A9C",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -8558,8 +9024,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#005A9C",
-          "accent": "#C9A227",
+          "primary": "#3E854C",
+          "accent": "#3E854C",
+          "name_text": "#1A722C",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -8583,10 +9051,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 1 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 10,
+        "pill_shape": "OVAL",
+        "pill_color": "WHITE"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -8611,8 +9084,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#926D74",
+          "accent": "#926D74",
+          "name_text": "#783F4A",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -8664,8 +9139,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#0072BC",
+          "accent": "#0072BC",
+          "name_text": "#0072BC",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -8717,8 +9194,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#BD1318",
+          "accent": "#BD1318",
+          "name_text": "#960004",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -8771,8 +9250,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#B344A8",
+          "accent": "#B344A8",
+          "name_text": "#9C168F",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -8797,10 +9278,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 1 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 10,
+        "pill_shape": "OVAL",
+        "pill_color": "PINK"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -8825,8 +9311,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#578057",
+          "accent": "#578057",
+          "name_text": "#306B30",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -8879,8 +9367,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#6175AE",
+          "accent": "#6175AE",
+          "name_text": "#2A4799",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -8933,8 +9423,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#9C6E0A",
+          "accent": "#0040D0",
+          "name_text": "#0040D0",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -8986,8 +9478,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#4D7E87",
+          "accent": "#4D7E87",
+          "name_text": "#266672",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -9039,8 +9533,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#88744A",
+          "accent": "#88744A",
+          "name_text": "#004B8D",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -9092,8 +9588,10 @@
       "packaging_geometry": "PEN",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#8F7153",
+          "accent": "#8F7153",
+          "name_text": "#79512A",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -9145,8 +9643,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#1B7DA7",
+          "accent": "#1B7DA7",
+          "name_text": "#1B7DA7",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -9198,8 +9698,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#497D96",
+          "accent": "#497D96",
+          "name_text": "#206181",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -9251,8 +9753,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#8B743D",
+          "accent": "#8B743D",
+          "name_text": "#785C18",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -9304,8 +9808,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#9A687D",
+          "accent": "#3E79B7",
+          "name_text": "#4A90D9",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -9357,8 +9863,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#4C7AA8",
+          "accent": "#4C7AA8",
+          "name_text": "#1F5891",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -9410,8 +9918,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#43853D",
+          "accent": "#43853D",
+          "name_text": "#217219",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -9463,8 +9973,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#0B1E60",
+          "accent": "#0B1E60",
+          "name_text": "#0B1E60",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -9516,8 +10028,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#A46A13",
+          "accent": "#A46A13",
+          "name_text": "#844F00",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -9569,8 +10083,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#9E6868",
+          "accent": "#9E6868",
+          "name_text": "#863737",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -9622,8 +10138,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#B935A6",
+          "accent": "#1A79CD",
+          "name_text": "#1E88E5",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -9675,8 +10193,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#8B7500",
+          "accent": "#8B7500",
+          "name_text": "#FFD700",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -9728,8 +10248,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#887536",
+          "accent": "#887536",
+          "name_text": "#E81E23",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -9781,8 +10303,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#917059",
+          "accent": "#917059",
+          "name_text": "#7A4E2F",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -9834,8 +10358,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#617992",
+          "accent": "#617992",
+          "name_text": "#35577A",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -9887,8 +10413,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#A34566",
+          "accent": "#A34566",
+          "name_text": "#8D1A42",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -9940,8 +10468,11 @@
       "packaging_geometry": "BOTTLE",
       "branding": {
         "palette": {
-          "primary": "#E2583E",
-          "accent": "#4B4632",
+          "primary": "#89725B",
+          "accent": "#89725B",
+          "secondary": "#4A7BA1",
+          "name_text": "#89725B",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -9993,8 +10524,11 @@
       "packaging_geometry": "TUBE",
       "branding": {
         "palette": {
-          "primary": "#E2583E",
-          "accent": "#4B4632",
+          "primary": "#89725B",
+          "accent": "#89725B",
+          "secondary": "#567A9D",
+          "name_text": "#89725B",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -10047,8 +10581,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#517C94",
+          "accent": "#517C94",
+          "name_text": "#275F7E",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -10100,8 +10636,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#86754B",
+          "accent": "#86754B",
+          "name_text": "#725B25",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -10153,8 +10691,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#007A73",
+          "accent": "#007A73",
+          "name_text": "#007A73",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -10206,8 +10746,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#9A687D",
+          "accent": "#897537",
+          "name_text": "#C8102E",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -10259,8 +10801,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#2B8743",
+          "accent": "#2B8743",
+          "name_text": "#0A7726",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -10312,8 +10856,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#0057A0",
+          "accent": "#0057A0",
+          "name_text": "#0057A0",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -10365,8 +10911,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#A56A00",
+          "accent": "#A56A00",
+          "name_text": "#FFA500",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -10418,8 +10966,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#BE5A19",
+          "accent": "#BE5A19",
+          "name_text": "#F37321",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -10471,8 +11021,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#65788C",
+          "accent": "#65788C",
+          "name_text": "#A7C7E7",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -10524,8 +11076,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#777A49",
+          "accent": "#777A49",
+          "name_text": "#636726",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -10577,8 +11131,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#007EB1",
+          "accent": "#007EB1",
+          "name_text": "#00A0E0",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -10631,8 +11187,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#E6007E",
+          "accent": "#E6007E",
+          "name_text": "#E6007E",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -10684,8 +11242,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#6D6DC2",
+          "accent": "#6D6DC2",
+          "name_text": "#2121B6",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -10737,8 +11297,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#B56017",
+          "accent": "#B56017",
+          "name_text": "#F58220",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -10791,8 +11353,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#AD0B47",
+          "accent": "#3A845B",
+          "name_text": "#AD0B47",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -10845,8 +11409,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#E8180F",
+          "accent": "#E8180F",
+          "name_text": "#E8180F",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -10898,8 +11464,11 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#005A9C",
-          "accent": "#C9A227",
+          "primary": "#031AA0",
+          "accent": "#031AA0",
+          "secondary": "#557D86",
+          "name_text": "#031AA0",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -10923,10 +11492,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 3 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 30,
+        "pill_shape": "ROUND",
+        "pill_color": "BLUE"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -10951,8 +11525,11 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#005A9C",
-          "accent": "#C9A227",
+          "primary": "#031AA0",
+          "accent": "#031AA0",
+          "secondary": "#89744A",
+          "name_text": "#031AA0",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -10976,10 +11553,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 3 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 30,
+        "pill_shape": "ROUND",
+        "pill_color": "BLUE"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -11004,8 +11586,11 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#005A9C",
-          "accent": "#C9A227",
+          "primary": "#031AA0",
+          "accent": "#031AA0",
+          "secondary": "#9C648F",
+          "name_text": "#031AA0",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -11029,10 +11614,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 3 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 30,
+        "pill_shape": "ROUND",
+        "pill_color": "BLUE"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -11057,8 +11647,11 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#005A9C",
-          "accent": "#C9A227",
+          "primary": "#031AA0",
+          "accent": "#031AA0",
+          "secondary": "#B4597B",
+          "name_text": "#031AA0",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -11082,10 +11675,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 3 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 30,
+        "pill_shape": "ROUND",
+        "pill_color": "BLUE"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -11110,8 +11708,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#E2583E",
-          "accent": "#4B4632",
+          "primary": "#2E5A8A",
+          "accent": "#2E5A8A",
+          "name_text": "#2E5A8A",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -11163,8 +11763,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#005A9C",
-          "accent": "#C9A227",
+          "primary": "#CC0000",
+          "accent": "#CC0000",
+          "name_text": "#CC0000",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -11188,10 +11790,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 1 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 10,
+        "pill_shape": "DIAMOND",
+        "pill_color": "BLUE"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -11216,8 +11823,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#64536E",
+          "accent": "#64536E",
+          "name_text": "#4B305B",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -11269,8 +11878,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#005A9C",
-          "accent": "#C9A227",
+          "primary": "#966F48",
+          "accent": "#966F48",
+          "name_text": "#81501F",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -11294,10 +11905,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 3 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 30,
+        "pill_shape": "DIAMOND",
+        "pill_color": "BLUE"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -11322,8 +11938,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#380850",
+          "accent": "#AF5895",
+          "name_text": "#380850",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -11375,8 +11993,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#707C40",
+          "accent": "#1D5A4A",
+          "name_text": "#1D5A4A",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -11428,8 +12048,11 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#005A9C",
-          "accent": "#C9A227",
+          "primary": "#472954",
+          "accent": "#472954",
+          "secondary": "#B85292",
+          "name_text": "#472954",
+          "body_text": "#CA642A",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -11453,10 +12076,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 1 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 10,
+        "pill_shape": "ROUND",
+        "pill_color": "ORANGE"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -11481,8 +12109,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#005A9C",
-          "accent": "#C9A227",
+          "primary": "#1E5AA8",
+          "accent": "#1E5AA8",
+          "name_text": "#1E5AA8",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -11506,10 +12136,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 3 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 30,
+        "pill_shape": "OVAL",
+        "pill_color": "BLUE"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -11534,8 +12169,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#7070AD",
+          "accent": "#7070AD",
+          "name_text": "#343499",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -11587,8 +12224,11 @@
       "packaging_geometry": "BOX",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#53832E",
+          "accent": "#53832E",
+          "secondary": "#2C818D",
+          "name_text": "#53832E",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -11614,8 +12254,13 @@
       "internal_unit": {
         "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 3 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 30,
+        "pill_shape": "ROUND",
+        "pill_color": "WHITE"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -11640,8 +12285,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#E2583E",
-          "accent": "#4B4632",
+          "primary": "#3E8181",
+          "accent": "#3E8181",
+          "name_text": "#1B6F6F",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -11693,8 +12340,11 @@
       "packaging_geometry": "TUBE",
       "branding": {
         "palette": {
-          "primary": "#E2583E",
-          "accent": "#4B4632",
+          "primary": "#D32B2B",
+          "accent": "#D32B2B",
+          "secondary": "#8B7436",
+          "name_text": "#D32B2B",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -11746,8 +12396,11 @@
       "packaging_geometry": "BOTTLE",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#198577",
+          "accent": "#0D8485",
+          "secondary": "#567B8F",
+          "name_text": "#25C4AF",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -11795,8 +12448,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#917143",
+          "accent": "#917143",
+          "name_text": "#7D551C",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -11848,8 +12503,10 @@
       "packaging_geometry": "TUBE",
       "branding": {
         "palette": {
-          "primary": "#E2583E",
-          "accent": "#4B4632",
+          "primary": "#797A3E",
+          "accent": "#797A3E",
+          "name_text": "#67681C",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -11901,8 +12558,10 @@
       "packaging_geometry": "TUBE",
       "branding": {
         "palette": {
-          "primary": "#E2583E",
-          "accent": "#4B4632",
+          "primary": "#5C7A91",
+          "accent": "#5C7A91",
+          "name_text": "#315A7A",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -11954,8 +12613,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#707B49",
+          "accent": "#707B49",
+          "name_text": "#596825",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -12007,8 +12668,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#8966B9",
+          "accent": "#8966B9",
+          "name_text": "#5D25A9",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -12060,8 +12723,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#677D51",
+          "accent": "#677D51",
+          "name_text": "#4A692C",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -12113,8 +12778,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#005A9C",
-          "accent": "#C9A227",
+          "primary": "#926D74",
+          "accent": "#926D74",
+          "name_text": "#D5397F",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -12138,10 +12805,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 3 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 30,
+        "pill_shape": "DIAMOND",
+        "pill_color": "PINK"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -12166,8 +12838,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#4B7D91",
+          "accent": "#4B7D91",
+          "name_text": "#23627C",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -12219,8 +12893,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#5A73C2",
+          "accent": "#5A73C2",
+          "name_text": "#183EB5",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -12272,8 +12948,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#005A9C",
-          "accent": "#C9A227",
+          "primary": "#AD6344",
+          "accent": "#AD6344",
+          "name_text": "#B03A2E",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -12297,10 +12975,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 3 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 30,
+        "pill_shape": "DIAMOND",
+        "pill_color": "PURPLE"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -12325,8 +13008,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#058A03",
+          "accent": "#058A03",
+          "name_text": "#039CFF",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -12378,8 +13063,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#C65309",
+          "accent": "#003593",
+          "name_text": "#003593",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -12431,8 +13118,11 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#182454",
+          "accent": "#182454",
+          "secondary": "#557B91",
+          "name_text": "#182454",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -12456,10 +13146,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 3 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 30,
+        "pill_shape": "ROUND",
+        "pill_color": "WHITE"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -12484,8 +13179,11 @@
       "packaging_geometry": "TUBE",
       "branding": {
         "palette": {
-          "primary": "#E2583E",
-          "accent": "#4B4632",
+          "primary": "#182454",
+          "accent": "#182454",
+          "secondary": "#3E378D",
+          "name_text": "#182454",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -12537,8 +13235,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#4C5F78",
+          "accent": "#4C5F78",
+          "name_text": "#294265",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -12590,8 +13290,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#3F8451",
+          "accent": "#3F8451",
+          "name_text": "#1B7132",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -12643,8 +13345,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#2F499F",
+          "accent": "#2F499F",
+          "name_text": "#2F499F",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -12696,8 +13400,10 @@
       "packaging_geometry": "TUBE",
       "branding": {
         "palette": {
-          "primary": "#E2583E",
-          "accent": "#4B4632",
+          "primary": "#588141",
+          "accent": "#588141",
+          "name_text": "#3A6E1D",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -12746,8 +13452,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#6E6EBB",
+          "accent": "#6E6EBB",
+          "name_text": "#2828AE",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -12799,8 +13507,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#797943",
+          "accent": "#797943",
+          "name_text": "#676721",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -12851,8 +13561,10 @@
       "packaging_geometry": "PEN",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#2B4AAC",
+          "accent": "#2B4AAC",
+          "name_text": "#2B4AAC",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -12904,8 +13616,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#5449A3",
+          "accent": "#5449A3",
+          "name_text": "#2B1D8C",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -12954,8 +13668,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#B05F5F",
+          "accent": "#B05F5F",
+          "name_text": "#9B2828",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -13006,8 +13722,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#4E7AA6",
+          "accent": "#4E7AA6",
+          "name_text": "#21588F",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -13059,8 +13777,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#E2583E",
-          "accent": "#4B4632",
+          "primary": "#0078B4",
+          "accent": "#182865",
+          "name_text": "#182865",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -13109,8 +13829,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#6574AE",
+          "accent": "#6574AE",
+          "name_text": "#2D4399",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -13162,8 +13884,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#7171A9",
+          "accent": "#7171A9",
+          "name_text": "#7171A9",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -13215,8 +13939,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#6674AC",
+          "accent": "#6674AC",
+          "name_text": "#2E4397",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -13267,8 +13993,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#43826A",
+          "accent": "#43826A",
+          "name_text": "#1F6F50",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -13320,8 +14048,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#7A63DB",
+          "accent": "#7A63DB",
+          "name_text": "#2900D6",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -13373,8 +14103,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#617F43",
+          "accent": "#617F43",
+          "name_text": "#466C20",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -13425,8 +14157,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#B15B7C",
+          "accent": "#B15B7C",
+          "name_text": "#9C2553",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -13477,8 +14211,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#438083",
+          "accent": "#438083",
+          "name_text": "#1F6C70",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -13530,8 +14266,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#1B3E8C",
+          "accent": "#DF1C86",
+          "name_text": "#E91E8C",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -13583,8 +14321,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#81426D",
+          "accent": "#81426D",
+          "name_text": "#6E1E55",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -13635,8 +14375,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#475768",
+          "accent": "#475768",
+          "name_text": "#273E57",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -13688,8 +14430,11 @@
       "packaging_geometry": "INHALER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#397F93",
+          "accent": "#397F93",
+          "secondary": "#6A7E37",
+          "name_text": "#1D7FA3",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -13737,8 +14482,10 @@
       "packaging_geometry": "BOTTLE",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#008080",
+          "accent": "#7171AA",
+          "name_text": "#008080",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -13786,8 +14533,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#975CC6",
+          "accent": "#975CC6",
+          "name_text": "#7215BC",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -13839,8 +14588,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#8C7259",
+          "accent": "#8C7259",
+          "name_text": "#755230",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -13892,8 +14643,11 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#7C6DAF",
+          "accent": "#7C6DAF",
+          "secondary": "#5178AC",
+          "name_text": "#7C6DAF",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -13917,10 +14671,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 3 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 30,
+        "pill_shape": "ROUND",
+        "pill_color": "WHITE"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -13945,8 +14704,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#6B545F",
+          "accent": "#6B545F",
+          "name_text": "#583244",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -13998,8 +14759,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#7F783A",
+          "accent": "#7F783A",
+          "name_text": "#6D6518",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -14052,8 +14815,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#956E5B",
+          "accent": "#956E5B",
+          "name_text": "#7D492F",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -14105,8 +14870,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#986F30",
+          "accent": "#986F30",
+          "name_text": "#85550B",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -14158,8 +14925,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#6D3528",
+          "accent": "#231F20",
+          "name_text": "#231F20",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -14211,8 +14980,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#BF4D89",
+          "accent": "#BF4D89",
+          "name_text": "#AC1564",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -14263,8 +15034,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#A4646F",
+          "accent": "#A4646F",
+          "name_text": "#8C3241",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -14316,8 +15089,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#B45D5D",
+          "accent": "#B45D5D",
+          "name_text": "#A02424",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -14368,8 +15143,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#724B72",
+          "accent": "#724B72",
+          "name_text": "#5F295F",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -14420,8 +15197,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#0577C9",
+          "accent": "#8B0E0C",
+          "name_text": "#8B0E0C",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -14472,8 +15251,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#4A7F7E",
+          "accent": "#4A7F7E",
+          "name_text": "#256B6A",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -14524,8 +15305,11 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#937219",
+          "accent": "#0057A0",
+          "secondary": "#385C98",
+          "name_text": "#0057A0",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -14549,10 +15333,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "15 pills per blister, 8 blisters",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 3 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 30,
+        "pill_shape": "OVAL",
+        "pill_color": "BLUE"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -14577,8 +15366,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#B6587A",
+          "accent": "#847553",
+          "name_text": "#FF7CAB",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -14629,8 +15420,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#005A9C",
-          "accent": "#C9A227",
+          "primary": "#A60703",
+          "accent": "#A60703",
+          "name_text": "#A60703",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -14654,10 +15447,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 1 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 10,
+        "pill_shape": "OVAL",
+        "pill_color": "WHITE"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -14682,8 +15480,10 @@
       "packaging_geometry": "BOX",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#8C7500",
+          "accent": "#996F2B",
+          "name_text": "#F26522",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -14730,8 +15530,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#757B36",
+          "accent": "#757B36",
+          "name_text": "#636A15",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -14783,8 +15585,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#4F7B98",
+          "accent": "#4F7B98",
+          "name_text": "#255D82",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -14836,8 +15640,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#947044",
+          "accent": "#947044",
+          "name_text": "#7F531C",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -14889,8 +15695,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#8D64B6",
+          "accent": "#8D64B6",
+          "name_text": "#6626A5",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -14942,8 +15750,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#7754BC",
+          "accent": "#7754BC",
+          "name_text": "#4A1AAA",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -14995,8 +15805,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#6372B9",
+          "accent": "#6372B9",
+          "name_text": "#243BA9",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -15048,8 +15860,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#A66464",
+          "accent": "#A66464",
+          "name_text": "#8F3131",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -15101,8 +15915,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#005A9C",
-          "accent": "#C9A227",
+          "primary": "#1E3A8A",
+          "accent": "#1E3A8A",
+          "name_text": "#1E3A8A",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -15126,10 +15942,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 3 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 30,
+        "pill_shape": "DIAMOND",
+        "pill_color": "GREEN"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -15154,8 +15975,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#946E5B",
+          "accent": "#946E5B",
+          "name_text": "#7C4930",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -15207,8 +16030,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#82773B",
+          "accent": "#82773B",
+          "name_text": "#706218",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -15260,8 +16085,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#C74C63",
+          "accent": "#C74C63",
+          "name_text": "#B80E2E",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -15313,8 +16140,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#B648BE",
+          "accent": "#B648BE",
+          "name_text": "#9F14A9",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -15366,8 +16195,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#687E3C",
+          "accent": "#687E3C",
+          "name_text": "#516C1A",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -15419,8 +16250,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#737B3A",
+          "accent": "#737B3A",
+          "name_text": "#606A19",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -15472,8 +16305,11 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#6B2D5C",
-          "accent": "#C9A227",
+          "primary": "#32665E",
+          "accent": "#32665E",
+          "secondary": "#927132",
+          "name_text": "#32665E",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -15497,10 +16333,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 3 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 30,
+        "pill_shape": "ROUND",
+        "pill_color": "ASSORTED"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -15525,8 +16366,11 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#6B2D5C",
-          "accent": "#C9A227",
+          "primary": "#32665E",
+          "accent": "#32665E",
+          "secondary": "#498073",
+          "name_text": "#32665E",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -15550,10 +16394,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 3 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 30,
+        "pill_shape": "DIAMOND",
+        "pill_color": "GREEN"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -15578,8 +16427,11 @@
       "packaging_geometry": "BOX",
       "branding": {
         "palette": {
-          "primary": "#006A4E",
-          "accent": "#C9A227",
+          "primary": "#F5D5BE",
+          "accent": "#197D02",
+          "secondary": "#6B7D45",
+          "name_text": "#197D02",
+          "body_text": "#DA9C44",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -15627,8 +16479,11 @@
       "packaging_geometry": "BOX",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#C9A227",
+          "primary": "#007FAC",
+          "accent": "#06294B",
+          "secondary": "#4E78AF",
+          "name_text": "#0F4290",
+          "body_text": "#229CB7",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -15676,8 +16531,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#005A9C",
-          "accent": "#C9A227",
+          "primary": "#51796D",
+          "accent": "#51796D",
+          "name_text": "#2D6554",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -15701,10 +16558,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "4 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "4 pills per blister, 1 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 4,
+        "pill_total": 4,
+        "pill_shape": "OVAL",
+        "pill_color": "WHITE"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -15729,8 +16591,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#B150B1",
+          "accent": "#B150B1",
+          "name_text": "#992099",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -15782,8 +16646,10 @@
       "packaging_geometry": "BOX",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#458359",
+          "accent": "#458359",
+          "name_text": "#20703A",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -15828,8 +16694,10 @@
       "packaging_geometry": "TUBE",
       "branding": {
         "palette": {
-          "primary": "#E2583E",
-          "accent": "#4B4632",
+          "primary": "#7058B8",
+          "accent": "#7058B8",
+          "name_text": "#7058B8",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -15878,8 +16746,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#A56A00",
+          "accent": "#A56A00",
+          "name_text": "#A56A00",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -15928,8 +16798,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#6D6DC7",
+          "accent": "#6D6DC7",
+          "name_text": "#1B1BBB",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -15978,8 +16850,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#467E93",
+          "accent": "#467E93",
+          "name_text": "#1E647E",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -16028,8 +16902,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#1F4E9C",
+          "accent": "#1F4E9C",
+          "name_text": "#1F4E9C",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -16078,8 +16954,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#5C4033",
+          "accent": "#5C4033",
+          "name_text": "#5C4033",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -16128,8 +17006,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#B95C1B",
+          "accent": "#B95C1B",
+          "name_text": "#F07824",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -16178,8 +17058,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#7E7915",
+          "accent": "#7E7915",
+          "name_text": "#CE0D4F",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -16228,8 +17110,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#86763A",
+          "accent": "#86763A",
+          "name_text": "#746017",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -16278,8 +17162,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#5B8141",
+          "accent": "#5B8141",
+          "name_text": "#3E6E1D",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -16330,8 +17216,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#88761B",
+          "accent": "#6E6EBF",
+          "name_text": "#F2D330",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -16382,8 +17270,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#5631B6",
+          "accent": "#5631B6",
+          "name_text": "#3105A1",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -16434,8 +17324,10 @@
       "packaging_geometry": "PEN",
       "branding": {
         "palette": {
-          "primary": "#005A9C",
-          "accent": "#C9A227",
+          "primary": "#A16857",
+          "accent": "#A16857",
+          "name_text": "#89402A",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -16458,10 +17350,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 1 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 10,
+        "pill_shape": "DIAMOND",
+        "pill_color": "BLUE"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -16486,8 +17383,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#5973C3",
+          "accent": "#5973C3",
+          "name_text": "#163EB6",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -16538,8 +17437,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#CC0000",
+          "accent": "#CC0000",
+          "name_text": "#CC0000",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -16590,8 +17491,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#5A7999",
+          "accent": "#5A7999",
+          "name_text": "#2E5781",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -16642,8 +17545,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#A06C20",
+          "accent": "#A06C20",
+          "name_text": "#8A5200",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -16695,8 +17600,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#115F44",
+          "accent": "#115F44",
+          "name_text": "#007049",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -16719,10 +17626,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 6 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 60,
+        "pill_shape": "ROUND",
+        "pill_color": "WHITE"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -16747,8 +17659,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#528152",
+          "accent": "#528152",
+          "name_text": "#2C6C2C",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -16799,8 +17713,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#727B45",
+          "accent": "#727B45",
+          "name_text": "#5D6822",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -16852,8 +17768,11 @@
       "packaging_geometry": "SACHET",
       "branding": {
         "palette": {
-          "primary": "#6B2D5C",
-          "accent": "#C9A227",
+          "primary": "#32665E",
+          "accent": "#32665E",
+          "secondary": "#A56845",
+          "name_text": "#32665E",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -16904,8 +17823,11 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#052053",
+          "accent": "#052053",
+          "secondary": "#425E9E",
+          "name_text": "#052053",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -16929,10 +17851,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 3 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 30,
+        "pill_shape": "PENTAGON (5 SIDED)",
+        "pill_color": "WHITE"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -16957,8 +17884,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#3F8457",
+          "accent": "#3F8457",
+          "name_text": "#1B7139",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -17009,8 +17938,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#DDA7A5",
-          "accent": "#6B2D5C",
+          "primary": "#B45979",
+          "accent": "#B45979",
+          "name_text": "#A0224E",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -17033,10 +17964,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 3 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 30,
+        "pill_shape": "ROUND",
+        "pill_color": "WHITE"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -17061,8 +17997,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#DDA7A5",
-          "accent": "#6B2D5C",
+          "primary": "#847459",
+          "accent": "#847459",
+          "name_text": "#6E5731",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -17085,10 +18023,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 3 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 30,
+        "pill_shape": "ROUND",
+        "pill_color": "WHITE"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -17113,8 +18056,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#DDA7A5",
-          "accent": "#6B2D5C",
+          "primary": "#527D8B",
+          "accent": "#527D8B",
+          "name_text": "#2A6375",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -17137,10 +18082,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 3 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 30,
+        "pill_shape": "OBLONG",
+        "pill_color": "WHITE"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -17165,8 +18115,11 @@
       "packaging_geometry": "BOX",
       "branding": {
         "palette": {
-          "primary": "#005A9C",
-          "accent": "#C9A227",
+          "primary": "#AC634F",
+          "accent": "#AC634F",
+          "secondary": "#B15F56",
+          "name_text": "#AC634F",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -17214,8 +18167,11 @@
       "packaging_geometry": "BOX",
       "branding": {
         "palette": {
-          "primary": "#005A9C",
-          "accent": "#C9A227",
+          "primary": "#AC634F",
+          "accent": "#AC634F",
+          "secondary": "#B15F56",
+          "name_text": "#AC634F",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -17263,8 +18219,11 @@
       "packaging_geometry": "BOX",
       "branding": {
         "palette": {
-          "primary": "#005A9C",
-          "accent": "#C9A227",
+          "primary": "#AC634F",
+          "accent": "#AC634F",
+          "secondary": "#B15F56",
+          "name_text": "#AC634F",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -17312,8 +18271,11 @@
       "packaging_geometry": "BOX",
       "branding": {
         "palette": {
-          "primary": "#005A9C",
-          "accent": "#C9A227",
+          "primary": "#AC634F",
+          "accent": "#AC634F",
+          "secondary": "#B15F56",
+          "name_text": "#AC634F",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -17358,8 +18320,11 @@
       "packaging_geometry": "BOX",
       "branding": {
         "palette": {
-          "primary": "#005A9C",
-          "accent": "#C9A227",
+          "primary": "#AC634F",
+          "accent": "#AC634F",
+          "secondary": "#B15F56",
+          "name_text": "#AC634F",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -17404,8 +18369,11 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#937219",
+          "accent": "#0057A0",
+          "secondary": "#388186",
+          "name_text": "#0057A0",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -17429,10 +18397,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 25 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 250,
+        "pill_shape": "OVAL",
+        "pill_color": "BLUE"
       },
       "render_config": {
         "primary_render_target": "standalone_container",
@@ -17457,8 +18430,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#005A9A",
+          "accent": "#005A9A",
+          "name_text": "#005A9A",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -17510,8 +18485,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#002D62",
+          "accent": "#002D62",
+          "name_text": "#002D62",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -17563,8 +18540,10 @@
       "packaging_geometry": "TUBE",
       "branding": {
         "palette": {
-          "primary": "#E2583E",
-          "accent": "#4B4632",
+          "primary": "#087BC2",
+          "accent": "#1E2E78",
+          "name_text": "#1E2E78",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -17612,8 +18591,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#C64C69",
+          "accent": "#C64C69",
+          "name_text": "#B60F37",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -17662,8 +18643,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#DDA7A5",
-          "accent": "#6B2D5C",
+          "primary": "#32576E",
+          "accent": "#32576E",
+          "name_text": "#15425F",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -17712,8 +18695,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#4868A8",
+          "accent": "#6C7D45",
+          "name_text": "#1C4391",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -17762,8 +18747,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#4C7D93",
+          "accent": "#4C7D93",
+          "name_text": "#23617D",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -17815,8 +18802,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#4F7AA5",
+          "accent": "#4F7AA5",
+          "name_text": "#22588E",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -17867,8 +18856,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#707C45",
+          "accent": "#707C45",
+          "name_text": "#5A6922",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -17919,8 +18910,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#6D7D40",
+          "accent": "#6D7D40",
+          "name_text": "#566B1D",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -17971,8 +18964,10 @@
       "packaging_geometry": "PEN",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#843C32",
+          "accent": "#843C32",
+          "name_text": "#731C10",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -18023,8 +19018,11 @@
       "packaging_geometry": "TUBE",
       "branding": {
         "palette": {
-          "primary": "#E2583E",
-          "accent": "#4B4632",
+          "primary": "#A80000",
+          "accent": "#A80000",
+          "secondary": "#A56566",
+          "name_text": "#A80000",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -18076,8 +19074,11 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#A80000",
+          "accent": "#A80000",
+          "secondary": "#438354",
+          "name_text": "#A80000",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -18101,10 +19102,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 3 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 30,
+        "pill_shape": "OBLONG",
+        "pill_color": "WHITE"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -18129,8 +19135,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#8C7258",
+          "accent": "#8C7258",
+          "name_text": "#75522F",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -18182,8 +19190,11 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#397F93",
+          "accent": "#397F93",
+          "secondary": "#368181",
+          "name_text": "#1D7FA3",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -18206,10 +19217,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 3 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 30,
+        "pill_shape": "ROUND",
+        "pill_color": "WHITE"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -18234,8 +19250,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#79794F",
+          "accent": "#79794F",
+          "name_text": "#65652B",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -18286,8 +19304,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#A56374",
+          "accent": "#A56374",
+          "name_text": "#8E3149",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -18338,8 +19358,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#79793B",
+          "accent": "#79793B",
+          "name_text": "#68681A",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -18390,8 +19412,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#445960",
+          "accent": "#445960",
+          "name_text": "#274550",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -18442,8 +19466,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#447D99",
+          "accent": "#447D99",
+          "name_text": "#1B6184",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -18494,8 +19520,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#737B3F",
+          "accent": "#737B3F",
+          "name_text": "#5F691D",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -18546,8 +19574,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#A16767",
+          "accent": "#A16767",
+          "name_text": "#893535",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -18598,8 +19628,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#5A7B88",
+          "accent": "#5A7B88",
+          "name_text": "#315F72",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -18650,8 +19682,11 @@
       "packaging_geometry": "BOTTLE",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#198577",
+          "accent": "#0D8485",
+          "secondary": "#358182",
+          "name_text": "#25C4AF",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -18698,8 +19733,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#B3506A",
+          "accent": "#B3506A",
+          "name_text": "#9C1F3F",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -18750,8 +19787,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#373F8B",
+          "accent": "#373F8B",
+          "name_text": "#131D79",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -18802,8 +19841,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#7F7749",
+          "accent": "#7F7749",
+          "name_text": "#6B6125",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -18854,8 +19895,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#85763D",
+          "accent": "#85763D",
+          "name_text": "#726019",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -18904,8 +19947,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#BA5D00",
+          "accent": "#144089",
+          "name_text": "#144089",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -18954,8 +19999,11 @@
       "packaging_geometry": "TUBE",
       "branding": {
         "palette": {
-          "primary": "#E2583E",
-          "accent": "#4B4632",
+          "primary": "#0860D4",
+          "accent": "#0860D4",
+          "secondary": "#1470D5",
+          "name_text": "#0860D4",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -19006,8 +20054,11 @@
       "packaging_geometry": "TUBE",
       "branding": {
         "palette": {
-          "primary": "#E2583E",
-          "accent": "#4B4632",
+          "primary": "#0860D4",
+          "accent": "#0860D4",
+          "secondary": "#A16859",
+          "name_text": "#0860D4",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -19058,8 +20109,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#E30488",
+          "accent": "#E30488",
+          "name_text": "#E40589",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -19082,10 +20135,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 3 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 30,
+        "pill_shape": "OVAL",
+        "pill_color": "PINK"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -19110,8 +20168,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#005A9C",
-          "accent": "#C9A227",
+          "primary": "#8E705C",
+          "accent": "#8E705C",
+          "name_text": "#774D32",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -19132,10 +20192,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 1 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 10,
+        "pill_shape": "ROUND",
+        "pill_color": "PINK"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -19160,8 +20225,10 @@
       "packaging_geometry": "TUBE",
       "branding": {
         "palette": {
-          "primary": "#E2583E",
-          "accent": "#4B4632",
+          "primary": "#B75F0B",
+          "accent": "#507AA4",
+          "name_text": "#FF8510",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -19210,8 +20277,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#7C69BF",
+          "accent": "#7C69BF",
+          "name_text": "#4222B3",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -19260,8 +20329,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#E30613",
+          "accent": "#E30613",
+          "name_text": "#E30613",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -19310,8 +20381,10 @@
       "packaging_geometry": "INHALER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#60417E",
+          "accent": "#60417E",
+          "name_text": "#7B4397",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -19358,8 +20431,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#6B7C5D",
+          "accent": "#C8324B",
+          "name_text": "#C8324B",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -19408,8 +20483,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#57799C",
+          "accent": "#57799C",
+          "name_text": "#2B5784",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -19458,8 +20535,10 @@
       "packaging_geometry": "VIAL",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#6E7C4F",
+          "accent": "#6E7C4F",
+          "name_text": "#55682A",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -19508,8 +20587,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#D01060",
+          "accent": "#D01060",
+          "name_text": "#D01060",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -19558,8 +20639,10 @@
       "packaging_geometry": "BOX",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#6868E1",
+          "accent": "#6868E1",
+          "name_text": "#0000D6",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -19604,8 +20687,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#916F60",
+          "accent": "#916F60",
+          "name_text": "#794935",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -19654,8 +20739,10 @@
       "packaging_geometry": "PEN",
       "branding": {
         "palette": {
-          "primary": "#E2583E",
-          "accent": "#4B4632",
+          "primary": "#766CBE",
+          "accent": "#766CBE",
+          "name_text": "#001965",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -19707,8 +20794,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#C8102E",
+          "accent": "#2E8540",
+          "name_text": "#2E8540",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -19760,8 +20849,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#DDA7A5",
-          "accent": "#6B2D5C",
+          "primary": "#006A9E",
+          "accent": "#88744E",
+          "name_text": "#006A9E",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -19811,8 +20902,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#487D95",
+          "accent": "#487D95",
+          "name_text": "#1F6280",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -19861,8 +20954,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#87753E",
+          "accent": "#87753E",
+          "name_text": "#745E1A",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -19911,8 +21006,10 @@
       "packaging_geometry": "PEN",
       "branding": {
         "palette": {
-          "primary": "#E2583E",
-          "accent": "#4B4632",
+          "primary": "#7367D7",
+          "accent": "#7367D7",
+          "name_text": "#1C06D0",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -19964,8 +21061,10 @@
       "packaging_geometry": "PEN",
       "branding": {
         "palette": {
-          "primary": "#E2583E",
-          "accent": "#4B4632",
+          "primary": "#727B4F",
+          "accent": "#727B4F",
+          "name_text": "#001965",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -20017,8 +21116,10 @@
       "packaging_geometry": "BOX",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#0033A0",
+          "accent": "#0033A0",
+          "name_text": "#0033A0",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -20063,8 +21164,10 @@
       "packaging_geometry": "BOX",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#1F5FA8",
+          "accent": "#477E8D",
+          "name_text": "#00438F",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -20109,8 +21212,10 @@
       "packaging_geometry": "BOX",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#724C3D",
+          "accent": "#724C3D",
+          "name_text": "#61301D",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -20155,8 +21260,10 @@
       "packaging_geometry": "BOX",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#5D5077",
+          "accent": "#5D5077",
+          "name_text": "#3E2C63",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -20201,8 +21308,10 @@
       "packaging_geometry": "VIAL",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#484168",
+          "accent": "#484168",
+          "name_text": "#2C2257",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -20251,8 +21360,10 @@
       "packaging_geometry": "VIAL",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#7E479B",
+          "accent": "#7E479B",
+          "name_text": "#611D85",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -20301,8 +21412,10 @@
       "packaging_geometry": "VIAL",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#824696",
+          "accent": "#824696",
+          "name_text": "#681E81",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -20351,8 +21464,10 @@
       "packaging_geometry": "VIAL",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#814697",
+          "accent": "#814697",
+          "name_text": "#671D82",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -20401,8 +21516,11 @@
       "packaging_geometry": "VIAL",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#A76824",
+          "accent": "#A76824",
+          "secondary": "#4E6AB0",
+          "name_text": "#924C00",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -20423,10 +21541,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Vial",
-        "material": "Glass Type I",
-        "layout": "Standard Unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "type": "Pills",
+        "material": "Blister (PVC/Aluminium)",
+        "layout": "10 pills per blister, 10 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 100,
+        "pill_shape": "ROUND",
+        "pill_color": "WHITE"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -20451,8 +21574,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#5B77AA",
+          "accent": "#5B77AA",
+          "name_text": "#294F93",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -20501,8 +21626,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#3F7F8D",
+          "accent": "#3F7F8D",
+          "name_text": "#196879",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -20551,8 +21678,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#A958A9",
+          "accent": "#A958A9",
+          "name_text": "#912891",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -20601,8 +21730,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#437D9B",
+          "accent": "#437D9B",
+          "name_text": "#1A6186",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -20651,8 +21782,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#332421",
+          "accent": "#332421",
+          "name_text": "#4F2921",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -20701,8 +21834,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#1E4B9C",
+          "accent": "#1E4B9C",
+          "name_text": "#1E4B9C",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -20754,8 +21889,10 @@
       "packaging_geometry": "BOX",
       "branding": {
         "palette": {
-          "primary": "#E2583E",
-          "accent": "#4B4632",
+          "primary": "#917147",
+          "accent": "#917147",
+          "name_text": "#E11F73",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -20807,8 +21944,10 @@
       "packaging_geometry": "PEN",
       "branding": {
         "palette": {
-          "primary": "#E2583E",
-          "accent": "#4B4632",
+          "primary": "#7B2D8E",
+          "accent": "#7B2D8E",
+          "name_text": "#7B2D8E",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -20860,8 +21999,11 @@
       "packaging_geometry": "SACHET",
       "branding": {
         "palette": {
-          "primary": "#006A4E",
-          "accent": "#C9A227",
+          "primary": "#F5D5BE",
+          "accent": "#197D02",
+          "secondary": "#907231",
+          "name_text": "#197D02",
+          "body_text": "#DA9C44",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -20912,8 +22054,11 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#6B2D5C",
-          "accent": "#C9A227",
+          "primary": "#32665E",
+          "accent": "#32665E",
+          "secondary": "#8C7250",
+          "name_text": "#32665E",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -20936,10 +22081,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 1 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 10,
+        "pill_shape": "ROUND",
+        "pill_color": "ASSORTED"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -20964,8 +22114,11 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#006A4E",
-          "accent": "#C9A227",
+          "primary": "#C8A02E",
+          "accent": "#000000",
+          "secondary": "#2F2323",
+          "name_text": "#C8A02E",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -20988,10 +22141,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 3 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 30,
+        "pill_shape": "OVAL",
+        "pill_color": "BLACK"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -21016,8 +22174,11 @@
       "packaging_geometry": "SACHET",
       "branding": {
         "palette": {
-          "primary": "#005A9C",
-          "accent": "#C9A227",
+          "primary": "#472954",
+          "accent": "#472954",
+          "secondary": "#A76467",
+          "name_text": "#472954",
+          "body_text": "#CA642A",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -21068,8 +22229,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#6E6EC1",
+          "accent": "#6E6EC1",
+          "name_text": "#2222B4",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -21120,8 +22283,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#867452",
+          "accent": "#867452",
+          "name_text": "#71592B",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -21172,8 +22337,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#986C5E",
+          "accent": "#986C5E",
+          "name_text": "#804431",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -21224,8 +22391,10 @@
       "packaging_geometry": "BOTTLE",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#16847A",
+          "accent": "#477D92",
+          "name_text": "#4B0082",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -21272,8 +22441,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#005A9C",
-          "accent": "#C9A227",
+          "primary": "#9F6868",
+          "accent": "#9F6868",
+          "name_text": "#D6146E",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -21296,10 +22467,15 @@
         ]
       },
       "internal_unit": {
-        "type": "Blister",
+        "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "10 pills per unit",
-        "leaflet": "IFU_Included_Standard_Fold"
+        "layout": "10 pills per blister, 3 blisters",
+        "leaflet": "IFU_Included_Standard_Fold",
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 30,
+        "pill_shape": "DIAMOND",
+        "pill_color": "PINK"
       },
       "render_config": {
         "primary_render_target": "carton_box",
@@ -21324,8 +22500,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#E2583E",
-          "accent": "#4B4632",
+          "primary": "#8E7400",
+          "accent": "#DA291C",
+          "name_text": "#DA291C",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {
@@ -21376,8 +22554,10 @@
       "packaging_geometry": "BLISTER",
       "branding": {
         "palette": {
-          "primary": "#003366",
-          "accent": "#0D5FB8",
+          "primary": "#666666",
+          "accent": "#666666",
+          "name_text": "#474747",
+          "body_text": "#000000",
           "background": "#FFFFFF"
         },
         "design_elements": {

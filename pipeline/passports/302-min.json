@@ -22,8 +22,10 @@
     "unit_count_standard": "30",
     "branding": {
         "palette": {
-            "primary": "#005A9C",
-            "accent": "#C9A227",
+            "primary": "#1E3A8A",
+            "accent": "#1E3A8A",
+            "name_text": "#1E3A8A",
+            "body_text": "#000000",
             "background": "#FFFFFF"
         },
         "design_elements": {
@@ -44,10 +46,13 @@
     "internal_unit": {
         "type": "Pills",
         "material": "Blister (PVC/Aluminium)",
-        "layout": "15 pills per blister, 8 blisters",
+        "layout": "10 pills per blister, 3 blisters",
         "leaflet": null,
-        "render": false,
-        "min_pills_per_unit": 15
+        "render": true,
+        "min_pills_per_unit": 10,
+        "pill_total": 30,
+        "pill_shape": "DIAMOND",
+        "pill_color": "GREEN"
     },
     "schema_version": "2.1",
     "brand_name": "Aurogra",

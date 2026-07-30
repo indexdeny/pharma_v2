@@ -7,8 +7,10 @@ Kept so that:
 
 Prefer the unified entry point:  python main.py --passports-only
 """
+import sys
+
 from src.passport_generator import *        # noqa: F401,F403  (re-export public API)
 from src.passport_generator import main
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())        # propagate the failure code, don't swallow it

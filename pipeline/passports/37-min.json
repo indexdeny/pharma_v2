@@ -1,71 +1,74 @@
 {
-  "sku_id": "37-min.jpg",
-  "product_name": "Zovirax Cream 5%",
-  "render_config": {
-    "primary_render_target": "carton_box",
-    "future_dual_shot_enabled": false,
-    "scene_archetype": "tube_carton"
-  },
-  "secondary_packaging": {
-    "box_type": "Reverse Tuck End (Standard)",
-    "material": "GZ-Cardboard (Pharmaceutical Grade)",
-    "dimensions": "140x35x25mm",
-    "features": [
-      "Braille",
-      "DataMatrix_Zone",
-      "Tamper_Evident_Seal"
-    ]
-  },
-  "render_priority": "secondary_box",
-  "dosage_ref": "mg",
-  "category_id": "12",
-  "unit_count_standard": "1",
-  "branding": {
-    "palette": {
-      "primary": "#E2583E",
-      "accent": "#4B4632",
-      "background": "#FFFFFF"
+    "sku_id": "37-min.jpg",
+    "product_name": "Zovirax Cream 5%",
+    "render_config": {
+        "primary_render_target": "carton_box",
+        "future_dual_shot_enabled": false,
+        "scene_archetype": "tube_carton"
     },
-    "design_elements": {
-      "has_logo_embossing": true,
-      "spot_uv_areas": [
-        "brand_name",
-        "logo"
-      ],
-      "is_varnished": true
+    "secondary_packaging": {
+        "box_type": "Reverse Tuck End (Standard)",
+        "material": "GZ-Cardboard (Pharmaceutical Grade)",
+        "dimensions": "140x35x25mm",
+        "features": [
+            "Braille",
+            "DataMatrix_Zone",
+            "Tamper_Evident_Seal"
+        ]
     },
-    "palette_source": "Canonical/Official_DB"
-  },
-  "label_content": {
-    "brand_name_display": "Zovirax Cream 5%",
-    "dosage_display": "5mg/5%",
-    "unit_count_display": "1 Tube"
-  },
-  "internal_unit": {
-    "type": "Tube",
-    "material": "Aluminum",
-    "layout": "1 tube",
-    "leaflet": null,
-    "render": false,
-    "min_pills_per_unit": 1
-  },
-  "schema_version": "2.1",
-  "brand_name": "Zovirax Cream 5%",
-  "active_ingredient": "Aciclovir",
-  "manufacturer": null,
-  "brand_color_verified": false,
-  "packaging_geometry": "TUBE",
-  "is_generic": false,
-  "reference_url": null,
-  "primary_package": {
-    "type": null,
-    "geometry": null,
-    "width_mm": null,
-    "height_mm": null,
-    "depth_mm": null
-  },
-  "package_type": "tube",
-  "minimal_package": 1,
-  "minimal_dosage": 5.0,
-  "category": "Anti-Viral"
+    "render_priority": "secondary_box",
+    "dosage_ref": "mg",
+    "category_id": "12",
+    "unit_count_standard": "1",
+    "branding": {
+        "palette": {
+            "primary": "#53832E",
+            "accent": "#53832E",
+            "secondary": "#627F44",
+            "name_text": "#53832E",
+            "body_text": "#000000",
+            "background": "#FFFFFF"
+        },
+        "design_elements": {
+            "has_logo_embossing": true,
+            "spot_uv_areas": [
+                "brand_name",
+                "logo"
+            ],
+            "is_varnished": true
+        },
+        "palette_source": "Canonical/Official_DB"
+    },
+    "label_content": {
+        "brand_name_display": "Zovirax Cream 5%",
+        "dosage_display": "5mg/5%",
+        "unit_count_display": "1 Tube"
+    },
+    "internal_unit": {
+        "type": "Tube",
+        "material": "Aluminum",
+        "layout": "1 tube",
+        "leaflet": null,
+        "render": false,
+        "min_pills_per_unit": 1
+    },
+    "schema_version": "2.1",
+    "brand_name": "Zovirax Cream 5%",
+    "active_ingredient": "Aciclovir",
+    "manufacturer": null,
+    "brand_color_verified": false,
+    "packaging_geometry": "TUBE",
+    "is_generic": false,
+    "reference_url": null,
+    "primary_package": {
+        "type": null,
+        "geometry": null,
+        "width_mm": null,
+        "height_mm": null,
+        "depth_mm": null
+    },
+    "package_type": "tube",
+    "minimal_package": 1,
+    "minimal_dosage": 5.0,
+    "category": "Anti-Viral"
 }

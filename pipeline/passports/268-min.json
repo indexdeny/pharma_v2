@@ -18,8 +18,11 @@
     "unit_count_standard": "1",
     "branding": {
         "palette": {
-            "primary": "#003366",
-            "accent": "#0D5FB8",
+            "primary": "#397F93",
+            "accent": "#397F93",
+            "secondary": "#6A7E37",
+            "name_text": "#1D7FA3",
+            "body_text": "#000000",
             "background": "#FFFFFF"
         },
         "design_elements": {
