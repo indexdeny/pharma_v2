@@ -39,6 +39,12 @@ rpa:
   # other apps. Unlike headless this keeps a real rendered window, so Gemini
   # still generates images. Set to false to watch the browser while it works.
   offscreen_window:         true
+  # Накопленная история Gemini протекает в новые картинки: на SKU без
+  # вертикальной полосы она появлялась, потому что была в соседнем чате.
+  # true  — если чистота истории не подтверждена, прогон останавливается
+  #         с кодом 2, вместо того чтобы часами рендерить брак;
+  # false — залогировать и продолжить (прежнее поведение).
+  strict_chat_cleanup:      true
   batch_size:               1     # passports per chat session before context reset
   image_generation_timeout: 180   # seconds
   download_timeout:         60     # seconds

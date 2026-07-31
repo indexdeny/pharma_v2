@@ -1210,7 +1210,7 @@ def agent_3_passport_architect(data: dict, template_id: str,
     # -- [SURFACE COLOUR MANDATE]
     _items = ["the brand accent stripe (Row 6) in " + accent_hex]
     if _secondary_hex:
-        _items.append("the left vertical accent stripe in " + _secondary_hex.upper())
+        _items.append("the left vertical accent band in " + _secondary_hex.upper())
     if _coloured_type:
         _items.append("the coloured type specified in the FRONT PANEL GRID")
     _items.append("the brand badge block")
@@ -1242,37 +1242,54 @@ def agent_3_passport_architect(data: dict, template_id: str,
             "#000000 ink. Brand colour is used ONLY for the corner badge and the "
             "Row 6 accent stripe — NEVER for the text characters themselves.")
 
-    # -- Left Vertical Accent Stripe
-    # Wording is deliberately positive ("overlaps", "extends", "runs continuously"):
-    # the renderer follows affirmative scene descriptions far better than bans.
+    # --- L-LAYOUT-PATCH: abutting bands, no layer compositing ---
+    # -- Left Vertical Accent Band
+    # Раньше здесь описывалась композиция слоёв: горизонтальная полоса на всю
+    # ширину, вертикальная поверх неё, зона пересечения заливается цветом
+    # вертикальной. Диффузионная модель слои не компилирует — она смешивает
+    # краски, отсюда тёмный квадрат и шов в левом нижнем углу.
+    # Теперь пересечения нет в принципе: две отдельные примыкающие фигуры,
+    # нижняя начинается там, где кончается левая. Смешивать нечего.
     if _secondary_hex:
         _sh = _secondary_hex.upper()
         _vstripe_line = (
-            # Phrasing deliberately mirrors the Row 6 line above, which is the one
-            # construction in this prompt that demonstrably renders flush. Earlier
-            # elaborate geometric descriptions of the same requirement did not.
-            "- Left Vertical Accent Stripe: solid vertical colour band (" + _sh +
-            "), full height of the FRONT FACE only, positioned FLUSH with the very "
-            "left edge of the front panel. No white margin to its left. Zero padding "
-            "between the stripe and the left fold line. Width approximately 12 mm. "
-            "The stripe stays on the front face and does not wrap onto the top, side "
-            "or back faces.\n"
-            "- Stripe intersection: the vertical stripe is the PRIORITY element. "
-            "Where it meets the horizontal bottom stripe, the crossing area is filled "
-            "with the vertical stripe's own colour " + _sh + " — exactly the same "
-            "flat tone it has along its whole length, unchanged. The horizontal "
-            "stripe runs the full width of the front face and simply passes behind "
-            "the vertical one, ending against its edge. The two inks are never mixed: "
-            "the crossing is one flat colour with no darkening, no shading, no "
-            "transparency and no visible seam.\n"
-            "- Keep a minimum 4 mm clear text gap to the right of the vertical stripe.")
-        _secondary_color_line = ("\n- Left Vertical Accent Stripe: " + _sh +
-                                 " — 12 mm band occupying the leftmost column of the "
-                                 "front face, top to bottom; priority element over the "
-                                 "bottom stripe; 4 mm clear text gap to its right")
+            "- Left Vertical Accent Band: one continuous, unbroken, 100% opaque "
+            "solid rectangle of flat " + _sh + " colour occupying the leftmost "
+            "column of the FRONT FACE. Width approximately 12 mm. It sits FLUSH "
+            "with the very left edge of the front panel — no white margin to its "
+            "left, zero padding against the left fold line. It runs from the top "
+            "fold line down to the bottom fold line as a single monolithic block "
+            "of one uniform tone, with sharp right-angled corners. It stays on "
+            "the front face and does not continue onto the top, side or back "
+            "faces.\n"
+            "- The Left Vertical Accent Band and the Row 6 / Accent Stripe are two "
+            "separate rectangles that meet edge to edge and form a clean L-shaped "
+            "corner at the bottom left of the front face. Each keeps its own flat "
+            "colour along its whole length.\n"
+            "- Keep a minimum 4 mm clear text gap to the right of the Left "
+            "Vertical Accent Band.")
+        _secondary_color_line = ("\n- Left Vertical Accent Band: " + _sh +
+                                 " — 12 mm rectangle occupying the leftmost column "
+                                 "of the front face, from the top fold line to the "
+                                 "bottom fold line; 4 mm clear text gap to its right")
+        # Row 6 обрывается о правый край вертикальной полосы: горизонтальная
+        # фигура физически не доходит до левого края и заходить туда не может.
+        _row6_line = (
+            "- Row 6 / Accent Stripe: solid horizontal colour band (" + accent_hex +
+            "), positioned FLUSH with the very bottom edge of the front panel. "
+            "No white margin below it. Height approximately 4 mm. It begins "
+            "strictly at the RIGHT edge of the Left Vertical Accent Band and "
+            "extends to the right edge of the FRONT FACE. It does not enter, "
+            "cross or continue into the Left Vertical Accent Band.")
     else:
         _vstripe_line = ""
         _secondary_color_line = ""
+        _row6_line = (
+            f'- Row 6 / Accent Stripe: solid horizontal colour band ({accent_hex}), '
+            f'full width of the FRONT FACE only, '
+            f'positioned FLUSH with the very bottom edge of the front panel. '
+            f'No white margin below it. '
+            f'Height approximately 4 mm.')
 
     # -- [BLISTER PACK]
     if _blister_on:
@@ -1408,21 +1425,26 @@ def agent_3_passport_architect(data: dict, template_id: str,
             "panel — accent stripe is on front face only (Row 6 of FRONT PANEL GRID)",
             "- FORBIDDEN: accent colour stripe or band on any side panel or back "
             "panel — accent stripe is on front face only (Row 6 of FRONT PANEL GRID)\n"
-            "- REQUIRED: the Left Vertical Accent Stripe is the priority element at "
-            "the lower-left corner. It runs unbroken from top to bottom in one flat "
-            "tone, and the horizontal bottom stripe passes behind it and ends against "
-            "its edge. The crossing area carries the vertical stripe's own colour, "
-            "identical to the rest of the stripe.\n"
+            "- REQUIRED: the Left Vertical Accent Band is one continuous solid "
+            "rectangle of uniform colour from the top fold line to the bottom fold "
+            "line, with no horizontal line, seam or change of tone passing through "
+            "its lower section.\n"
             "- REQUIRED: the top face of the carton is bare white cardboard. No "
             "accent colour of any kind appears on it — the front-face artwork ends at "
             "the top fold.\n"
-            "- FORBIDDEN: the Left Vertical Accent Stripe appearing on the top face, "
+            "- FORBIDDEN: a dark square, shadow, darkened patch, colour bleed or "
+            "visible seam at the bottom-left corner where the Left Vertical Accent "
+            "Band meets the Row 6 / Accent Stripe\n"
+            "- FORBIDDEN: the Row 6 / Accent Stripe entering, cutting into, crossing "
+            "or showing through the Left Vertical Accent Band — it stops at that "
+            "band\'s right edge\n"
+            "- FORBIDDEN: the Left Vertical Accent Band appearing on the top face, "
             "the side panel or the back of the carton — it exists only on the front "
             "face and terminates at the top fold line\n"
             "- FORBIDDEN: any white paper strip, margin or gap between the Left "
-            "Vertical Accent Stripe and the left edge of the front face\n"
+            "Vertical Accent Band and the left edge of the front face\n"
             "- FORBIDDEN: any text, Braille or graphic element placed inside the "
-            "12 mm vertical stripe zone or within the 4 mm clear gap to its right")
+            "12 mm vertical band zone or within the 4 mm clear gap to its right")
     if _coloured_type:
         _shared_forbidden = _shared_forbidden.replace(
             "- FORBIDDEN: rendering the brand name, active ingredient, dosage or "
@@ -1467,12 +1489,12 @@ def agent_3_passport_architect(data: dict, template_id: str,
     grid_lines.extend([
         f'- Row 4 / Dosage: "{dosage}" — bottom row, LEFT corner, printed in solid {_body_text_hex}. Render only the minimal dosage and dosage form joined with no separator in the bottom-left counter (e.g., "{dosage}" → "{dosage}"), with zero percentage symbols and no active-ingredient text in this zone.',
         f'- Row 5 / Quantity: "{unit_count}" — SAME bottom row, RIGHT corner, directly opposite the dosage, maximally separated horizontally (opposite corners), printed in solid {_body_text_hex}. Both dosage and quantity are on the single lowest information line. Printed once only.',
-        f'- Row 6 / Accent Stripe: solid horizontal colour band ({accent_hex}), full width of the FRONT FACE only, '
-        f'positioned FLUSH with the very bottom edge of the front panel. No white margin below it. '
-        f'Height approximately 4 mm.',
     ])
+    # Вертикальная полоса идёт ПЕРЕД Row 6: она задаёт левую границу, о которую
+    # обрывается нижняя полоса, и опорный элемент должен быть описан первым.
     if _vstripe_line:
         grid_lines.append(_vstripe_line)
+    grid_lines.append(_row6_line)
 
     front_panel_grid_lines = "\n".join(grid_lines)
 

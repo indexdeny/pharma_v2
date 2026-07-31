@@ -29,6 +29,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -490,110 +491,250 @@ def wait_for_ready_response(driver: webdriver.Chrome) -> bool:
         return False
 
 
-def clean_old_chats(driver: webdriver.Chrome, keep_last: int = 0, force: bool = True):
-    """
-    Deletes chats from the Gemini sidebar so history does not pile up.
+# --- CLEANUP-PATCH: verified sidebar handling ---
+# Селекторы сайдбара Gemini. Держим в одном месте: вёрстка Gemini меняется,
+# и следующая поломка должна чиниться правкой этих констант, а не поиском
+# по всему файлу.
+#
+# ПРОВЕРЕНО на живом DOM 31.07.2026 (дамп: 00_PROJECT_STATE/dom_dump/):
+#   * сайдбар грузится СВЁРНУТЫМ: <side-navigation-content class="... rail ...">,
+#     и в свёрнутом состоянии список диалогов в DOM отсутствует полностью.
+#     Именно поэтому прежний код всегда получал 0 при непустой истории;
+#   * раскрытие: <button data-test-id="side-nav-sparkle-button">.
+#     ВНИМАНИЕ: тот же data-test-id носит <a> «Новый чат» — отбираем по тегу
+#     button, иначе вместо раскрытия панели создастся новый чат;
+#   * список догружается асинхронно: <infinite-scroller> +
+#     data-test-id="loading-content-spinner".
+#
+# НЕ ПРОВЕРЕНО: на момент диагностики история аккаунта была пуста
+# («Нет недавних чатов»), поэтому строку диалога и её меню действий вживую
+# снять не удалось. Ниже — набор кандидатов; фактически сработавший
+# селектор пишется в лог при первом же непустом сайдбаре, и если не
+# сработает ни один, функция сообщает об этом как об ОШИБКЕ, а не как об
+# успешной уборке.
+SIDEBAR_ROOT_SEL = "side-navigation-content"
+SIDEBAR_EXPAND_BTN_SEL = "button[data-test-id='side-nav-sparkle-button']"
+SIDEBAR_RAIL_CLASS = "rail"
+SIDEBAR_SPINNER_SEL = "[data-test-id='loading-content-spinner']"
 
-    Default policy (per user requirement): delete EVERY chat present before a new
-    one is started — keep_last=0, no minimum-count threshold. The previous policy
-    (keep the 2 newest, skip entirely when fewer than 5 exist) left old chats
-    hanging in the sidebar.
+CONVERSATION_ROW_SELECTORS = (
+    "div[data-test-id='conversation']",
+    "[data-test-id='conversation']",
+    "conversation-items-container div.conversation",
+    "div.conversation",
+    "conversation-item",
+    "a[href*='/app/c/']",
+)
+CONVERSATION_MENU_SELECTORS = (
+    "button[data-test-id='actions-menu-button']",
+    "[data-test-id='actions-menu-button']",
+    "button.gem-conversation-actions-menu-button",
+    "button[aria-label*='ptions']",
+    "mat-icon[fonticon='more_vert']",
+)
+MENU_ITEM_SEL = "button.mat-mdc-menu-item, [role='menuitem']"
+CONFIRM_DIALOG_SEL = "mat-dialog-container button, [role='dialog'] button"
+DELETE_WORDS = ("удалить", "delete", "remove")
 
-    Scope: only entries in the Gemini conversation list are touched. Failures are
-    logged and swallowed — sidebar housekeeping must never abort a render run.
-    """
+MAX_DELETE_ITERATIONS = 100
+
+
+def _sidebar_expand(driver: webdriver.Chrome) -> bool:
+    """Раскрывает свёрнутый сайдбар. True — панель раскрыта (или уже была)."""
     try:
-        # We find all menu buttons in the sidebar
-        buttons = driver.find_elements(By.CSS_SELECTOR, "button.gem-conversation-actions-menu-button")
+        root = driver.find_element(By.CSS_SELECTOR, SIDEBAR_ROOT_SEL)
+    except Exception:
+        log.warning("Сайдбар не найден в DOM — раскрыть нечего.")
+        return False
+    if SIDEBAR_RAIL_CLASS not in (root.get_attribute("class") or ""):
+        return True
+    for btn in driver.find_elements(By.CSS_SELECTOR, SIDEBAR_EXPAND_BTN_SEL):
+        if not btn.is_displayed():
+            continue
+        try:
+            btn.click()
+        except Exception:
+            driver.execute_script("arguments[0].click();", btn)
+        time.sleep(2.5)
+        break
+    try:
+        root = driver.find_element(By.CSS_SELECTOR, SIDEBAR_ROOT_SEL)
+        return SIDEBAR_RAIL_CLASS not in (root.get_attribute("class") or "")
+    except Exception:
+        return False
 
-        # Target all chat menu buttons in the sidebar
-        target_buttons = buttons
 
-        total_targets = len(target_buttons)
-        log.info(f"Sidebar cleanup: found {total_targets} chats, keep_last={keep_last}.")
+def _find_conversation_rows(driver: webdriver.Chrome):
+    """Возвращает (список видимых строк диалогов, сработавший селектор)."""
+    for sel in CONVERSATION_ROW_SELECTORS:
+        try:
+            rows = [e for e in driver.find_elements(By.CSS_SELECTOR, sel)
+                    if e.is_displayed()]
+        except Exception:
+            continue
+        if rows:
+            return rows, sel
+    return [], None
 
-        if total_targets == 0:
-            log.info("Sidebar is already empty — nothing to delete.")
-            return
-        if not force and total_targets < 5:
-            log.info("Fewer than 5 chats in sidebar. Skipping cleanup.")
-            return
 
-        # Keep the newest `keep_last` chats (at the top) and delete the rest
-        to_delete_count = total_targets - keep_last
-        log.info(f"Targeting {to_delete_count} old chats for deletion...")
+def _wait_sidebar_loaded(driver: webdriver.Chrome, timeout: int = 25):
+    """Ждёт окончания асинхронной догрузки списка диалогов.
+
+    Возвращает (строки, селектор). Пустой результат здесь НЕ означает
+    «чатов нет» — он означает «ничего не нашли», и вызывающий код обязан
+    отнестись к этому как к неопределённости.
+    """
+    waited = 0.0
+    rows, sel = [], None
+    while waited < timeout:
+        rows, sel = _find_conversation_rows(driver)
+        spinning = any(e.is_displayed() for e in
+                       driver.find_elements(By.CSS_SELECTOR, SIDEBAR_SPINNER_SEL))
+        if rows and not spinning:
+            break
+        time.sleep(1.5)
+        waited += 1.5
+    return rows, sel
+
+
+def _delete_one(driver: webdriver.Chrome, row) -> bool:
+    """Наведение -> меню -> удалить -> подтвердить. True, если подтверждено."""
+    ActionChains(driver).move_to_element(row).perform()
+    time.sleep(1.0)
+
+    menu_btn = None
+    for sel in CONVERSATION_MENU_SELECTORS:
+        try:
+            cands = [b for b in row.find_elements(By.CSS_SELECTOR, sel) if b.is_displayed()]
+        except Exception:
+            cands = []
+        if cands:
+            menu_btn = cands[0]
+            break
+    if menu_btn is None:
+        log.error("Кнопка меню у строки диалога не найдена ни одним селектором.")
+        return False
+
+    driver.execute_script("arguments[0].click();", menu_btn)
+    time.sleep(1.5)
+
+    delete_item = None
+    for item in driver.find_elements(By.CSS_SELECTOR, MENU_ITEM_SEL):
+        try:
+            if any(w in (item.text or "").lower() for w in DELETE_WORDS):
+                delete_item = item
+                break
+        except Exception:
+            continue
+    if delete_item is None:
+        log.error("Пункт «Удалить» в меню не найден.")
+        driver.find_element(By.TAG_NAME, "body").send_keys("\ue00c")
+        return False
+
+    driver.execute_script("arguments[0].click();", delete_item)
+    time.sleep(1.5)
+
+    for db in driver.find_elements(By.CSS_SELECTOR, CONFIRM_DIALOG_SEL):
+        try:
+            if any(w in (db.text or "").lower() for w in DELETE_WORDS):
+                driver.execute_script("arguments[0].click();", db)
+                time.sleep(1.5)
+                return True
+        except Exception:
+            continue
+    log.error("Кнопка подтверждения удаления не найдена — удаление не подтверждено.")
+    driver.find_element(By.TAG_NAME, "body").send_keys("\ue00c")
+    return False
+
+
+def clean_old_chats(driver: webdriver.Chrome, keep_last: int = 0, force: bool = True) -> bool:
+    """Удаляет ВСЕ диалоги из сайдбара Gemini перед началом нового рендера.
+
+    Зачем: накопленная история загрязняет контекст — элементы из соседних
+    чатов протекают в новую картинку (вертикальные полосы на SKU, где их в
+    промпте нет; напечатанные ярлыки полей).
+
+    Возвращает True, если состояние сайдбара ПОДТВЕРЖДЕНО чистым.
+    Возвращает False, если подтвердить чистоту не удалось.
+
+    Ключевое отличие от прежней версии: «найдено 0 чатов» больше не
+    считается успехом само по себе. Ноль после раскрытия сайдбара и
+    ожидания загрузки — это неопределённость, а не пустая история.
+    """
+    strict = bool(_RPA.get("strict_chat_cleanup", True))
+    try:
+        expanded = _sidebar_expand(driver)
+        if not expanded:
+            log.error("Не удалось раскрыть сайдбар — состояние истории неизвестно.")
+            return _cleanup_verdict(False, strict, "сайдбар не раскрыт")
+
+        rows, sel = _wait_sidebar_loaded(driver)
+        before = len(rows)
+        log.info(f"Sidebar cleanup: найдено {before} диалогов (селектор: {sel}).")
+
+        if before == 0:
+            log.error(
+                "Сайдбар раскрыт, но список диалогов не найден ни одним из "
+                f"{len(CONVERSATION_ROW_SELECTORS)} селекторов. Это НЕ значит, что "
+                "история пуста — это значит, что состояние неизвестно. Проверьте "
+                "вёрстку Gemini и обновите CONVERSATION_ROW_SELECTORS.")
+            return _cleanup_verdict(False, strict, "список диалогов не опознан")
 
         deleted = 0
-        while deleted < to_delete_count:
-            # Re-fetch because DOM updates after deletion
-            buttons = driver.find_elements(By.CSS_SELECTOR, "button.gem-conversation-actions-menu-button")
-            curr_targets = buttons
-            
-            if len(curr_targets) <= keep_last:
+        for _ in range(MAX_DELETE_ITERATIONS):
+            rows, _sel = _find_conversation_rows(driver)
+            if not rows:
                 break
-                
-            # Delete the oldest target chat first (at the bottom, index -1)
-            target_btn = curr_targets[-1]
-            label_summary = (target_btn.get_attribute("aria-label") or "")[:50].replace("\n", " ")
-            log.info(f"Deleting old chat: '{label_summary}...'")
-            
+            title = (rows[0].text or "")[:60].replace("\n", " ")
+            log.info(f"Удаляю диалог: '{title}'")
             try:
-                driver.execute_script("arguments[0].click();", target_btn)
-                time.sleep(2.5)  # Задержка 2.5 сек после открытия меню
-                
-                menu_items = driver.find_elements(By.CSS_SELECTOR, "button.mat-mdc-menu-item")
-                delete_item = None
-                for item in menu_items:
-                    txt = item.text.lower()
-                    if any(x in txt for x in ["удалить", "delete", "remove"]) or "delete-outline" in item.get_attribute("outerHTML"):
-                        delete_item = item
-                        break
-                        
-                if not delete_item and len(menu_items) >= 3:
-                    delete_item = menu_items[2]
-                    
-                if delete_item:
-                    driver.execute_script("arguments[0].click();", delete_item)
-                    time.sleep(2.5)  # Задержка 2.5 сек после выбора Delete
-                    
-                    dialog_buttons = driver.find_elements(By.CSS_SELECTOR, "mat-dialog-container button, [role='dialog'] button")
-                    confirm_btn = None
-                    for db in dialog_buttons:
-                        db_txt = db.text.lower()
-                        if any(x in db_txt for x in ["удалить", "delete", "confirm"]):
-                            confirm_btn = db
-                            break
-                            
-                    if not confirm_btn and dialog_buttons:
-                        confirm_btn = dialog_buttons[-1]
-                        
-                    if confirm_btn:
-                        log.info(f"Confirming deletion: clicking '{confirm_btn.text.strip()}' button")
-                        driver.execute_script("arguments[0].click();", confirm_btn)
-                        deleted += 1
-                        time.sleep(2.5)  # Задержка 2.5 сек после подтверждения
-                    else:
-                        log.warning("Could not find confirmation button in dialog.")
-                        driver.find_element(By.TAG_NAME, "body").send_keys("\ue00c") # Escape
-                        time.sleep(2.5)
-                        break
-                else:
-                    log.warning("Could not find Delete option in menu.")
-                    driver.find_element(By.TAG_NAME, "body").send_keys("\ue00c") # Escape
-                    time.sleep(2.5)
-                    break
+                ok = _delete_one(driver, rows[0])
             except Exception as e:
-                log.error(f"Error during automatic sidebar deletion step: {e}")
-                try:
-                    driver.find_element(By.TAG_NAME, "body").send_keys("\ue00c")
-                except Exception:
-                    pass
-                time.sleep(2.5)
+                log.error(f"Сбой при удалении диалога '{title}': {e}")
+                ok = False
+            if ok:
+                deleted += 1
+                # ждём, пока строка действительно исчезнет из списка
+                for _ in range(10):
+                    time.sleep(0.5)
+                    now, _s = _find_conversation_rows(driver)
+                    if len(now) < len(rows):
+                        break
+            else:
                 break
-                
-        log.info(f"Sidebar cleanup completed. Deleted {deleted} chats.")
+
+        after_rows, _sel = _find_conversation_rows(driver)
+        after = len(after_rows)
+        log.info(f"Sidebar cleanup: было {before}, удалено {deleted}, осталось {after}.")
+
+        if after > 0:
+            log.error(f"Очистка не завершена: в сайдбаре осталось {after} диалогов.")
+            return _cleanup_verdict(False, strict, f"осталось {after} диалогов")
+
+        log.info("Sidebar cleanup: история подтверждённо пуста.")
+        return True
     except Exception as e:
-        log.error(f"Failed to clean old chats from sidebar: {e}")
+        log.error(f"Сбой очистки сайдбара: {e}")
+        return _cleanup_verdict(False, strict, str(e))
+
+
+def _cleanup_verdict(ok: bool, strict: bool, reason: str) -> bool:
+    """В строгом режиме неподтверждённая очистка останавливает прогон.
+
+    Рендер с грязной историей производит брак: дешевле остановиться, чем
+    потратить часы на негодные картинки. Отключается флагом
+    rpa.strict_chat_cleanup: false в config.yaml.
+    """
+    if ok:
+        return True
+    if strict:
+        log.error(
+            "strict_chat_cleanup=true — прогон остановлен, потому что чистота "
+            f"истории Gemini не подтверждена ({reason}). Чтобы рендерить всё "
+            "равно, поставьте rpa.strict_chat_cleanup: false в config.yaml.")
+        raise SystemExit(2)
+    log.warning(f"Очистка не подтверждена ({reason}), но strict_chat_cleanup=false — продолжаю.")
+    return False
 
 
 def get_timeout_stems_from_log() -> list[str]:

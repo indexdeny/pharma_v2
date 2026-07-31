@@ -6,3 +6,7 @@ logs/
 verification_failures.log
 # Added by code-review-graph
 .code-review-graph/
+
+# DOM-дампы диагностики: крупные и восстанавливаются скриптом
+00_PROJECT_STATE/dom_dump/*.html
+00_PROJECT_STATE/dom_dump/*.txt
