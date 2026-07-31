@@ -560,13 +560,14 @@ _TERMINOLOGY_MAP = (
 # different point in frame for every carton format and camera angle.
 _FRAME_ANCHOR = (
     "- Frame zone: the blister always occupies the SAME zone of the frame, whatever the "
-    "carton format. The centre of the blister group sits at approximately 60% of the "
-    "frame width from the left edge and approximately 76% of the frame height from the "
-    "top edge. The blister group spans no more than 42% of the frame width. This zone is "
+    "carton format. The centre of the blister group sits at approximately 58% of the "
+    "frame width from the left edge and approximately 79% of the frame height from the "
+    "top edge. The blister group spans no more than 36% of the frame width. This zone is "
     "fixed and identical in every image.\n"
     "- Frame safety: the whole blister group stays inside the frame with a clear margin "
-    "of at least 8% of the frame size between it and every edge. The far end of the "
-    "blister is fully inside the picture with empty white background beyond it.\n"
+    "of at least 12% of the frame size between it and every edge. The far end of the "
+    "blister is fully inside the picture with a wide band of empty white background "
+    "beyond it.\n"
 )
 
 _SHARED_FORBIDDEN = """\
@@ -1247,18 +1248,28 @@ def agent_3_passport_architect(data: dict, template_id: str,
     if _secondary_hex:
         _sh = _secondary_hex.upper()
         _vstripe_line = (
+            # Phrasing deliberately mirrors the Row 6 line above, which is the one
+            # construction in this prompt that demonstrably renders flush. Earlier
+            # elaborate geometric descriptions of the same requirement did not.
             "- Left Vertical Accent Stripe: solid vertical colour band (" + _sh +
-            "), width EXACTLY 12 mm. The stripe is FLUSH with the extreme left edge "
-            "of the FRONT FACE. No white margin on its left side. The stripe runs "
-            "continuously from the top edge of the front panel to the bottom edge. "
-            "The vertical stripe OVERLAPS the horizontal bottom stripe, visually "
-            "covering it at the intersection. The vertical stripe is rendered above "
-            "the horizontal stripe in the print hierarchy. Maintain a minimum 4 mm "
-            "clear text gap to the right of the vertical stripe. Front face only.")
+            "), full height of the FRONT FACE only, positioned FLUSH with the very "
+            "left edge of the front panel. No white margin to its left. Zero padding "
+            "between the stripe and the left fold line. Width approximately 12 mm. "
+            "The stripe stays on the front face and does not wrap onto the top, side "
+            "or back faces.\n"
+            "- Stripe intersection: the vertical stripe is the PRIORITY element. "
+            "Where it meets the horizontal bottom stripe, the crossing area is filled "
+            "with the vertical stripe's own colour " + _sh + " — exactly the same "
+            "flat tone it has along its whole length, unchanged. The horizontal "
+            "stripe runs the full width of the front face and simply passes behind "
+            "the vertical one, ending against its edge. The two inks are never mixed: "
+            "the crossing is one flat colour with no darkening, no shading, no "
+            "transparency and no visible seam.\n"
+            "- Keep a minimum 4 mm clear text gap to the right of the vertical stripe.")
         _secondary_color_line = ("\n- Left Vertical Accent Stripe: " + _sh +
-                                 " — 12 mm vertical band flush with the left edge, "
-                                 "runs top to bottom, overlaps the bottom stripe, "
-                                 "4 mm clear text gap")
+                                 " — 12 mm band occupying the leftmost column of the "
+                                 "front face, top to bottom; priority element over the "
+                                 "bottom stripe; 4 mm clear text gap to its right")
     else:
         _vstripe_line = ""
         _secondary_color_line = ""
@@ -1301,20 +1312,21 @@ def agent_3_passport_architect(data: dict, template_id: str,
                     "carton, to the RIGHT of the carton's centre line.\n"
                     "- Rotation: rotate the blister approximately 18–25° clockwise "
                     "relative to the front edge of the carton.\n"
-                    "- Contact: the blister lightly touches and partially overlaps "
-                    "ONLY the lower-right front edge of the carton by approximately "
-                    "5–10% of its own length.\n"
+                    "- Separation: a clear gap of empty background separates the blister "
+                    "from the carton. The blister rests on the surface entirely in "
+                    "front of the carton's near edge and leaves the whole carton "
+                    "visible and unobstructed.\n"
                     "- Visibility: the blister is shown complete, from end to end, with "
                     "clear empty background between its far end and the frame edge. "
                     "One strip only, lying flat.")
             _ref = ("- Composition reference: mimic the classic pharmaceutical "
-                    "catalogue composition where one single blister is casually placed "
-                    "against the lower-right corner of the package.\n"
+                    "catalogue composition where one single blister lies on the surface "
+                    "in front of the package, near its lower-right corner.\n"
                     "- Visual reference: arrange the blister exactly like a typical "
-                    "European pharmaceutical product photograph — one blister resting "
-                    "against the lower-right corner of the carton with approximately "
-                    "one third of the blister overlapping the front footprint of the "
-                    "box, while all printed information stays fully visible.")
+                    "European pharmaceutical product photograph — the carton stands "
+                    "upright and complete, and the blister lies flat on the surface in "
+                    "front of it and to the right, fully separate from the box, with "
+                    "all printed information on the carton fully visible.")
         else:
             _qty = ("- Quantity: the pack holds " + str(_bl) + " blister strips of " +
                     str(_per) + " tablets (" + str(_tot) + " tablets in total, matching "
@@ -1332,20 +1344,22 @@ def agent_3_passport_architect(data: dict, template_id: str,
                     "- Rotation: rotate the front strip approximately 18–25° clockwise "
                     "relative to the front edge of the carton; the second strip sits at "
                     "a slightly shallower angle.\n"
-                    "- Contact: the front strip lightly touches and partially overlaps "
-                    "ONLY the lower-right front edge of the carton by approximately "
-                    "5–10% of its own length.\n"
+                    "- Separation: a clear gap of empty background separates the pair "
+                    "from the carton. Both strips rest on the surface entirely in front "
+                    "of the carton's near edge and leave the whole carton visible and "
+                    "unobstructed.\n"
                     "- Visibility: both blisters are shown complete, from end to end, "
                     "with clear empty background between the far end of the pair and "
                     "the frame edge. Exactly two strips, both lying flat.")
             _ref = ("- Composition reference: mimic the classic pharmaceutical "
-                    "catalogue composition where blisters are casually placed against "
-                    "the lower-right corner of the package.\n"
+                    "catalogue composition where the blisters lie on the surface in "
+                    "front of the package, near its lower-right corner.\n"
                     "- Visual reference: arrange the blisters exactly like a typical "
-                    "European pharmaceutical product photograph — two blisters resting "
-                    "against the lower-right corner of the carton with approximately "
-                    "one third of the front blister overlapping the front footprint of "
-                    "the box, while all printed information stays fully visible.")
+                    "European pharmaceutical product photograph — the carton stands "
+                    "upright and complete, and the two strips lie flat on the surface "
+                    "in front of it and to the right, slightly fanned and overlapping "
+                    "each other but fully separate from the box, with all printed "
+                    "information on the carton fully visible.")
 
         _blister_block = (
             "[BLISTER PACK]:\n"
@@ -1382,8 +1396,8 @@ def agent_3_passport_architect(data: dict, template_id: str,
             "- FORBIDDEN: loose tablets outside the blister cavities, pill bottle, "
             "HDPE jar, tube, sachet, ampoule, or any primary container other than "
             "the blister strips specified in [BLISTER PACK]\n"
-            "- FORBIDDEN: the blister covering any printed text or the brand badge "
-            "(a slight overlap of the very bottom edge is expected and allowed)\n"
+            "- FORBIDDEN: the blister touching, leaning on, resting against or "
+            "overlapping the carton in any way — the two objects stay visually separate\n"
             "- FORBIDDEN: the blister rendered larger than, taller than, or visually "
             "dominant over the carton\n"
             "- FORBIDDEN: tablets outside the blister cavities, broken tablets, or "
@@ -1394,10 +1408,19 @@ def agent_3_passport_architect(data: dict, template_id: str,
             "panel — accent stripe is on front face only (Row 6 of FRONT PANEL GRID)",
             "- FORBIDDEN: accent colour stripe or band on any side panel or back "
             "panel — accent stripe is on front face only (Row 6 of FRONT PANEL GRID)\n"
-            "- REQUIRED: the Left Vertical Accent Stripe MUST overlap the horizontal "
-            "bottom accent stripe at the lower-left corner. The vertical stripe is "
-            "visually uninterrupted from top to bottom. The horizontal stripe "
-            "terminates beneath the vertical stripe.\n"
+            "- REQUIRED: the Left Vertical Accent Stripe is the priority element at "
+            "the lower-left corner. It runs unbroken from top to bottom in one flat "
+            "tone, and the horizontal bottom stripe passes behind it and ends against "
+            "its edge. The crossing area carries the vertical stripe's own colour, "
+            "identical to the rest of the stripe.\n"
+            "- REQUIRED: the top face of the carton is bare white cardboard. No "
+            "accent colour of any kind appears on it — the front-face artwork ends at "
+            "the top fold.\n"
+            "- FORBIDDEN: the Left Vertical Accent Stripe appearing on the top face, "
+            "the side panel or the back of the carton — it exists only on the front "
+            "face and terminates at the top fold line\n"
+            "- FORBIDDEN: any white paper strip, margin or gap between the Left "
+            "Vertical Accent Stripe and the left edge of the front face\n"
             "- FORBIDDEN: any text, Braille or graphic element placed inside the "
             "12 mm vertical stripe zone or within the 4 mm clear gap to its right")
     if _coloured_type:

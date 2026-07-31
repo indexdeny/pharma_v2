@@ -193,6 +193,15 @@ def create_driver() -> webdriver.Chrome:
     chrome_options.add_argument("--no-sandbox")
     chrome_options.add_argument("--disable-dev-shm-usage")
     chrome_options.add_argument("--window-size=1920,1080")
+
+    # Keep the window off-screen instead of headless. Gemini blocks image
+    # generation in headless mode (see the warning above), but an off-screen
+    # window is a real rendered window — generation keeps working while the
+    # browser never steals focus or minimises other applications.
+    # Disable with rpa.offscreen_window: false in config.yaml.
+    if _RPA.get("offscreen_window", True) and not _RPA.get("headless"):
+        chrome_options.add_argument("--window-position=-32000,-32000")
+
     chrome_options.add_argument("--disable-gpu")
     chrome_options.add_argument("--disable-extensions")
     chrome_options.add_argument("--lang=en-US")
@@ -481,22 +490,31 @@ def wait_for_ready_response(driver: webdriver.Chrome) -> bool:
         return False
 
 
-def clean_old_chats(driver: webdriver.Chrome, keep_last: int = 2, force: bool = False):
+def clean_old_chats(driver: webdriver.Chrome, keep_last: int = 0, force: bool = True):
     """
-    Cleans up old chats in the Gemini sidebar to avoid UI lag.
-    Keep the most recent `keep_last` chats, delete the rest.
-    Only runs if total target chats >= 5, unless force is True.
+    Deletes chats from the Gemini sidebar so history does not pile up.
+
+    Default policy (per user requirement): delete EVERY chat present before a new
+    one is started — keep_last=0, no minimum-count threshold. The previous policy
+    (keep the 2 newest, skip entirely when fewer than 5 exist) left old chats
+    hanging in the sidebar.
+
+    Scope: only entries in the Gemini conversation list are touched. Failures are
+    logged and swallowed — sidebar housekeeping must never abort a render run.
     """
     try:
         # We find all menu buttons in the sidebar
         buttons = driver.find_elements(By.CSS_SELECTOR, "button.gem-conversation-actions-menu-button")
-        
+
         # Target all chat menu buttons in the sidebar
         target_buttons = buttons
-                
+
         total_targets = len(target_buttons)
-        log.info(f"Sidebar cleanup check: Found {total_targets} total chats.")
-        
+        log.info(f"Sidebar cleanup: found {total_targets} chats, keep_last={keep_last}.")
+
+        if total_targets == 0:
+            log.info("Sidebar is already empty — nothing to delete.")
+            return
         if not force and total_targets < 5:
             log.info("Fewer than 5 chats in sidebar. Skipping cleanup.")
             return
@@ -668,7 +686,7 @@ def prime_gemini(driver: webdriver.Chrome) -> None:
     time.sleep(2.5)  # Задержка 2.5 сек для инициализации Angular/React
 
     # Auto-cleanup old chats in sidebar to prevent lag
-    clean_old_chats(driver, keep_last=2)
+    clean_old_chats(driver, keep_last=0, force=True)
 
     log.info("📨 Пропускаем отправку системного промпта по требованию пользователя.")
 
@@ -1457,7 +1475,7 @@ def main():
             if (index + 1) % 10 == 0:
                 log.info(f"🧹 {index + 1} iterations completed. Triggering scheduled sidebar chat cleanup...")
                 try:
-                    clean_old_chats(driver, keep_last=2, force=True)
+                    clean_old_chats(driver, keep_last=0, force=True)
                 except Exception as clean_err:
                     log.warning(f"⚠️ Scheduled sidebar cleanup failed: {clean_err}")
 

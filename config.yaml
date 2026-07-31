@@ -35,6 +35,10 @@ rpa:
   # WARNING: Gemini blocks image generation in headless mode. Leave false.
   # (--headless on the CLI forces this true and main.py prints a loud warning.)
   headless:                 false
+  # Park the Chrome window off-screen so it never steals focus or minimises
+  # other apps. Unlike headless this keeps a real rendered window, so Gemini
+  # still generates images. Set to false to watch the browser while it works.
+  offscreen_window:         true
   batch_size:               1     # passports per chat session before context reset
   image_generation_timeout: 180   # seconds
   download_timeout:         60     # seconds
