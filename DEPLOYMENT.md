@@ -1,6 +1,6 @@
 # Deployment guide
 
-Current local-candidate guidance, 2026-11-18. Publication remains on hold pending credential remediation; see the [audit](docs/portfolio-audit.md).
+Current local-candidate guidance, 2026-11-18. Publication awaits exact-ref owner approval; see the [audit](docs/portfolio-audit.md).
 
 ## Prerequisites
 
@@ -18,7 +18,7 @@ venv\Scripts\python.exe main.py --help
 venv\Scripts\python.exe -m unittest discover -s tests -p "test_*.py"
 ```
 
-Installation is an operator procedure, not a fresh-install result. Dependencies are not locked. The audit uses Python 3.10.11 and the existing project venv.
+A new isolated Python 3.10.11 environment installed the unchanged requirements and passed dependency, CLI, unit and local pipeline checks. Versions remain lower-bounded rather than locked; [validated versions](docs/evidence/20261118-validated-dependencies.txt) record this run.
 
 ## Data and artifacts
 
@@ -26,7 +26,7 @@ Retained inputs are `SSOT/` and `pipeline/passports/`; Stage 0 prepares those ma
 
 ## Local configuration
 
-Copy `config.example.yaml` to ignored `config.local.yaml`; fill in absolute browser profile/download paths and verify all I/O paths. Supply `--config config.local.yaml` consistently. Relative `paths.*` resolve from the project root; browser paths are passed to the browser layer. Existing default paths retain legacy machine details, a publication finding.
+Copy `config.example.yaml` to ignored `config.local.yaml`; fill in absolute browser profile/download paths and verify all I/O paths. Supply `--config config.local.yaml` consistently. Relative `paths.*` resolve from the project root; browser paths are passed to the browser layer. Per-user defaults avoid embedded personal home paths; use ignored local overrides for a dedicated profile.
 
 Committed config uses `output/test1`; defaults use `output`. A root `images/` directory overrides the configured Stage 3 input. Do not infer the active destination from an old runbook.
 

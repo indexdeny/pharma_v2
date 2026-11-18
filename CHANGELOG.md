@@ -5,7 +5,7 @@ Format inspired by [Keep a Changelog](https://keepachangelog.com/).
 
 ## [Unreleased] — Local portfolio candidate — 2026-11-18
 
-- Prepared a dev-descended cleanup branch; remote migration is blocked pending credential revocation.
+- Prepared a dev-descended cleanup branch; local history cleanup is prepared and remote replacement awaits exact-ref approval.
 - Excluded confirmed archives, generated output/state, browser diagnostics, stale tooling, source photos with unresolved third-party marks and unverified third-party weights from the index; local files and an all-ref bundle preserve them.
 - Rewrote README, architecture, deployment and operations; separated current evidence from historical release claims.
 - Fixed a CHECK 10 test assertion to inspect its filtered warning instead of an unrelated earlier colour warning; no runtime algorithm changed.

@@ -13,6 +13,6 @@ Current checklist, 2026-11-18. Historical release documents do not certify this 
 | Stage 3 | Process a synthetic fixture in an isolated directory | Valid WebP, configured dimensions and byte target; not catalogue acceptance |
 | Real image delivery | Compare expected IDs with readable final files | Explain missing/failed outputs; human visual acceptance required |
 | Browser/Gemini | Attended authorised session, small batch | Verify login, cleanup, selectors, download, progress and output; NOT VERIFIED here |
-| Publication | Revoked exposed credentials, privacy/rights review, clean scan | Blocked pending owner confirmation and approved remediation |
+| Publication | Revoked exposed credentials, privacy/rights review, clean scan | Credential/session owner confirmations received; blocked pending exact remote ref/tag replacement approval |
 
 Run from the repository root using the explicit project venv interpreter. Do not regenerate historical production outputs as a test. Do not equate successful local checks with Production Ready or LinkedIn readiness. Public master promotion and branch retirement require the remaining migration gates in the [audit](../portfolio-audit.md).

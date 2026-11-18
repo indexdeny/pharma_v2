@@ -2,7 +2,7 @@
 
 An operator-assisted pipeline that turns pharmaceutical product records into packaging prompts, browser-generated packshots and optimized WebP images.
 
-> **Portfolio migration candidate.** Publication is on hold pending confirmation that an exposed historical API key has been revoked. Remote master and the backup branch have not been changed. [Current audit](docs/portfolio-audit.md).
+> **Portfolio migration candidate.** Local privacy/history cleanup is prepared. Publication awaits approval of exact branch and tag replacements. Remote master and the backup branch have not been changed. [Current audit](docs/portfolio-audit.md).
 
 ## Project Overview
 
@@ -41,7 +41,7 @@ flowchart LR
 
 ## Technology Stack
 
-Python 3.10+, Selenium, Chrome, webdriver-manager, Pillow, PyYAML, rich and Pydantic. Optional OCR diagnostics use pytesseract and Tesseract. [requirements.txt](requirements.txt) uses version lower bounds, not a lockfile. Clean-environment installation was not repeated during this audit.
+Python 3.10+, Selenium, Chrome, webdriver-manager, Pillow, PyYAML, rich and Pydantic. Optional OCR diagnostics use pytesseract and Tesseract. [requirements.txt](requirements.txt) uses version lower bounds, not a lockfile. A new isolated Python 3.10.11 environment installed these requirements and passed dependency, CLI and unit checks; see [test results](FINAL_TEST_RESULTS.md).
 
 ## Repository Structure
 
@@ -87,7 +87,7 @@ Follow [DEPLOYMENT.md](DEPLOYMENT.md) for browser setup and artifact restore. Do
 venv\Scripts\python.exe main.py --config config.local.yaml --render-only --limit 1
 ```
 
-`PHARMAGEN_CONFIG` selects a config file; `PHARMAGEN_HEADLESS` and `PHARMAGEN_DEBUG` override their settings. Relative `paths.*` resolve against the project root. Use absolute browser profile/download paths in local configuration. The existing runtime defaults still contain machine-specific paths, which are a publication finding.
+`PHARMAGEN_CONFIG` selects a config file; `PHARMAGEN_HEADLESS` and `PHARMAGEN_DEBUG` override their settings. Relative `paths.*` resolve against the project root. Use absolute browser profile/download paths in local configuration. Default profile/download paths are derived per user with Path.home(); local overrides remain ignored.
 
 Committed dev configuration writes to `output/test1`; built-in defaults use `output`. Keep the same explicit config when resuming. Neither location implies a complete delivery.
 
@@ -134,8 +134,8 @@ Candidate test counts and before/after comparisons are in the [audit](docs/portf
 - Catalogue-wide visual acceptance is unverified. No medical or regulatory approval is implied.
 - Stage 1 resume compares counts, not IDs or hashes. Stage 3 skips existing filenames without revalidating their content.
 - Stage 3 may log per-file failures and still exit successfully. A configured byte limit is a target, not an unconditional guarantee.
-- Machine-specific defaults and unpinned dependencies limit portability.
-- Historical credential exposure still requires remediation; no automatic Git-history rewrite is authorised.
+- Browser-specific configuration and unpinned dependencies limit portability.
+- Historical credential revocation and browser session review are owner-confirmed. Remote replacements require explicit approval.
 
 ## My Contribution
 
@@ -151,7 +151,7 @@ Historical generated concept packshot, copied from the existing 400×400 preview
 
 ## Project Status
 
-**PARTIALLY COMPLETED / BLOCKED — NOT READY for LinkedIn publication.** The local candidate preserves dev ancestry and runtime inputs. Public PR, master promotion, default-branch switching and backup retirement are on hold pending credential remediation. Historical tags are not current acceptance evidence. [Plan](MIGRATION_PLAN.md), [baseline](BASELINE_REPORT.md), [rollback](ROLLBACK_PLAN.md), [audit](docs/portfolio-audit.md).
+**PARTIALLY COMPLETED / BLOCKED — NOT READY for LinkedIn publication.** The locally rewritten candidate preserves mapped dev ancestry and runtime inputs. Public PR, master promotion, default-branch switching and legacy branch retirement await exact-ref approval and post-update checks. Historical tags are not current acceptance evidence. [Plan](MIGRATION_PLAN.md), [baseline](BASELINE_REPORT.md), [rollback](ROLLBACK_PLAN.md), [audit](docs/portfolio-audit.md).
 
 ## License / Usage Restrictions
 

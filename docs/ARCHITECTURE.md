@@ -42,13 +42,13 @@ Stage 1 returns failure on incomplete conversion, but low-confidence verifier wa
 ## Resume Logic
 
 - Stage 1 compares JSON/Markdown counts, without matching IDs, hashes or freshness.
-- Stage 2 combines recorded stems and raw-image filenames. Restore images and tracker together.
+- Stage 2 counts tracker stems only when the corresponding raw PNG exists, and also scans existing raw filenames. Missing-image tracker entries are retried. Restore images and tracker together.
 - Stage 3 skips existing output filenames without reopening them for validation.
 - Ctrl+C is handled by the orchestrator; interrupted writes and power loss are not transactional.
 
 ## External Dependencies
 
-Python packages are in `requirements.txt`. Stage 2 needs Chrome, driver provisioning, network and an authenticated Gemini account. OCR diagnostics separately require pytesseract/Tesseract. Local Stage 1/3 verification needs no browser. Clean-environment installation was not repeated.
+Python packages are in `requirements.txt`. Stage 2 needs Chrome, driver provisioning, network and an authenticated Gemini account. OCR diagnostics separately require pytesseract/Tesseract. Local Stage 1/3 verification needs no browser. A new isolated environment installed the core requirements and passed pip check, CLI and unit checks. Optional legacy CV/OCR dependencies were not exercised.
 
 ## QA Boundaries
 
@@ -56,4 +56,4 @@ Unit tests cover packaging, verifier and mocked OCR helper behaviour. Isolated c
 
 ## Known Architectural Trade-offs
 
-File-based state is inspectable but lacks transactional per-item status. Counts and filenames can conceal stale data. UI automation needs selector maintenance and generates non-deterministic images. Large compiler/RPA modules concentrate logic. Lower-bounded dependencies and local path defaults limit reproducibility. Cleanup introduces no runtime dependency or algorithm refactor.
+File-based state is inspectable but lacks transactional per-item status. Counts and filenames can conceal stale data. UI automation needs selector maintenance and generates non-deterministic images. Large compiler/RPA modules concentrate logic. Lower-bounded dependencies and browser configuration limit reproducibility. Cleanup introduces no runtime dependency or algorithm refactor.

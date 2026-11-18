@@ -1,5 +1,7 @@
 # PharmaGen PRO — Business Value & Integration
 
+> **Historical integration proposal; corrected 2026-11-18.** CRM options and effort ratings below are proposals, not implemented integrations or measured business impact. The verified historical result is 389 final WebPs for 391 catalogue records; SKU 132/218 exports are missing. Current browser/visual acceptance is not established and no Production Ready certification is claimed.
+
 > A decision-oriented brief for management and the senior engineer. It frames the
 > question "how should PharmaGen PRO live in the company?" — not the code.
 > Cost is expressed in **effort/complexity**, not money.
@@ -8,19 +10,17 @@
 ## Executive Summary
 
 PharmaGen PRO turns a pharmaceutical product catalogue into standardized,
-web-ready packshot images through one automated pipeline. It has rendered the full
-catalogue of **391 SKU** end to end and is production-ready as a **standalone
-tool**. The strategic question is integration with the CRM. The system's value is
+web-oriented packshot concepts through an operator-assisted pipeline. The historical set has **389 final WebPs for 391 catalogue records**, with final exports 132/218 absent. Local tests do not certify current attended rendering or production readiness. The strategic question is integration with the CRM. The system's value is
 high (standardization + automation of manual design work); its main constraint is
-that rendering is driven through the **Gemini browser UI** (free, but serial and
-fragile). This brief lays out three integration paths and recommends a **phased,
+that rendering is driven through the **Gemini browser UI** (serial and
+fragile; current pricing/eligibility were not assessed). This brief lays out three integration paths and recommends a **phased,
 low-risk middle option**.
 
 ## Current State
 
 - **Done:** unified one-command pipeline (`main.py`), centralized config, resume,
   logging, tests, and full documentation (architecture, ADRs, operations, DR,
-  backup, audits). 391 SKU delivered as WEBP in `output/`.
+  backup, audits). 389 historical final WebPs were measured in the archived output set; final exports 132/218 were absent.
 - **Limitations (from the audits):** rendering uses a logged-in **browser session,
   not an API** (architectural); it is **single-threaded** (one browser); images
   are **non-deterministic** (not reproducible); there is **no programmatic API,
@@ -28,8 +28,8 @@ low-risk middle option**.
 
 ## Business Value
 
-- **Standardization** — every SKU rendered to one consistent visual standard (colour zoning, optics, regulated text), removing per-image manual design.
-- **Speed & scale of catalogue work** — a whole catalogue is produced by one command instead of manual art production.
+- **Standardization goal** — templates specify colour zoning, composition and label fields; catalogue-wide visual consistency and regulatory text correctness still require human acceptance.
+- **Workflow automation** — Stages 1–3 share one CLI; Stage 0 remains manual and attended rendering remains necessary. No throughput improvement was measured here.
 - **Reduced manual labour** — passport compilation, routing, sanitization and image optimization are automated and auditable.
 - **Reproducible inputs** — the deterministic stages (passports) and the SSOT make the *input* side fully traceable and re-runnable.
 
@@ -60,7 +60,7 @@ low-risk middle option**.
 
 Adopt **Option 2 (Partial CRM integration)** as the next step. It delivers
 automation value (CRM can trigger renders, read status, fetch assets) **without
-betting on re-architecting the fragile, free renderer**. Keep `output/` as the
+betting on re-architecting the UI-dependent renderer**. Keep `output/` as the
 system of record. Defer **Option 3** until catalogue volume or SLA pressure
 justifies the cost of an API-based, concurrent renderer — at which point the
 browser-RPA constraint (and its determinism/throughput limits) is the thing to
@@ -79,18 +79,16 @@ buy out, not the surrounding pipeline, which is already sound.
 
 PharmaGen PRO превращает каталог фармацевтической продукции в стандартизированные,
 готовые для веба изображения упаковок через единый автоматизированный конвейер.
-Полный каталог из **391 SKU** отрендерен от начала до конца; как **отдельный
-инструмент** система готова к продакшену. Стратегический вопрос — интеграция с
+Исторически проверены **389 итоговых WebP для 391 записи каталога**; экспорты 132/218 отсутствуют. Новый браузерный прогон и полная визуальная приёмка не выполнялись; готовность к production не заявляется. Стратегический вопрос — интеграция с
 CRM. Ценность высокая (стандартизация + автоматизация ручного дизайна); главное
-ограничение — рендеринг идёт через **браузерный UI Gemini** (бесплатно, но
-последовательно и хрупко). Ниже — три пути интеграции и рекомендация в пользу
+ограничение — рендеринг идёт через **браузерный UI Gemini** (последовательно и хрупко; цена и доступность аккаунта не проверялись). Ниже — три пути интеграции и рекомендация в пользу
 **поэтапного, низкорискового среднего варианта**.
 
 ## Текущее состояние (Current State)
 
 - **Сделано:** единый конвейер одной командой (`main.py`), централизованный
   конфиг, resume, логирование, тесты и полная документация (архитектура, ADR,
-  эксплуатация, DR, бэкап, аудиты). 391 SKU поставлены в `output/` как WEBP.
+  эксплуатация, DR, бэкап, аудиты). Измерены 389 исторических итоговых WebP; экспорты 132/218 отсутствуют.
 - **Ограничения (по аудитам):** рендер использует **сессию браузера, а не API**
   (архитектурное); **однопоточность** (один браузер); изображения
   **недетерминированы** (не воспроизводятся); пока **нет программного API, канала
@@ -98,9 +96,8 @@ CRM. Ценность высокая (стандартизация + автом�
 
 ## Бизнес-ценность (Business Value)
 
-- **Стандартизация** — каждый SKU в едином визуальном стандарте (цветовое
-  зонирование, оптика, регуляторный текст), без ручного дизайна на каждое изображение.
-- **Скорость и масштаб** — весь каталог производится одной командой вместо ручного арт-продакшена.
+- **Цель стандартизации** — шаблоны задают композицию, цвет и поля этикетки; единообразие каталога и корректность текста требуют визуальной приёмки.
+- **Автоматизация этапов** — единый CLI охватывает Stage 1–3; Stage 0 ручной, рендер требует оператора. Измеренного выигрыша производительности здесь нет.
 - **Снижение ручного труда** — компиляция паспортов, маршрутизация, санитаризация
   и оптимизация изображений автоматизированы и проверяемы.
 - **Воспроизводимые входы** — детерминированные этапы (паспорта) и SSOT делают

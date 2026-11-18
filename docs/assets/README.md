@@ -4,7 +4,7 @@ The owner authorised public publication of code, images, catalogue data, documen
 
 Only real source-traced outputs may be added. No synthetic runtime fixture is presented as a commercial packshot. Screenshots with accounts, conversations or customer details are excluded. No fake terminal screenshot is created.
 
-Public publishing is paused until historical credential remediation is confirmed. Source images and approved previews, when selected, must have source paths, blob IDs, dimensions, date of inspection and a clear indication that they are historical results rather than a new render. Catalogue-wide visual acceptance remains unverified.
+Historical key revocation and session review are owner-confirmed; public ref replacement awaits exact approval. Source images and approved previews, when selected, must have source paths, blob IDs, dimensions, date of inspection and a clear indication that they are historical results rather than a new render. Catalogue-wide visual acceptance remains unverified.
 
 ## Selected historical example
 

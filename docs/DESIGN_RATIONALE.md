@@ -60,20 +60,20 @@ path was a budget decision the project chose to avoid.
 **Why RPA.** Driving the UI with Selenium turns the free interactive capability
 into an automatable one, at the cost of fragility (DOM selectors), serialization
 (one browser/session), and a non-headless requirement. This was a deliberate
-**cost-vs-robustness trade**: zero render cost in exchange for operational
-fragility. See [ADR-004](DECISIONS/ADR-004-why-rpa.md). It is the single biggest
+**cost-vs-robustness trade**: browser-driven access in exchange for operational
+fragility; account eligibility and service pricing were not audited. See [ADR-004](DECISIONS/ADR-004-why-rpa.md). It is the single biggest
 architectural constraint and the main thing to revisit if volume/SLA grows
-(an API renderer would unlock concurrency and determinism).
+(an API renderer could support concurrency; deterministic image generation would still need separate evidence).
 
 ## 5. Why WEBP (1600×1600, ≤500 KB)?
 
 **Forces.** Final assets are for web/catalogue use; they must be small yet keep
 small pharmaceutical label text legible.
 
-**Why WEBP with an auto-tuned quality ladder.** It hits a hard ≤500 KB weight cap
+**Why WEBP with an auto-tuned quality ladder.** It targets a ≤500 KiB weight budget
 with broad browser support; LANCZOS upscaling preserves text legibility. PNG has
 no practical weight cap; JPEG smears text/edges. The dynamic quality loop trades a
-little fidelity to guarantee the weight budget. See [ADR-003](DECISIONS/ADR-003-why-webp.md).
+little fidelity within a bounded quality loop. The loop can fail to meet the target, and batch success does not certify every output; inspect actual file sizes. See [ADR-003](DECISIONS/ADR-003-why-webp.md).
 
 ## 6. Why SSOT / `SKU.csv` as the routing authority?
 

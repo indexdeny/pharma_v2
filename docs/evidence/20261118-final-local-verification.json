@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-18",
+  "environment": "New isolated Python 3.10.11 venv; pip install requirements.txt succeeded; pip check succeeded",
+  "commands": {
+    "compile": 0,
+    "help": 0,
+    "unit": 0,
+    "dependencies": 0
+  },
+  "unitTests": {
+    "run": 18,
+    "passed": 18,
+    "failed": 0,
+    "skipped": 0
+  },
+  "stage1": {
+    "generated": 391,
+    "referenceHashesCompared": 391,
+    "differences": [],
+    "resumeSkipped": true
+  },
+  "stage3": {
+    "fixture": {
+      "format": "WEBP",
+      "dimensions": [
+        1600,
+        1600
+      ],
+      "bytes": 4634
+    },
+    "resumeExistingOutputUnchanged": true
+  },
+  "protectedFilesCompared": 420,
+  "protectedFilesChangedOrMissing": [],
+  "catalogueValidation": {
+    "csv_rows": 391,
+    "picture_rows": 391,
+    "unique_pictures": 391,
+    "duplicate_pictures": 0,
+    "master_registry_entries": 391,
+    "json_passports": 391,
+    "structurally_invalid_passports": []
+  },
+  "limitations": [
+    "No formal full SSOT JSON schema exists; structural/readability and compiler route/fit checks were executed",
+    "Authenticated Gemini rendering NOT VERIFIED",
+    "Catalogue-wide visual/medical acceptance NOT VERIFIED",
+    "Optional legacy CV model/OCR system dependencies were not installed or exercised"
+  ]
+}
