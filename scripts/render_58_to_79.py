@@ -139,7 +139,7 @@ def run_render():
     log.info("=" * 70)
     log.info("  GEMINI IMAGE GENERATOR — Запуск (ID 58–79)")
     log.info(f"  MD_DIR:       {MD_DIR}")
-    log.info(f"  DOWNLOADS_DIR:LOCAL_HOME\\Downloads")
+    log.info("  DOWNLOADS_DIR:%s", load_config()["rpa"]["downloads_dir"])
     log.info(f"  RAW_DIR:      {RAW_DIR}")
     log.info(f"  FAILED_DIR:   {FAILED_DIR}")
     log.info(f"  BATCH_SIZE:   1")

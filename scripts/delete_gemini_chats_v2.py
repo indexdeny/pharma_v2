@@ -1,10 +1,11 @@
+from pathlib import Path
 import os, sys, time, logging
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
 
-PROFILE_DIR = r"LOCAL_HOME\.gemini\antigravity-browser-profile"
+PROFILE_DIR = str(Path.home().joinpath('.gemini', 'antigravity-browser-profile'))
 PROFILE_NAME = "Profile 1"
 
 options = Options()

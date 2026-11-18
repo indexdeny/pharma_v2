@@ -27,10 +27,8 @@ paths:
 
 # ── Stage 2: Selenium / Gemini RPA renderer ──────────────────────────────────
 rpa:
-  # Pre-authenticated Chrome profile (Gemini session must already be logged in).
-  browser_profile_dir:  'LOCAL_HOME\.gemini\antigravity-browser-profile\Profile 1'
+  # Per-user profile/download paths default in src/utils.py; override in config.local.yaml.
   browser_profile_name: "Profile 1"
-  downloads_dir:        'LOCAL_HOME\Downloads'
   gemini_url:           "https://gemini.google.com/app"
   # WARNING: Gemini blocks image generation in headless mode. Leave false.
   # (--headless on the CLI forces this true and main.py prints a loud warning.)

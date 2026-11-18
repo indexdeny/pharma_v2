@@ -6,7 +6,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-PROFILE_DIR = r"LOCAL_HOME\.gemini\antigravity-browser-profile"
+PROFILE_DIR = str(Path.home().joinpath('.gemini', 'antigravity-browser-profile'))
 PROFILE_NAME = "Profile 1"
 
 options = Options()

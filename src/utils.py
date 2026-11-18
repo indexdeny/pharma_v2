@@ -39,9 +39,9 @@ _DEFAULTS = {
         "progress_file":       "gemini_rpa_progress_v23.txt",
     },
     "rpa": {
-        "browser_profile_dir":      r"LOCAL_HOME\.gemini\antigravity-browser-profile\Profile 1",
+        "browser_profile_dir":      str(Path.home().joinpath('.gemini', 'antigravity-browser-profile', 'Profile 1')),
         "browser_profile_name":     "Profile 1",
-        "downloads_dir":            r"LOCAL_HOME\Downloads",
+        "downloads_dir":            str(Path.home().joinpath('Downloads')),
         "gemini_url":               "https://gemini.google.com/app",
         "headless":                 False,
         "batch_size":               1,

@@ -24,10 +24,10 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 # Configuration matching gemini_image_generator.py
-BROWSER_PROFILE_DIR = r"LOCAL_HOME\.gemini\antigravity-browser-profile\Profile 1"
+BROWSER_PROFILE_DIR = str(Path.home().joinpath('.gemini', 'antigravity-browser-profile', 'Profile 1'))
 BROWSER_PROFILE_NAME = "Profile 1"
 RAW_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "render_output", "raw")
-DOWNLOADS_DIR = r"LOCAL_HOME\Downloads"
+DOWNLOADS_DIR = str(Path.home().joinpath('Downloads'))
 GEMINI_URL = "https://gemini.google.com/app"
 
 logging.basicConfig(

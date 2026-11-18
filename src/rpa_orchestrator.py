@@ -51,18 +51,18 @@ from selenium.common.exceptions import (
 #   1. Откройте встроенный браузер Antigravity IDE.
 #   2. В адресной строке введите:  chrome://version
 #   3. Найдите строку "Profile Path" — она выглядит примерно так:
-#      LOCAL_HOME\AppData\Local\Google\Chrome\User Data\Default
+#      your authorised local profile path
 #   4. Скопируйте путь БЕЗ последнего сегмента "\Default"
 #      То есть укажите родительскую папку: ...\User Data
 #   5. Вставьте этот путь в переменную BROWSER_PROFILE_DIR ниже.
 #
 # ПРИМЕР (стандартный Chrome):
-#   BROWSER_PROFILE_DIR = r"LOCAL_HOME\AppData\Local\Google\Chrome\User Data"
+#   BROWSER_PROFILE_DIR = r"your authorised local profile path
 #
 # ПРИМЕР (Antigravity / встроенный браузер):
 #   Путь может быть нестандартным — проверьте chrome://version в самом браузере IDE.
 #   Обычно что-то вроде:
-#   r"LOCAL_HOME\.gemini\antigravity\browser\profile"
+#   r"your authorised local profile path"
 #
 # ⚠️  ВАЖНО: Закройте встроенный браузер Antigravity ПЕРЕД запуском скрипта!
 #   Chrome не позволяет двум процессам использовать один профиль одновременно.
