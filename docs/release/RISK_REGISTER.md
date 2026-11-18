@@ -1,5 +1,7 @@
 # Risk Register
 
+> **Historical snapshot — current maintenance notice (2026-11-18):** The assessment below records an earlier state, not current acceptance or publication readiness. Current paths, measured results and security/publication limits are in the [portfolio audit](../portfolio-audit.md). The owner has superseded the old internal-publication restriction; third-party rights are not implied. Historical tags are unchanged.
+
 > **Phase:** v1.0.0 Final Release Engineering · **Date:** 2026-06-28
 > Likelihood × Severity, with mitigation and recovery. Recovery references use
 > two ID schemes: **DR-n** → [docs/ops/DISASTER_RECOVERY.md](../ops/DISASTER_RECOVERY.md);

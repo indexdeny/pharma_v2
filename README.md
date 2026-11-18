@@ -1,332 +1,158 @@
 # PharmaGen PRO
 
-> Automated render factory that turns a pharmaceutical product catalogue (SSOT)
-> into clean, production-ready packshot images through a single, resumable
-> command-line pipeline.
+An operator-assisted pipeline that turns pharmaceutical product records into packaging prompts, browser-generated packshots and optimized WebP images.
 
-*(English first — Русская версия ниже / Russian version below.)*
+> **Portfolio migration candidate.** Publication is on hold pending confirmation that an exposed historical API key has been revoked. Remote master and the backup branch have not been changed. [Current audit](docs/portfolio-audit.md).
 
----
+## Project Overview
 
-## Features
+PharmaGen PRO combines a single source of truth (SSOT), packaging passports and a resumable three-stage CLI. Product analysis and JSON passport preparation are a separate manual Stage 0. The automated stages compile prompts, drive an authenticated Gemini browser session and process downloaded images.
 
-- **One command, whole catalogue.** `python main.py --full` runs every stage end to end.
-- **Three well-separated stages** — Passport generation, AI render (RPA), final image optimization.
-- **Single source of truth (SSOT).** Routing and product data come only from `SSOT/SKU.csv` + `SSOT/master.json`.
-- **Centralized configuration** in one `config.yaml`; sensible built-in defaults if it is missing.
-- **Resume-safe.** Interrupt at any point and re-run with `--resume` — no duplicated work.
-- **Structured logging** (rich console + per-run file logs) and a final summary report.
-- **Backward compatible.** Legacy entry points still work via thin shims.
+## Problem Statement
 
-## Architecture
+The owner's project brief describes an e-commerce catalogue with outdated photos, low-resolution images and time-consuming reference searches. Repeated Photoshop work made it difficult to standardize composition and delivery format across the catalogue. This is reported project context, not a measured productivity claim.
 
-```
-SSOT  (SKU.csv + master.json)
-  │
-  ▼
-Passport Generator   ── Stage 1 ──  src/passport_generator.py
-  │
-  ▼
-Markdown Passports   (pipeline/passports.markdown/)
-  │
-  ▼
-AI Renderer (RPA)    ── Stage 2 ──  src/rpa_orchestrator.py   (Selenium → Gemini)
-  │
-  ▼
-PNG Output           (render_output/raw/)
-  │
-  ▼
-WEBP Optimizer       ── Stage 3 ──  src/image_processor.py
-  │
-  ▼
-Final Assets         (output/  ·  WEBP 1600×1600, ≤500 KB)
+## Solution
+
+Structured product records and packaging passports separate product identity from visual instructions. SSOT routing, design rules and templates feed Selenium/Gemini RPA. Downloaded PNGs pass through a WebP processor. Progress records, retries and validation support attended operation and recovery.
+
+## Key Features
+
+- SSOT-driven packaging routing, geometry, colour rules and prompt generation.
+- Browser automation with strict chat-cleanup checks in the current implementation.
+- Sequential subprocess stages, centralized YAML configuration and run logs.
+- File-based resume and retry handling.
+- Image resizing and iterative WebP quality reduction toward a configured byte limit.
+- Passport checks and OCR QA helpers; human visual acceptance remains necessary.
+
+## System Architecture
+
+```mermaid
+flowchart LR
+    A[Manual Stage 0] --> B[JSON passports]
+    S[SSOT] --> C[Stage 1: Markdown compiler]
+    B --> C
+    C --> D[Stage 2: Selenium / Gemini]
+    D --> E[Raw PNG + progress]
+    E --> F[Stage 3: Pillow / WebP]
 ```
 
-`main.py` orchestrates the three Stages, each as an isolated subprocess, adding
-pre-flight checks, resume, retries, logging and a summary — without changing any
-stage's internal logic. Editable diagram sources live in [`docs/diagrams/`](docs/diagrams/).
+`main.py` launches `src.passport_generator`, `src.rpa_orchestrator` and `src.image_processor` as separate subprocesses. Stage 0 is outside this command. [Architecture and failure boundaries](docs/ARCHITECTURE.md); [editable diagram](docs/diagrams/pipeline.mmd).
+
+## Technology Stack
+
+Python 3.10+, Selenium, Chrome, webdriver-manager, Pillow, PyYAML, rich and Pydantic. Optional OCR diagnostics use pytesseract and Tesseract. [requirements.txt](requirements.txt) uses version lower bounds, not a lockfile. Clean-environment installation was not repeated during this audit.
 
 ## Repository Structure
 
-| Path | Purpose |
+| Path | Responsibility |
 |---|---|
-| `main.py` | Single entry point / orchestrator. |
-| `config.yaml` | Central configuration (paths, RPA, image processor, logging). |
-| `requirements.txt` | Runtime dependencies. |
-| `src/` | Pipeline runtime: `passport_generator`, `rpa_orchestrator`, `image_processor`, `utils`. |
-| `pharma_pkg/` | Routing / geometry / classifier library (used by Stage 1). |
-| `schemas/` · `verification_agent.py` | Validation schema helpers and the rule-based verifier. |
-| `SSOT/` | Single source of truth — `SKU.csv`, `master.json`, design specs. |
-| `pipeline/` | Stage data: `passports/` (JSON input), `passports.markdown/` (MD output), `cv/`. |
-| `render_output/` | Stage 2 output: `raw/` (PNG), `failed/`, `failed_logs/`. |
-| `output/` | Stage 3 output — final WEBP assets (the shipped deliverables). |
-| `input/` | Source product photos. |
-| `scripts/` | Auxiliary / maintenance tools (QA, snapshots, sync utilities). |
-| `tests/` | Unit tests. |
-| `docs/` | Documentation and editable diagram sources. |
-| `logs/` | Per-run logs (git-ignored). |
-| `trash/` | Archival store of legacy/superseded artifacts (never auto-restored). |
-| `pass_tomd.py`, `gemini_image_generator.py`, `webp_converter.py` | Back-compat shims → `src/`. |
+| `main.py`, `src/` | CLI, configuration and the three runtime stages |
+| `pharma_pkg/`, `schemas/`, `verification_agent.py` | Packaging models, routing and validation helpers |
+| `SSOT/` | Catalogue, design rules and supporting source documents |
+| `pipeline/passports/` | JSON inputs prepared in Stage 0 |
+| `pipeline/cv/` | Retained structured analysis evidence |
+| `input/` (local, ignored) | Source photos for manual Stage 0; third-party rights review pending |
+| `.agents/protocol.md`, `.agents/workflows/` | Manual preparation guidance; proposed schemas remain roadmap material |
+| `scripts/`, `tests/` | Auxiliary tools and unit tests |
+| `docs/` | Architecture, evidence, runbooks and historical assessments |
 
-## Installation
+Generated prompts, images, diagnostics and resume state are ignored. Existing local copies remain available and committed history is preserved in the external backup. Fresh clones require regeneration or an authorised restore. [Cleanup decisions](CLEANUP_MANIFEST.md).
 
-Requires **Python 3.10+** (Windows; the render Stage drives Chrome).
+## Quick Start
 
-```bash
-python -m pip install -r requirements.txt
+From the repository root on Windows:
+
+```powershell
+python -m venv venv
+venv\Scripts\python.exe -m pip install -r requirements.txt
+venv\Scripts\python.exe main.py --help
+venv\Scripts\python.exe -m unittest discover -s tests -p "test_*.py"
 ```
 
-The render Stage additionally needs a local **Chrome** with a Chrome profile that
-has an authenticated **Gemini** session (see Known Limitations).
+Use a disposable working copy for verification. Stage 1 writes prompts, a verifier log and a generated audit report:
+
+```powershell
+venv\Scripts\python.exe main.py --passports-only
+venv\Scripts\python.exe main.py --passports-only --resume
+```
+
+Follow [DEPLOYMENT.md](DEPLOYMENT.md) for browser setup and artifact restore. Do not run the full pipeline as an installation test.
 
 ## Configuration
 
-All tuning lives in [`config.yaml`](config.yaml). Defaults mirror the original
-scripts, so the Pipeline runs even without the file. Sections:
+[config.yaml](config.yaml) controls inputs, outputs, logging, resume state and browser settings. Copy [config.example.yaml](config.example.yaml) to ignored `config.local.yaml`, set a dedicated authorised browser profile/downloads directory and select it explicitly:
 
-- `paths.*` — SSOT, Stage I/O and bookkeeping locations.
-- `rpa.*` — Chrome profile, Gemini URL, timeouts, batch size, `headless`.
-- `image_processor.*` — final WEBP size (`1600×1600`) and weight cap (`500 KB`).
-- `pipeline.render_retries` — stage-level retries for the render Stage.
-- `logging.level` — `INFO` / `DEBUG` / `WARNING` / `ERROR`.
-
-Use an alternate file with `--config path/to/config.yaml`.
-
-## Usage
-
-```bash
-python main.py --full                      # all three Stages
-python main.py --full --resume             # continue after an interruption
-python main.py --passports-only            # Stage 1 only
-python main.py --render-only --limit 5     # Stage 2, first 5 unprocessed
-python main.py --render-only --from 50-min # Stage 2, start at stem 50-min
-python main.py --process-images-only --resume   # Stage 3 only
-python main.py --full --debug              # verbose logging
+```powershell
+venv\Scripts\python.exe main.py --config config.local.yaml --render-only --limit 1
 ```
 
-Flags: `--resume`, `--headless` (debug only — Gemini blocks headless render),
-`--debug`, `--limit N`, `--from STEM`, `--config PATH`.
+`PHARMAGEN_CONFIG` selects a config file; `PHARMAGEN_HEADLESS` and `PHARMAGEN_DEBUG` override their settings. Relative `paths.*` resolve against the project root. Use absolute browser profile/download paths in local configuration. The existing runtime defaults still contain machine-specific paths, which are a publication finding.
+
+Committed dev configuration writes to `output/test1`; built-in defaults use `output`. Keep the same explicit config when resuming. Neither location implies a complete delivery.
 
 ## Pipeline Stages
 
-| Stage | Module | Input | Output |
+| Stage | Input | Output | Execution |
 |---|---|---|---|
-| **1 — Passports** | `src/passport_generator.py` | `pipeline/passports/*.json` + SSOT | `pipeline/passports.markdown/*.md` |
-| **2 — Renderer (RPA)** | `src/rpa_orchestrator.py` | `pipeline/passports.markdown/*.md` | `render_output/raw/*.png` |
-| **3 — WEBP Optimizer** | `src/image_processor.py` | `render_output/raw/*.png` | `output/*.webp` |
+| 0 — Preparation | Source photos and metadata | JSON passports | Manual, outside `main.py` |
+| 1 — Prompt compilation | JSON passports + SSOT | Markdown prompts | Local Python |
+| 2 — Rendering | Markdown + Gemini session | Raw PNG + progress | Attended Selenium/Chrome |
+| 3 — Processing | Raw PNG/JPEG | WebP | Local Pillow |
 
-- **Stage 1** is deterministic: JSON Passports + SSOT → Markdown Passports.
-- **Stage 2** drives Chrome via Selenium against Gemini and saves raw PNGs.
-- **Stage 3** upscales to WEBP `1600×1600` with auto-tuned quality (≤500 KB).
+```powershell
+venv\Scripts\python.exe main.py --render-only --limit 5
+venv\Scripts\python.exe main.py --process-images-only --resume
+venv\Scripts\python.exe main.py --full --resume
+```
 
-## Resume System
+These are operational commands, not evidence of rendering during this audit. Review [OPERATIONS.md](OPERATIONS.md): the renderer includes chat-history deletion.
 
-Re-running with `--resume` never duplicates work:
+## Verified Results
 
-- **Stage 1** — skipped when every JSON Passport already has a Markdown file; otherwise re-generated in place.
-- **Stage 2** — resumes natively via `gemini_rpa_progress_v23.txt` plus a scan of `render_output/raw/`; already-rendered SKUs are skipped and timed-out SKUs are retried automatically.
-- **Stage 3** — skips any SKU whose `.webp` already exists.
+Measured on **2026-11-18**, from dev `df31165` and its local cleanup candidate. [Evidence and definitions](docs/portfolio-evidence.md) distinguish historical assets from newly executed checks.
 
-**Ctrl+C** is safe at any point: progress is saved, the subprocess is terminated
-cleanly, and `--resume` continues from where it stopped.
+| Measurement | Observed result |
+|---|---|
+| Current source records | 391 unique CSV picture IDs, 391 master registry entries, 391 JSON passports |
+| Isolated Stage 1 | 391/391 Markdown files generated; resume skipped the completed stage |
+| Previous raw set | 391 archived PNG files; current raw directory contains 7 |
+| Historical final set | 389 WebP files, all 1600×1600; largest 134,630 bytes, all within 500 KiB |
+| Missing historical finals | SKU 132 and 218 |
+| Later test batch | 9 WebP files in `output/test1`, not a complete catalogue run |
+| Baseline unit tests | 18 run: 17 passed, 1 failed due to warning-order coupling in a test |
+| Candidate unit tests | 18 run: 18 passed, 0 failed, 0 skipped after correcting the test's warning selection |
+| Browser/Gemini end-to-end | **NOT VERIFIED** in this audit |
 
-## Project Status
-
-- **391 SKU rendered** (389 final WEBP)
-- **Production Ready**
-- **Unified Pipeline** (single entry point)
-- **Resume Supported**
+Candidate test counts and before/after comparisons are in the [audit](docs/portfolio-audit.md). Dimensions, decoding and byte checks do not establish medical, text, packaging or brand correctness.
 
 ## Known Limitations
 
-- The render Stage requires a **logged-in Gemini session** in the configured Chrome profile and must run **non-headless** (Gemini blocks headless image generation).
-- Rendering is **browser-driven (RPA)**, not API-based; throughput depends on Gemini's UI.
-- **Stage 0** (source image → JSON Passport) is a separate manual analysis step and is not part of this automated Pipeline.
-- Profile/Downloads paths in `config.yaml` default to a **Windows** layout.
+- Stage 0 is manual. The complete workflow is not autonomous.
+- Rendering requires an authenticated Gemini browser and typically non-headless Chrome. Selectors, account state, UI changes and service instability affect operation.
+- Image generation is non-deterministic; rerunning a prompt does not reproduce historical images.
+- Catalogue-wide visual acceptance is unverified. No medical or regulatory approval is implied.
+- Stage 1 resume compares counts, not IDs or hashes. Stage 3 skips existing filenames without revalidating their content.
+- Stage 3 may log per-file failures and still exit successfully. A configured byte limit is a target, not an unconditional guarantee.
+- Machine-specific defaults and unpinned dependencies limit portability.
+- Historical credential exposure still requires remediation; no automatic Git-history rewrite is authorised.
 
-## Development Notes
+## My Contribution
 
-Architecture principles:
+**Owner-reported, from the 2026-11-18 brief:** identified the e-commerce workflow problem; formulated requirements; designed the architecture, SSOT and data contracts; organized AI-assisted implementation and coordinated AI coding agents; reviewed results; and participated in deployment to one commercial storefront. Storefront adoption and personal authorship were not independently verified by this audit. This does not claim that all Python was manually written by the owner.
 
-- **SSOT only** — no business data is invented; routing comes from `SSOT/`.
-- **Config-driven paths** — every location is resolvable from `config.yaml`, anchored to the project root.
-- **Subprocess isolation** — each Stage runs exactly as its standalone script; the orchestrator never alters stage logic.
-- **Faithful refactor** — Stage logic, templates, sanitization, color zoning and the WEBP math are unchanged.
-- **Backward compatibility** — root shims preserve legacy commands and imports.
+## Visual Demo
 
-Run the tests:
+Only real, source-traced examples may be included. The pipeline diagram documents implemented behaviour; it is not an output screenshot. Product examples and their provenance are listed in [demo assets](docs/assets/README.md). No synthetic verification fixture is presented as a commercial result.
 
-```bash
-python -m unittest discover -s tests -p "test_*.py"
-```
+![Historical generic Atomoxetine concept packshot](docs/assets/atomoxetine-historical.webp)
 
-## License / Internal Use
+Historical generated concept packshot, copied from the existing 400×400 preview. Not a new render, validated product label or approved packaging. The branded source photo is withheld pending third-party rights confirmation.
 
-**Internal project of Pharma Progressive.** All rights reserved. For internal use
-only — not for public distribution.
+## Project Status
 
----
----
+**PARTIALLY COMPLETED / BLOCKED — NOT READY for LinkedIn publication.** The local candidate preserves dev ancestry and runtime inputs. Public PR, master promotion, default-branch switching and backup retirement are on hold pending credential remediation. Historical tags are not current acceptance evidence. [Plan](MIGRATION_PLAN.md), [baseline](BASELINE_REPORT.md), [rollback](ROLLBACK_PLAN.md), [audit](docs/portfolio-audit.md).
 
-# PharmaGen PRO (Русская версия)
+## License / Usage Restrictions
 
-> Автоматизированная фабрика рендеринга, превращающая каталог фармацевтической
-> продукции (SSOT) в чистые, готовые к продакшену изображения упаковок через
-> единый возобновляемый конвейер командной строки.
-
-## Возможности (Features)
-
-- **Одна команда — весь каталог.** `python main.py --full` выполняет все этапы от начала до конца.
-- **Три чётко разделённых этапа** — генерация Passport, AI-рендер (RPA), финальная оптимизация изображений.
-- **Единый источник правды (SSOT).** Маршрутизация и данные о продукте берутся только из `SSOT/SKU.csv` + `SSOT/master.json`.
-- **Централизованная конфигурация** в одном `config.yaml`; разумные значения по умолчанию, если файла нет.
-- **Безопасное возобновление.** Прервите в любой момент и перезапустите с `--resume` — без дублирования работы.
-- **Структурированное логирование** (rich-консоль + файловые логи на каждый запуск) и итоговый отчёт.
-- **Обратная совместимость.** Старые точки входа работают через тонкие шимы.
-
-## Архитектура (Architecture)
-
-```
-SSOT  (SKU.csv + master.json)
-  │
-  ▼
-Passport Generator   ── Stage 1 ──  src/passport_generator.py
-  │
-  ▼
-Markdown Passports   (pipeline/passports.markdown/)
-  │
-  ▼
-AI Renderer (RPA)    ── Stage 2 ──  src/rpa_orchestrator.py   (Selenium → Gemini)
-  │
-  ▼
-PNG Output           (render_output/raw/)
-  │
-  ▼
-WEBP Optimizer       ── Stage 3 ──  src/image_processor.py
-  │
-  ▼
-Final Assets         (output/  ·  WEBP 1600×1600, ≤500 КБ)
-```
-
-`main.py` оркестрирует три Stage, каждый — как изолированный подпроцесс, добавляя
-pre-flight проверки, resume, retry, логирование и итоговый отчёт — не меняя
-внутреннюю логику этапов. Редактируемые исходники диаграмм — в [`docs/diagrams/`](docs/diagrams/).
-
-## Структура репозитория (Repository Structure)
-
-| Путь | Назначение |
-|---|---|
-| `main.py` | Единая точка входа / оркестратор. |
-| `config.yaml` | Центральная конфигурация (пути, RPA, обработчик изображений, логирование). |
-| `requirements.txt` | Зависимости рантайма. |
-| `src/` | Рантайм конвейера: `passport_generator`, `rpa_orchestrator`, `image_processor`, `utils`. |
-| `pharma_pkg/` | Библиотека маршрутизации / геометрии / классификации (этап Stage 1). |
-| `schemas/` · `verification_agent.py` | Помощники схем валидации и rule-based верификатор. |
-| `SSOT/` | Единый источник правды — `SKU.csv`, `master.json`, спецификации дизайна. |
-| `pipeline/` | Данные этапов: `passports/` (вход JSON), `passports.markdown/` (выход MD), `cv/`. |
-| `render_output/` | Выход Stage 2: `raw/` (PNG), `failed/`, `failed_logs/`. |
-| `output/` | Выход Stage 3 — финальные WEBP-ассеты (поставляемый результат). |
-| `input/` | Исходные фотографии продуктов. |
-| `scripts/` | Вспомогательные / обслуживающие инструменты (QA, снапшоты, sync-утилиты). |
-| `tests/` | Юнит-тесты. |
-| `docs/` | Документация и редактируемые исходники диаграмм. |
-| `logs/` | Логи на каждый запуск (в .gitignore). |
-| `trash/` | Архив легаси/устаревших артефактов (никогда не восстанавливается автоматически). |
-| `pass_tomd.py`, `gemini_image_generator.py`, `webp_converter.py` | Шимы обратной совместимости → `src/`. |
-
-## Установка (Installation)
-
-Требуется **Python 3.10+** (Windows; этап рендера управляет Chrome).
-
-```bash
-python -m pip install -r requirements.txt
-```
-
-Этапу рендера дополнительно нужен локальный **Chrome** с профилем, в котором есть
-авторизованная сессия **Gemini** (см. «Известные ограничения»).
-
-## Конфигурация (Configuration)
-
-Все настройки — в [`config.yaml`](config.yaml). Значения по умолчанию повторяют
-оригинальные скрипты, поэтому конвейер работает и без файла. Разделы:
-
-- `paths.*` — SSOT, ввод/вывод этапов и служебные пути.
-- `rpa.*` — профиль Chrome, URL Gemini, таймауты, размер батча, `headless`.
-- `image_processor.*` — размер финального WEBP (`1600×1600`) и лимит веса (`500 КБ`).
-- `pipeline.render_retries` — повторы на уровне этапа для рендера.
-- `logging.level` — `INFO` / `DEBUG` / `WARNING` / `ERROR`.
-
-Альтернативный файл — `--config path/to/config.yaml`.
-
-## Использование (Usage)
-
-```bash
-python main.py --full                      # все три этапа
-python main.py --full --resume             # продолжить после прерывания
-python main.py --passports-only            # только Stage 1
-python main.py --render-only --limit 5     # Stage 2, первые 5 необработанных
-python main.py --render-only --from 50-min # Stage 2, начать со stem 50-min
-python main.py --process-images-only --resume   # только Stage 3
-python main.py --full --debug              # подробное логирование
-```
-
-Флаги: `--resume`, `--headless` (только для отладки — Gemini блокирует headless-рендер),
-`--debug`, `--limit N`, `--from STEM`, `--config PATH`.
-
-## Этапы конвейера (Pipeline Stages)
-
-| Этап | Модуль | Вход | Выход |
-|---|---|---|---|
-| **1 — Passports** | `src/passport_generator.py` | `pipeline/passports/*.json` + SSOT | `pipeline/passports.markdown/*.md` |
-| **2 — Renderer (RPA)** | `src/rpa_orchestrator.py` | `pipeline/passports.markdown/*.md` | `render_output/raw/*.png` |
-| **3 — WEBP Optimizer** | `src/image_processor.py` | `render_output/raw/*.png` | `output/*.webp` |
-
-- **Stage 1** детерминирован: JSON Passport + SSOT → Markdown Passport.
-- **Stage 2** управляет Chrome через Selenium и сохраняет сырые PNG из Gemini.
-- **Stage 3** масштабирует в WEBP `1600×1600` с авто-подбором качества (≤500 КБ).
-
-## Система возобновления (Resume System)
-
-Перезапуск с `--resume` никогда не дублирует работу:
-
-- **Stage 1** — пропускается, если у каждого JSON Passport уже есть Markdown; иначе перегенерируется на месте.
-- **Stage 2** — нативный resume через `gemini_rpa_progress_v23.txt` и скан `render_output/raw/`; обработанные SKU пропускаются, SKU с таймаутом повторяются автоматически.
-- **Stage 3** — пропускает SKU, у которых `.webp` уже существует.
-
-**Ctrl+C** безопасен в любой момент: прогресс сохраняется, подпроцесс корректно
-завершается, а `--resume` продолжает с места остановки.
-
-## Статус проекта (Project Status)
-
-- **391 SKU отрендерено** (389 финальных WEBP)
-- **Production Ready**
-- **Единый конвейер (Unified Pipeline)**
-- **Поддержка возобновления (Resume Supported)**
-
-## Известные ограничения (Known Limitations)
-
-- Этап рендера требует **авторизованной сессии Gemini** в настроенном профиле Chrome и должен работать **не в headless** (Gemini блокирует headless-генерацию изображений).
-- Рендеринг — **через браузер (RPA)**, не через API; пропускная способность зависит от UI Gemini.
-- **Stage 0** (исходное изображение → JSON Passport) — отдельный ручной шаг анализа, не входит в этот автоматизированный конвейер.
-- Пути профиля/Downloads в `config.yaml` по умолчанию рассчитаны на **Windows**.
-
-## Заметки для разработчиков (Development Notes)
-
-Архитектурные принципы:
-
-- **Только SSOT** — бизнес-данные не выдумываются; маршрутизация берётся из `SSOT/`.
-- **Пути из конфига** — любое расположение резолвится из `config.yaml`, с привязкой к корню проекта.
-- **Изоляция подпроцессов** — каждый Stage работает точно как отдельный скрипт; оркестратор не меняет логику этапов.
-- **Точный рефакторинг** — логика этапов, шаблоны, санитаризация, цветовое зонирование и математика WEBP не изменены.
-- **Обратная совместимость** — корневые шимы сохраняют старые команды и импорты.
-
-Запуск тестов:
-
-```bash
-python -m unittest discover -s tests -p "test_*.py"
-```
-
-## Лицензия / Внутреннее использование (License / Internal Use)
-
-**Внутренний проект Pharma Progressive.** Все права защищены. Только для
-внутреннего использования — не для публичного распространения.
+The owner explicitly authorised public publication of the project's source code, images, catalogue data, documentation and results on 2026-11-18, asserting ownership or authority to grant permission. This supersedes the former Pharma Progressive internal-publication restriction. **All rights reserved; no open-source licence or blanket permission to reuse third-party trademarks is granted.** Secrets, browser sessions and personal data are excluded. See [publication authorisation](docs/PUBLICATION_AUTHORIZATION.md).

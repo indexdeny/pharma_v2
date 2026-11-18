@@ -4,6 +4,7 @@ flowchart TD
     SSOT["SSOT<br/>SKU.csv + master.json"]:::ssot
 
     SSOT --> S1["Stage 1 — Passport Generator<br/>src/passport_generator.py"]:::stage
+    PREP["Stage 0 — Manual preparation<br/>source photos + metadata"]:::data --> JSON
     JSON["pipeline/passports/*.json"]:::data --> S1
     S1 --> MD["Markdown Passports<br/>pipeline/passports.markdown/*.md"]:::data
 
@@ -11,7 +12,7 @@ flowchart TD
     S2 --> PNG["PNG Output<br/>render_output/raw/*.png"]:::data
 
     PNG --> S3["Stage 3 — WEBP Optimizer<br/>src/image_processor.py"]:::stage
-    S3 --> WEBP["Final Assets<br/>output/*.webp · 1600×1600 · ≤500 KB"]:::final
+    S3 --> WEBP["Final Assets<br/>output/test1/*.webp (configured) · 1600×1600 · ≤500 KB"]:::final
 
     classDef ssot fill:#e8f0fe,stroke:#4285f4,color:#000;
     classDef stage fill:#fff4e5,stroke:#f5a623,color:#000;

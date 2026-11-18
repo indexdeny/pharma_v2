@@ -1,5 +1,7 @@
 # PharmaGen PRO — Project History
 
+> **Historical snapshot — current maintenance notice (2026-11-18):** The assessment below records an earlier state, not current acceptance or publication readiness. Current paths, measured results and security/publication limits are in the [portfolio audit](docs/portfolio-audit.md). The owner has superseded the old internal-publication restriction; third-party rights are not implied. Historical tags are unchanged.
+
 > A narrative of how the product evolved — **not** a changelog. It exists so a new
 > maintainer understands *why the system looks the way it does*. Milestones are
 > grounded in the git history (46 commits, 2026-05-02 → 2026-06-11) and the later

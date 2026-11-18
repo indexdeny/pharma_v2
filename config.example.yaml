@@ -1,0 +1,15 @@
+# Copy to ignored config.local.yaml; pass --config config.local.yaml.
+# Replace these values with absolute paths on your authorised local machine.
+rpa:
+  browser_profile_dir: "SET_ABSOLUTE_LOCAL_PROFILE_PATH"
+  browser_profile_name: "Default"
+  downloads_dir: "SET_ABSOLUTE_LOCAL_DOWNLOADS_PATH"
+  headless: false
+  strict_chat_cleanup: true
+paths:
+  renders_final: "output/test1"
+image_processor:
+  source_dir: "render_output/raw"
+  output_dir: "output/test1"
+  target_size: [1600, 1600]
+  max_file_size_kb: 500

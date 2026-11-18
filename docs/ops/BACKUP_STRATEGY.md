@@ -1,5 +1,7 @@
 # Backup Strategy
 
+> **Historical snapshot — current maintenance notice (2026-11-18):** The assessment below records an earlier state, not current acceptance or publication readiness. Current paths, measured results and security/publication limits are in the [portfolio audit](../portfolio-audit.md). The owner has superseded the old internal-publication restriction; third-party rights are not implied. Historical tags are unchanged.
+
 > What to keep, what is regenerable, and what is gone forever if lost. Driven by
 > one fact from the Production Readiness audit: **rendered images are
 > non-deterministic** — they cannot be reproduced, only restored.

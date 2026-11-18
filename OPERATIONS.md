@@ -1,81 +1,38 @@
-# PharmaGen PRO — Operations Manual
+# Operations
 
-> The operator runbook: how to run the pipeline, read its state, and recover from
-> the errors you will actually hit. Setup is in [DEPLOYMENT.md](DEPLOYMENT.md);
-> deep failure playbooks are in [docs/ops/DISASTER_RECOVERY.md](docs/ops/DISASTER_RECOVERY.md).
+Current guidance, 2026-11-18. Run from the root with the same explicit config throughout a run. See [deployment](DEPLOYMENT.md) and [architecture](docs/ARCHITECTURE.md).
 
-## Pre-run checklist
+## Before a run
 
-- [ ] Chrome profile is **logged in to Gemini** (Stage 2).
-- [ ] No other browser (incl. embedded Antigravity) is using that profile.
-- [ ] Enough free disk for new PNG/WEBP output (there is **no automatic disk check**).
-- [ ] `venv` active; `python main.py --help` works.
+Confirm authorisation for data, images and account; free disk; SSOT/JSON integrity; a recent private backup; and output paths. Stage 2 needs a logged-in, exclusively owned Chrome profile. **The renderer deletes Gemini chat history during cleanup.** Use a dedicated authorised profile. The audit did not exercise account actions.
 
-## Running
+## Commands
 
-```bash
-# whole catalogue, safe to repeat (skips finished work)
-venv\Scripts\python.exe main.py --full --resume
-
-# individual stages
-venv\Scripts\python.exe main.py --passports-only
-venv\Scripts\python.exe main.py --render-only            # needs logged-in browser
-venv\Scripts\python.exe main.py --process-images-only --resume
+```powershell
+venv\Scripts\python.exe main.py --config config.local.yaml --passports-only
+venv\Scripts\python.exe main.py --config config.local.yaml --render-only --limit 5
+venv\Scripts\python.exe main.py --config config.local.yaml --process-images-only --resume
+venv\Scripts\python.exe main.py --config config.local.yaml --full --resume
 ```
 
-## What to watch
+`--from STEM` sets a render start position, not single-SKU regeneration. `--headless` is a debug override, not evidence of supported unattended rendering. `python -m src.rpa_orchestrator --estimate` reads local state and writes logs without launching Chrome; set `PHARMAGEN_CONFIG` when directly invoking a module with alternate config.
 
-| Signal | Where |
+## Inspecting state
+
+| Signal | Location |
 |---|---|
-| Per-stage status / duration / artifact counts | `main.py` end-of-run summary table |
-| Live per-SKU progress `[i/N]` | console + `logs/pharmagen_*.log`, `logs/gemini_rpa_*.log` |
-| Remaining SKUs + ETA | `python -m src.rpa_orchestrator --estimate` (no browser) |
-| Failures (per SKU) | `render_output/failed_logs/failures.log` + screenshots in `render_output/failed/` |
+| Stage status, duration, file counts | CLI summary and run log |
+| Browser/per-SKU failures | RPA logs and configured failure screenshots/logs |
+| Resume state | Configured tracker plus raw-image filenames |
+| Verifier warnings | Configured failure log and generated override report |
+| Final images | `image_processor.output_dir`, currently `output/test1` |
 
-## Error-handling flow
+Generated files are ignored by Git. A successful stage exit does not certify every SKU. Compare expected IDs, readable files, dimensions and byte limits; inspect text and packaging visually.
 
-```
-Start generation
-      │
-      ▼
-Error appears ──▶ What to check ──▶ Recover ──▶ Continue (--resume)
-      │                                              │
-      └──────────── if unrecoverable ───────────────┘
-                         ▼
-                 Full restart (rare)
-```
+## Recovery and reruns
 
-## Common situations
+For auth/UI failures, stop and inspect logs; restore login manually or repair selectors in a separate reviewed change. Preserve failures privately. Use the same config and restored raw/progress state before resuming.
 
-| Symptom | Check | Action |
-|---|---|---|
-| Stage 2 times out on a SKU | `failures.log` (`stage: wait_for_image_generation`); screenshot in `failed/` | Auto-retried in the end-of-run pass; otherwise re-run `--render-only --resume`. |
-| "Chrome already in use" / profile lock | Another browser on the same profile | Close it (incl. Antigravity), re-run. |
-| All SKUs failing fast | Network / Gemini session expired | Re-login in the profile; check connectivity; re-run `--resume`. |
-| No PNG produced | `failed/error_gen_<stem>.png` | Re-run `--render-only --resume` (resume re-attempts it). |
-| Disk fills mid-run | Free space | Free space, then `--resume` (no data duplication). |
-| Gemini UI changed (selectors fail) | Repeated failures at the same stage across SKUs | See [Disaster Recovery → Gemini DOM change](docs/ops/DISASTER_RECOVERY.md). |
+Stage 1 resume compares counts. For content freshness, generate into an empty isolated directory. Stage 3 skips any existing filename, including invalid files. Before regeneration, copy affected raw/final files and tracker records into private recovery storage, then review which entries need removal. This guide does not perform destructive regeneration.
 
-## Re-render a single SKU
-
-There is no one-shot `regenerate(sku)`. To redo e.g. `217-min`:
-
-```bash
-del render_output\raw\217-min.png        # makes it "unprocessed" again
-del output\217-min.webp                  # so Stage 3 will rebuild it
-venv\Scripts\python.exe main.py --render-only --from 217-min --limit 1
-venv\Scripts\python.exe main.py --process-images-only
-```
-
-## Resume vs. full restart
-
-- **Resume (default choice):** `--resume`. Safe after any interruption — finished
-  SKUs are skipped, no duplication. This is correct in almost all cases.
-- **Full restart (rare):** only when inputs themselves changed (new SSOT, rebuilt
-  passports) and you intend to regenerate. Remember images are **not reproducible**;
-  preserve `output/` first.
-
-## Interrupting
-
-Press **Ctrl+C** — progress is saved per SKU and the browser is closed cleanly.
-Continue later with `--resume`.
+Ctrl+C termination is handled; power loss is not transactional. Inspect interrupted writes before resuming. Authenticated rendering and catalogue-wide visual acceptance remain **NOT VERIFIED**. [Historical recovery scenarios](docs/ops/DISASTER_RECOVERY.md) are retained; current paths and limitations here take precedence.

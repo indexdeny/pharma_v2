@@ -21,7 +21,7 @@ flowchart TD
     P -- reads --> SSOT["SSOT/"]:::data
     R -- reads --> SSOTm["pipeline/passports.markdown/"]:::data
     I -- reads --> RAW["render_output/raw/"]:::data
-    I -- writes --> OUT["output/ (WEBP)"]:::data
+    I -- writes --> OUT["configured output/test1/ (WEBP)"]:::data
 
     SHIM["Root shims<br/>pass_tomd.py · gemini_image_generator.py · webp_converter.py"]:::shim
     SHIM -. re-export .-> P

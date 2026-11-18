@@ -10,3 +10,30 @@ verification_failures.log
 # DOM-дампы диагностики: крупные и восстанавливаются скриптом
 00_PROJECT_STATE/dom_dump/*.html
 00_PROJECT_STATE/dom_dump/*.txt
+
+# Runtime products and state: restore from private backups when needed.
+/output/
+/render_output/
+/pipeline/passports.markdown/
+/gemini_rpa_progress_v23.txt
+/docs/DATA_DRIVEN_OVERRIDE_AUDIT.md
+/00_PROJECT_STATE/dom_dump/
+
+# Historical material is preserved in the external all-ref bundle.
+/trash/
+
+# Branded source photographs: private Stage 0 inputs, pending third-party rights.
+/input/
+/pipeline/cv/yolov8n.pt
+
+# Machine-specific tooling and unrelated installed skill packs.
+/.agents/skills/
+/.claude/
+/.codex/
+/.mcp.json
+/.vscode/
+/config.local.yaml
+/.local/
+/.venv/
+/.pytest_cache/
+*.bundle

@@ -187,7 +187,7 @@ class TestVerifier(unittest.TestCase):
         res = agent_2_verifier(data)
         check10_warnings = [w for w in res["warnings"] if "CHECK 10" in w]
         self.assertEqual(len(check10_warnings), 1, "CHECK 10 should fire for blister scene on vial")
-        self.assertIn("routing mismatch", res["warnings"][0] if check10_warnings else "")
+        self.assertIn("routing mismatch", check10_warnings[0])
 
     def test_check10_pill_blister_scene_no_penalty(self):
         """CHECK 10: standard pill SKU with blister scene → no penalty (not vertical product)."""

@@ -1,5 +1,7 @@
 # Disaster Recovery
 
+> **Historical snapshot — current maintenance notice (2026-11-18):** The assessment below records an earlier state, not current acceptance or publication readiness. Current paths, measured results and security/publication limits are in the [portfolio audit](../portfolio-audit.md). The owner has superseded the old internal-publication restriction; third-party rights are not implied. Historical tags are unchanged.
+
 > Per-failure playbooks. Each entry: **symptom → impact → recovery → prevention.**
 > Backups referenced here are defined in [BACKUP_STRATEGY.md](BACKUP_STRATEGY.md).
 > The golden rule: rendered images are **not reproducible** — recover them from

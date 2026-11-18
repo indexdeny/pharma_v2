@@ -1,29 +1,18 @@
-# Acceptance Test
+# Acceptance checks
 
-> A single hand-over gate. Run top to bottom from the project root; tick each box.
-> **When every box passes, the deployment may be declared `Production Ready`.**
-> Note: Stage 2 (render) is an **attended** check — it needs a logged-in browser
-> and cannot be a fully automated CI gate.
+Current checklist, 2026-11-18. Historical release documents do not certify this candidate. Completed local checks and exact results are in [portfolio evidence](../portfolio-evidence.md).
 
-| # | Check | Command | Expected | ☑ |
-|---|---|---|---|---|
-| 1 | Environment & deps | `venv\Scripts\python.exe -m pip install -r requirements.txt` | installs cleanly | ☐ |
-| 2 | Entry point | `venv\Scripts\python.exe main.py --help` | usage prints, exit 0 | ☐ |
-| 3 | Config exists & parses | `venv\Scripts\python.exe -c "from src.utils import load_config; load_config()"` | no error | ☐ |
-| 4 | SSOT found | confirm `SSOT/SKU.csv` and `SSOT/master.json` exist & non-empty | both present | ☐ |
-| 5 | Unit tests (QA) | `venv\Scripts\python.exe -m unittest discover -s tests -p "test_*.py"` | `OK` (18 tests) | ☐ |
-| 6 | **Stage 1** — passports | `venv\Scripts\python.exe main.py --passports-only` | `converted 391/391`, `git diff` on `pipeline/passports.markdown/` empty (deterministic) | ☐ |
-| 7 | **Stage 2** — render *(attended)* | `venv\Scripts\python.exe -m src.rpa_orchestrator --estimate` | paths resolve, remaining/ETA shown. *Full render requires a logged-in Gemini session in the Chrome profile.* | ☐ |
-| 8 | **Stage 3** — WEBP | `venv\Scripts\python.exe main.py --process-images-only --resume` | runs, exit 0 (skips existing on resume) | ☐ |
-| 9 | Resume (no duplication) | re-run #6 / #8 with `--resume` | finished work skipped, no duplicates | ☐ |
-| 10 | WEBP output present & valid | inspect `output/*.webp` | files exist; `1600×1600`; each ≤ 500 KB | ☐ |
-| 11 | QA (optional) | `venv\Scripts\python.exe scripts/render_qa.py` | runs if Tesseract installed; otherwise skip | ☐ |
+| Check | Procedure | Acceptance boundary |
+|---|---|---|
+| Syntax/import surfaces | `python -m compileall -q main.py src pharma_pkg schemas` | Exit 0; execution dependencies still require separate checks |
+| CLI | `python main.py --help` | Exit 0 without starting a browser |
+| Unit suite | `python -m unittest discover -s tests -p "test_*.py"` | All discovered tests pass; record count/date |
+| Source readability | Parse SSOT JSON/CSV and all input JSON passports | Record unique IDs, supported schema_version and missing records; no claim of full clinical validation |
+| Stage 1 | Run in isolated copy with empty generated directory | Output count matches JSON set; inspect failures; compare content hashes for unchanged inputs |
+| Resume | Run Stage 1 and Stage 3 twice in the same disposable copy | Stage 1 skips completed stage; existing Stage 3 file remains unchanged; note count/filename limitations |
+| Stage 3 | Process a synthetic fixture in an isolated directory | Valid WebP, configured dimensions and byte target; not catalogue acceptance |
+| Real image delivery | Compare expected IDs with readable final files | Explain missing/failed outputs; human visual acceptance required |
+| Browser/Gemini | Attended authorised session, small batch | Verify login, cleanup, selectors, download, progress and output; NOT VERIFIED here |
+| Publication | Revoked exposed credentials, privacy/rights review, clean scan | Blocked pending owner confirmation and approved remediation |
 
-## Sign-off
-
-- All non-optional boxes ticked → **Production Ready**.
-- Stage 2 full render verified manually at least once on the target machine.
-- Backups of Tier-1 data confirmed (see [BACKUP_STRATEGY.md](BACKUP_STRATEGY.md)).
-
-> Determinism note: checks #10/#11 verify **presence and format**, not pixel
-> equality — rendered images are non-reproducible by design.
+Run from the repository root using the explicit project venv interpreter. Do not regenerate historical production outputs as a test. Do not equate successful local checks with Production Ready or LinkedIn readiness. Public master promotion and branch retirement require the remaining migration gates in the [audit](../portfolio-audit.md).

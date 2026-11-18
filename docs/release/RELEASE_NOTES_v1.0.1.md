@@ -1,5 +1,7 @@
 # PharmaGen PRO v1.0.1 — Patch Release (June 2026)
 
+> **Historical snapshot — current maintenance notice (2026-11-18):** The assessment below records an earlier state, not current acceptance or publication readiness. Current paths, measured results and security/publication limits are in the [portfolio audit](../portfolio-audit.md). The owner has superseded the old internal-publication restriction; third-party rights are not implied. Historical tags are unchanged.
+
 > Draft body for the GitHub Release of tag `v1.0.1` (the latest, fully
 > reproducible release). Patch over [v1.0.0](RELEASE_NOTES_v1.0.0.md).
 
