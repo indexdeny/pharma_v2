@@ -1,4 +1,4 @@
-# Final local test results — 2026-11-18
+# Final local and post-publication test results — 2026-11-18
 
 Executed in a new isolated Python 3.10.11 environment, installed from unchanged requirements.txt. pip check passed.
 
@@ -18,3 +18,7 @@ Isolated Stage 1: **391/391** JSON passports compiled; all **391 SHA-256 values*
 [Machine-readable results](docs/evidence/20261118-final-local-verification.json), [validated dependency versions](docs/evidence/20261118-validated-dependencies.txt), [historical output evidence](docs/portfolio-evidence.md).
 
 Authenticated Gemini rendering, catalogue-wide visual/medical acceptance, and optional legacy CV/OCR dependencies are **NOT VERIFIED**. No historical commercial images were regenerated.
+
+## Public-clone verification
+
+After the approved master/tag update, a fresh GitHub master clone passed the four commands above with 18/18 unit tests. After default-branch cutover and dev/backup deletion, a second fresh public master clone passed the same commands. Both clone trees exactly matched the approved baseline, preserving all 391 passports. These runs used the already validated isolated Python environment; they are not claimed as additional independent dependency installations. All current public branch/tag refs were cloned into a fresh mirror and scanned. Private logs retain exact command results.

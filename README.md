@@ -2,7 +2,7 @@
 
 An operator-assisted pipeline that turns pharmaceutical product records into packaging prompts, browser-generated packshots and optimized WebP images.
 
-> **Portfolio migration candidate.** Local privacy/history cleanup is prepared. Publication awaits approval of exact branch and tag replacements. Remote master and the backup branch have not been changed. [Current audit](docs/portfolio-audit.md).
+> **Published portfolio project — READY WITH LIMITATIONS.** The cleaned runtime is on GitHub master, which is the default branch. Legacy dev/backup branches are retired; both historical tags point to cleaned history. Fresh public clones passed compilation, CLI, dependency checks and 18/18 unit tests on 2026-11-18. [Release report](FINAL_PORTFOLIO_RELEASE_REPORT.md).
 
 ## Project Overview
 
@@ -135,7 +135,7 @@ Candidate test counts and before/after comparisons are in the [audit](docs/portf
 - Stage 1 resume compares counts, not IDs or hashes. Stage 3 skips existing filenames without revalidating their content.
 - Stage 3 may log per-file failures and still exit successfully. A configured byte limit is a target, not an unconditional guarantee.
 - Browser-specific configuration and unpinned dependencies limit portability.
-- Historical credential revocation and browser session review are owner-confirmed. Remote replacements require explicit approval.
+- Historical credential revocation and browser session review are owner-confirmed. Cleanup covers current public refs; previous clones and server caches are outside that guarantee.
 
 ## My Contribution
 
@@ -151,7 +151,7 @@ Historical generated concept packshot, copied from the existing 400×400 preview
 
 ## Project Status
 
-**PARTIALLY COMPLETED / BLOCKED — NOT READY for LinkedIn publication.** The locally rewritten candidate preserves mapped dev ancestry and runtime inputs. Public PR, master promotion, default-branch switching and legacy branch retirement await exact-ref approval and post-update checks. Historical tags are not current acceptance evidence. [Plan](MIGRATION_PLAN.md), [baseline](BASELINE_REPORT.md), [rollback](ROLLBACK_PLAN.md), [audit](docs/portfolio-audit.md).
+**GitHub migration completed — READY WITH LIMITATIONS for portfolio use.** Master preserves mapped dev ancestry and runtime inputs and is the GitHub default. Approved master/tag replacements and legacy branch retirement were verified through GitHub API and fresh clones. Historical tags represent cleaned historical versions, not current acceptance evidence. Browser/Gemini end-to-end and catalogue-wide visual/medical acceptance remain unverified. [Plan](MIGRATION_PLAN.md), [baseline](BASELINE_REPORT.md), [rollback](ROLLBACK_PLAN.md), [audit](docs/portfolio-audit.md).
 
 ## License / Usage Restrictions
 
